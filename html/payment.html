@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Quick Learn</title>
+    <link rel="stylesheet" href="../css/payment.css" />
+  </head>
+  <body>
+
+<header>
+    <a href="../home.html">
+         <img
+    id="avatar"
+    src="../imgs/images.png"
+    class="imglogod"
+/>
+    </a>
+
+<div class="back">
+    <a href="../home.html">Back</a>
+</div>
+</header>
+<br><br>
+<div class="pay">
+     <div id="paypal-button-container"></div>
+</div>
+   
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AYEGU8PPIXfHpvwt2t2LUaUxApfiAtcJyJmucskDrUK-Fdf3zSY-ls_4gGPO9XgzPuqB8_Jg1AB9NPCT"></script>
+    <script src="../js/payment.js"></script>
+    <script>
+            paypal
+              .Buttons({
+                createOrder: function (data, actions) {
+                  return actions.order.create({
+                    purchase_units: [
+                      {
+                        amount: {
+                          value: 5,
+                        },
+                      },
+                    ],
+                  });
+                },
+
+                onApprove:function(data, actions) {
+          return actions.order.capture().then(function(details){
+              console.log(details);
+              alert("Thanks");
+          });
+      }
+              })
+              .render("#paypal-button-container");
+  
+    </script>
+  </body>
+</html>
