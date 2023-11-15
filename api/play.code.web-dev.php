@@ -20,9 +20,72 @@ box-shadow:  5px 5px 10px #bebebe,
              -5px -5px 10px #ffffff;
              font-weight: 700;
     }
+    
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    align-items: center;
+}
+input{
+    border: 2px white solid;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1023px) {
+    .video-item {
+        width: 100%;
+    }
+
+    .video-player iframe {
+        max-width: 100%;
+    }
+    .desc{
+        width: 100%;
+    }
+}
 </style>
 </head>
 <body>
+    <header>
+        <a href="../index.html" class="logo">Skilldr.</a>
+        <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
+                <input
+                title="Search Skilldr"
+                  type="search"
+                  name="query"
+                  style="border-radius: 10px;color: #de5b00;font-weight: 700;"
+                  placeholder="Search Skilldr By Categories ID Or A Code Or Even Name..."
+                  id="search"
+                />
+             
+              </form>
+        <!-- <nav>
+            <a href="video.code.web-dev.php">Return</a>
+        </nav> -->
+    </header>
     <div class="container">
         <?php
         // Check if the video ID is provided in the query parameter
@@ -53,6 +116,7 @@ box-shadow:  5px 5px 10px #bebebe,
                 $videoDescription = $selectedVideo['description'];
                 $youtubeId = $selectedVideo['youtubeId'];
                 echo "<h2>$videoTitle</h2>";
+                echo "<br>";
                 echo "<div class='video-player'>";
                 echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                 echo "</div>";
