@@ -11,9 +11,122 @@
         color: white;
         background-color: #292929;
     }
+    header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    align-items: center;
+}
+input{
+    border: 2px white solid;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1023px) {
+    .video-item {
+        width: 100%;
+    }
+
+    .video-player iframe {
+        max-width: 100%;
+    }
+    .desc{
+        width: 100%;
+    }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
     </style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<br><br><br>
+  <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
+                <input
+                title="Search Skilldr"
+                  type="search"
+                  name="query"
+                  style="border-radius: 10px;color: #de5b00;font-weight: 700;"
+                  placeholder="Search Skilldr Academy ..."
+                  id="search"
+                />
+             
+        </form>
+        <br><br>
+        <a href="../html/code/intro.html">Return</a>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About Us</a>
+        <a href="../index.html#courses">Courses</a>
+        
+
+</div>
+    <header>
+        
+        <a href="../index.html" class="logo">Skill<span style="color:orange;">dr.</span></a>
+        <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
+    </header>
     <div class="container">
         <h1>Web Development</h1>
         <div class="video-container">
@@ -44,5 +157,19 @@
             ?>
         </div>
     </div>
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.padding = "10px";
+  document.getElementById("main").style.marginLeft = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.padding = "0px";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
 </body>
 </html>

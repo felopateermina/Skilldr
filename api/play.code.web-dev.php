@@ -66,25 +66,76 @@ nav a{
         width: 100%;
     }
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 </style>
 </head>
 <body>
-    <header>
-        <a href="../index.html" class="logo">Skilldr.</a>
-        <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<br><br><br>
+  <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
                 <input
                 title="Search Skilldr"
                   type="search"
                   name="query"
                   style="border-radius: 10px;color: #de5b00;font-weight: 700;"
-                  placeholder="Search Skilldr By Categories ID Or A Code Or Even Name..."
+                  placeholder="Search Skilldr Academy ..."
                   id="search"
                 />
              
-              </form>
-        <!-- <nav>
-            <a href="video.code.web-dev.php">Return</a>
-        </nav> -->
+        </form>
+        <br><br>
+        <a href="../html/code/intro.html">Return</a>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About Us</a>
+        <a href="../index.html#courses">Courses</a>
+        
+
+</div>
+    <header>
+        
+    <a href="../index.html" class="logo">Skill<span style="color:orange;">dr.</span></a>
+        <div class="menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        
     </header>
     <div class="container">
         <?php
@@ -115,11 +166,13 @@ nav a{
                 $videoTitle = $selectedVideo['title'];
                 $videoDescription = $selectedVideo['description'];
                 $youtubeId = $selectedVideo['youtubeId'];
-                echo "<h2>$videoTitle</h2>";
                 echo "<br>";
                 echo "<div class='video-player'>";
                 echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
-                echo "</div>";
+                    echo "</div>";
+                    echo "<h2>$videoTitle</h2>";
+                    echo "<br>";
+                    echo "<br>";
                 echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
                 echo "</div>";
@@ -131,5 +184,19 @@ nav a{
         }
         ?>
     </div>
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.padding = "10px";
+  document.getElementById("main").style.marginLeft = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.padding = "0px";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
 </body>
 </html>
