@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +5,22 @@
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        color: white;
+        background-color: #292929;
+    }
+    .desc{
+        background-color: 
+        black;
+        width: 60%;
+        border-radius: 10px;
+        padding: 8px;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+             font-weight: 700;
+    }
+</style>
 </head>
 <body>
     <div class="container">
@@ -19,7 +33,7 @@
                     'id' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
                     'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
-                    'filename' => '../../html/code/vids/skilldr-[Arabic] Learn HTML in 2022 In One Video.mp4'
+                    'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
                 ],
                 // Add more videos as needed
             ];
@@ -37,19 +51,16 @@
             if ($selectedVideo) {
                 $videoTitle = $selectedVideo['title'];
                 $videoDescription = $selectedVideo['description'];
-                $videoFilename = $selectedVideo['filename'];
+                $youtubeId = $selectedVideo['youtubeId'];
                 echo "<h2>$videoTitle</h2>";
                 echo "<div class='video-player'>";
-                echo "<video controls>";
-                echo "<source class='vid' src='videos/$videoFilename' type='video/mp4'>";
-                echo "Your browser does not support the video tag.";
-                echo "</video>";
+                echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                 echo "</div>";
-                echo "<div class='desc' >";
+                echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
                 echo "</div>";
             } else {
-                echo "<p>Video not exist.</p>";
+                echo "<p>Video does not exist.</p>";
             }
         } else {
             echo "<p>Invalid video ID.</p>";

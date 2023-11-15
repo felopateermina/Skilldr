@@ -6,7 +6,12 @@
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <style>
+         body{
+        color: white;
+        background-color: #292929;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,7 +23,7 @@
                 'id' => 1,
                 'title' => '[Arabic] Learn HTML in 2022 In One Video',
                 'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
-                'filename' => '../../html/code/vids/skilldr-[Arabic] Learn HTML in 2022 In One Video.mp4'
+                'filename' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
             ],
             // Add more videos as needed
         ];
