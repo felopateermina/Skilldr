@@ -125,21 +125,17 @@ nav a{
             outline: none;
         }
 
-        .like-button i.fa-thumbs-up,
-        .dislike-button i.fa-thumbs-down,
-        .save-button i.fa-bookmark {
-            color: #999;
-        }
+        
 
-        .like-button.active i.fa-thumbs-up {
+        .like-button i.fa-thumbs-up {
             color: blue;
         }
 
-        .dislike-button.active i.fa-thumbs-down {
+        .dislike-button i.fa-thumbs-down {
             color: red;
         }
 
-        .save-button.active i.fa-bookmark {
+        .save-button i.fa-bookmark {
             color: green;
         }
 </style>
@@ -185,7 +181,10 @@ nav a{
                     'id' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
                     'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a>',
-                    'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
+                    'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
+                    'likeNo' => '15k',
+                    'dislikeNo' => '843',
+                    'saveNo' => '10.4k',
                 ],
                 // Add more videos as needed
             ];
@@ -204,6 +203,9 @@ nav a{
                 $videoTitle = $selectedVideo['title'];
                 $videoDescription = $selectedVideo['description'];
                 $youtubeId = $selectedVideo['youtubeId'];
+                $likeNo = $selectedVideo['likeNo'];
+                $dislikeNo = $selectedVideo['dislikeNo'];
+                $saveNo = $selectedVideo['saveNo'];
                 echo "<br>";
                 echo "<div class='video-player'>";
                 echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
@@ -211,9 +213,9 @@ nav a{
                     echo "<h2>$videoTitle</h2>";
                 
                     echo "<div class='buttons'>";
-            echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i> Like</button>";
-            echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i> Dislike</button>";
-            echo "<button class='save-button' type='button'><i class='fas fa-bookmark'></i> Save</button>";
+            echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
+            echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
+            echo "<button class='save-button' type='button'><i class='fas fa-bookmark'></i>$saveNo</button>";
             echo "</div>";
                     echo "<br>";
                     echo "<br>";
@@ -224,26 +226,7 @@ nav a{
             // Display the like, dislike, and save buttons
             
 
-            // Process button clicks using JavaScript
-            echo "<script>
-                    const likeButton = document.querySelector('.like-button');
-                    const dislikeButton = document.querySelector('.dislike-button');
-                    const saveButton = document.querySelector('.save-button');
-                    
-                    likeButton.addEventListener('click', () => {
-                        likeButton.classList.toggle('active');
-                        dislikeButton.classList.remove('active');
-                    });
-                    
-                    dislikeButton.addEventListener('click', () => {
-                        dislikeButton.classList.toggle('active');
-                        likeButton.classList.remove('active');
-                    });
-                    
-                    saveButton.addEventListener('click', () => {
-                        saveButton.classList.toggle('active');
-                    });
-                </script>";
+           
             } else {
                 echo "<p>Video does not exist.</p>";
             }
