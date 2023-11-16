@@ -146,7 +146,7 @@ nav a{
                 [
                     'id' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
-                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
+                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br> Creator: <a href="../index.html" style="color:blue;text-decoration:none;">Elzero Web School</a>',
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
                 ],
                 // Add more videos as needed
