@@ -74,7 +74,8 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
                 <li><a class="dropdown-item" href="#about">About Us</a></li>
                 <li><a class="dropdown-item" href="#courses">Categories</a></li>
                 <li><a class="dropdown-item" href="api/share.php">Share The Website</a></li>
-              
+                <li><a class="dropdown-item" href="../html/search_skilldr.html">(Beta) Skilldr Engine</a></li>
+
             </ul>
             </div>
             

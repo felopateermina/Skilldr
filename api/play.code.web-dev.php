@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
     body{
         color: white;
@@ -104,6 +105,43 @@ nav a{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            margin-right: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .buttons button i {
+            margin-right: 5px;
+        }
+
+        .buttons button:focus {
+            outline: none;
+        }
+
+        .like-button i.fa-thumbs-up,
+        .dislike-button i.fa-thumbs-down,
+        .save-button i.fa-bookmark {
+            color: #999;
+        }
+
+        .like-button.active i.fa-thumbs-up {
+            color: blue;
+        }
+
+        .dislike-button.active i.fa-thumbs-down {
+            color: red;
+        }
+
+        .save-button.active i.fa-bookmark {
+            color: green;
+        }
 </style>
 </head>
 <body>
@@ -146,7 +184,7 @@ nav a{
                 [
                     'id' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
-                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br> Creator: <a href="../index.html" style="color:blue;text-decoration:none;">Elzero Web School</a>',
+                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a>',
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
                 ],
                 // Add more videos as needed
@@ -171,11 +209,41 @@ nav a{
                 echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";
                     echo "<h2>$videoTitle</h2>";
+                
+                    echo "<div class='buttons'>";
+            echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i> Like</button>";
+            echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i> Dislike</button>";
+            echo "<button class='save-button' type='button'><i class='fas fa-bookmark'></i> Save</button>";
+            echo "</div>";
                     echo "<br>";
                     echo "<br>";
                 echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
                 echo "</div>";
+                
+            // Display the like, dislike, and save buttons
+            
+
+            // Process button clicks using JavaScript
+            echo "<script>
+                    const likeButton = document.querySelector('.like-button');
+                    const dislikeButton = document.querySelector('.dislike-button');
+                    const saveButton = document.querySelector('.save-button');
+                    
+                    likeButton.addEventListener('click', () => {
+                        likeButton.classList.toggle('active');
+                        dislikeButton.classList.remove('active');
+                    });
+                    
+                    dislikeButton.addEventListener('click', () => {
+                        dislikeButton.classList.toggle('active');
+                        likeButton.classList.remove('active');
+                    });
+                    
+                    saveButton.addEventListener('click', () => {
+                        saveButton.classList.toggle('active');
+                    });
+                </script>";
             } else {
                 echo "<p>Video does not exist.</p>";
             }
