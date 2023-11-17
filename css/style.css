@@ -741,3 +741,15 @@ footer svg{
 footer svg:hover{
   opacity: 100%;
 }
+
+.tytyt {
+  color: white;
+  font-weight: 300;
+  overflow: hidden;
+
+}
+@media screen and (max-width: 1023px) {
+  .tytyt{
+    color: white;
+  }
+}

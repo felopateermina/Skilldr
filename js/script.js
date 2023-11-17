@@ -256,3 +256,19 @@ if (!localStorage.getItem("username") == "" && !localStorage.getItem("email") ==
   h4acc.style.color = "grey";
   login.style.display = "block";
 }
+function typeWriter(text, i, speed, elementId) {
+  if (i < text.length) {
+    document.getElementById(elementId).innerHTML += text.charAt(i);
+    i++;
+    setTimeout(function () {
+      typeWriter(text, i, speed, elementId);
+    }, speed);
+  }
+}
+
+window.onload = function () {
+  var textToType = `You can watch courses with the best teachers with very high quality!`;
+  var speed = 10; // Adjust the speed (milliseconds) to control the typing speed
+  var elementId = "tittt"; // Set the id of your h4 element
+  typeWriter(textToType, 0, speed, elementId);
+};
