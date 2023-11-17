@@ -135,7 +135,7 @@ nav a{
             color: red;
         }
 
-        .save-button i.fa-bookmark {
+        .save-button i.fa-eye {
             color: green;
         }
 </style>
@@ -184,7 +184,16 @@ nav a{
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
                     'likeNo' => '15k',
                     'dislikeNo' => '843',
-                    'saveNo' => '10.4k',
+                    'saveNo' => '+ 400k',
+                ],
+                [
+                    'id' => 2,
+                    'title' => '[Arabic] Learn CSS in 2022 In One Video',
+                    'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a>',
+                    'youtubeId' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O',
+                    'likeNo' => '+ 7k',
+                    'dislikeNo' => '+ 400',
+                    'saveNo' => '+ 300k',
                 ],
                 // Add more videos as needed
             ];
@@ -215,7 +224,7 @@ nav a{
                     echo "<div class='buttons'>";
             echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
             echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
-            echo "<button class='save-button' type='button'><i class='fas fa-bookmark'></i>$saveNo</button>";
+            echo "<button class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
             echo "</div>";
                     echo "<br>";
                     echo "<br>";

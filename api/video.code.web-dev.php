@@ -138,6 +138,12 @@ nav a{
                 'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
                 'filename' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
             ],
+            [
+                'id' => 2,
+                'title' => '[Arabic] Learn CSS in 2022 In One Video',
+                'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos',
+                'filename' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O'
+            ],
             // Add more videos as needed
         ];
 
