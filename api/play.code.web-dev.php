@@ -9,6 +9,8 @@
 <style>
     body{
         color: white;
+        font-family: system-ui;
+
         background-color: #292929;
     }
     .desc{

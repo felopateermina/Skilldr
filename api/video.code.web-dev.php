@@ -9,6 +9,7 @@
         /* CSS styles */
         body {
             color: white;
+            font-family: system-ui;
             background-color: #292929;
         }
 
@@ -29,7 +30,12 @@
             outline: none;
             width: 100%;
         }
-
+        .video-item{
+            transition: .3s ease;
+        }
+.video-item:hover{
+    transform:scale(1.02);
+}
         .logo {
             text-decoration: none;
             color: white;
