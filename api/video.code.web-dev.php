@@ -135,7 +135,7 @@
             />
         </form>
     <div class="container">
-    <h1>Web Development</h1>
+    <h1 style="opacity:60%;text-decoration:underline;">Web Development</h1>
         <div class="video-container">
             <?php
             $videos = [
