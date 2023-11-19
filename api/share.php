@@ -26,8 +26,7 @@ $sharingLinks = generateSharingLinks($currentUrl);
     <link rel="stylesheet" href="../css/share.css">
 </head>
 <body>
-    <h1>Share this Website</h1>
-    <br><br><br>
+    <br><br><br><br><br><br><br><br>
     
     <a href="<?php echo $sharingLinks['facebook']; ?>">
        <button class="fcs">
