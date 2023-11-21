@@ -80,7 +80,7 @@
 #login {
   color: white;
   font-weight: 700;
-  background-color: var(--dark-color);
+  background-color: #de5b00;
   padding: 4px;
   padding-left: 20px;
   border: #de5b00 solid;
@@ -90,6 +90,11 @@
   align-items: center;
   display: flex;
   text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  #login{
+    margin-left: 3px;
+  }
 }
 #gtprm {
   color: white;
@@ -103,13 +108,15 @@
   transform-origin: right;
   align-items: center;
   display: flex;
+  text-align: center;
 }
 .h1al,
 .h1al2 {
   color: var(--main-color-group);
 }
 #login:hover {
-  background-color: var(--main-color-group);
+  background-color: #8c3a00;
+  
 }
 #gtprm:hover {
   background-color: #8c3a00;
