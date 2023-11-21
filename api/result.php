@@ -68,7 +68,6 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
                 Menu
               </button>
               <ul class="dropdown-menu">
-              <li><a href="#" class="dropdown-item" id="avatar"><span>Account</span></a></li>
                 <li><a class="dropdown-item" href="html/whiteboard.html">Whiteboard</a></li>
                 <li><a class="dropdown-item" href="app.zip">Download</a></li>
                 <li><a class="dropdown-item" href="#about">About Us</a></li>
