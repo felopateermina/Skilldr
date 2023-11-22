@@ -6,7 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skilldr | Free online courses </title>
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="keywords" content="courses , skilldr_website_for_courses">
+    <meta name="keywords" content="courses , skilldr courses , courses skilldr">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://skilldr.vercel.app">
+
+
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Skilldr Academy">
+<meta property="og:description" content="Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ">
+<meta property="og:image" content="imgs/skilldr-high-resolution-logo-black-transparent.png">
+<meta property="og:url" content="https://skilldr.vercel.app">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skilldr Academy">
+<meta name="twitter:description" content="Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ">
+<meta name="twitter:image" content="imgs/skilldr-high-resolution-logo-black-transparent.png">
+<!-- Others -->
+<meta name="author" content="Felopateer">
+
+
+<link rel="manifest" href="manifest.json">
+
+
     <link
       rel="shortcut icon"
       href="imgs/skilldr-high-resolution-logo-black-transparent.png"
@@ -420,6 +443,43 @@
     <script src="WOW-master/dist/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/path/to/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      }
+      // Add this script to the existing script block in your HTML file
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', event => {
+  event.preventDefault();
+  deferredPrompt = event;
+
+  // Show your own install button or prompt here
+  // Example: Display a button with an "Install" label
+  document.getElementById('installButton').style.display = 'block';
+});
+
+// Attach an event listener to your install button
+document.getElementById('installButton').addEventListener('click', () => {
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(choiceResult => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the A2HS prompt');
+    } else {
+      console.log('User dismissed the A2HS prompt');
+    }
+    deferredPrompt = null;
+  });
+});
+
     </script>
   </body>
 </html>
