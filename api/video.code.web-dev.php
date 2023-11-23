@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
+
     <title>Web development - Skilldr</title>
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
