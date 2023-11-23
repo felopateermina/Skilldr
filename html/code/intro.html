@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming - Skilldr</title>
+    <link rel="stylesheet" href="bootstrap/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    
     <link rel="stylesheet" href="../../css/style.css" />
+    
     <style>
       
       header{
@@ -96,76 +100,89 @@ nav a{
       href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
       type="image/x-icon"
     />
+   
     <link rel="stylesheet" href="../../bootstrap/css/all.min.css" />
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../WOW-master/css/libs/animate.css" />
 </head>
 <body style="
-  background-color: #292929;
+ background-color: #001220;
 ">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<br><br><br>
-  <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
-                <input
-                title="Search Skilldr"
-                  type="search"
-                  name="query"
-                  style="border-radius: 10px;color: #de5b00;font-weight: 700;width: 100%;font-size: 1em;"
-                  placeholder="Search Skilldr Academy ..."
-                  id="search"
-                />
-             
-        </form>
-        <br><br>
-        <a href="../../index.html#courses">Return</a>
-        <a href="../../index.html">Home</a>
-        <a href="../index.html#about">About Us</a>
-        <a href="../index.html#courses">Courses</a>
-        
 
-</div>
     <header>
         
-    <a href="../index.html" class="logo">Skill<span style="color:orange;">dr.</span></a>
-        <div class="menu">
-        <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
-        </div>
-        
+    <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
+  
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <svg width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.75 7.5h16.5"></path>
+        <path d="M3.75 12h16.5"></path>
+        <path d="M3.75 16.5h16.5"></path>
+      </svg>
+    </button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form method="get" action="api/result.php" style="display: flex; justify-content: center" class="search_form">
+      <input
+      title="Search Skilldr"
+        type="search"
+        name="query"
+        style="border-radius: 0px;color: #de5b00;font-weight: 700;font-size: 1em;"
+        placeholder="Search Skilldr..."
+        id="search"
+      />
+    
+    </form>
+  </div>
+</div>
     </header>
     <section id="courses">
     <div class="txt">
-            <h2 style="opacity:60%;text-decoration:underline;text-align: center;color: white;font-weight: 600;">Programming</h2>
+            <h2 style="text-align: center;color: white;font-weight: 800;text-decoration: underline;">" Programming & Coding Learning "</h2>
     </div>
 
 <br>
 
-  <div class="cards">
 
 
-
-
-
-
-
-
+<div class="cards">
+  
 
 <a href="../../api/video.code.web-dev.php" style="text-decoration: none;">
-
-  <div class="card wow bounceIn" style="background-color:#ba7882;border-radius: 0px" >
+  <div class="card wow fadeInDown" data-wow-delay=".9s" style="  box-shadow:  5px 5px 10px #bebebe,
+  -5px -5px 10px #ffffff; border: white 2px solid; color: white; background-color: black; cursor: default;border-radius: 10px">
     <div class="child_card">
-      <h3>Web Development</h3>
+      <center>
+        <h1 class="titl" style="margin: auto;justify-content: center; font-weight: 700;">
+          <svg width="46" height="46" fill="none" stroke="#de5b00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 17.25 1.5 12l6-5.25"></path>
+            <path d="m16.5 17.25 6-5.25-6-5.25"></path>
+            <path d="m14.25 4.5-4.5 15"></path>
+          </svg><br>
+          <span style="color: #de5b00;font-size: .7em;">Web Development.</span>
+        </h1>
+       <span>-----------------------------</span>
+        <div class="txt" style="margin-top: 9px;">
+          <h4 style="font-weight: 600;">
+             You Will Learn Html , Css , Javascript , Php , Mysql and Laravel . You will learn full-stack development and you will be able to build websites after learning web development !
+          </h4>
+          
+        </div>
+        
+      </center>
+      
     </div>
+    
   </div>
-
+  
 </a>
 
-
-
-
-
-
-  </div>
+</div>
 
 
 
@@ -173,19 +190,8 @@ nav a{
                                 
  
 </section>
-<script>
-  function openNav() {
-document.getElementById("mySidenav").style.width = "100%";
-document.getElementById("mySidenav").style.padding = "10px";
-document.getElementById("main").style.marginLeft = "250px";
-
-}
-
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-document.getElementById("mySidenav").style.padding = "0px";
-document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+<script src="../../bootstrap/js/all.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
