@@ -10,8 +10,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://skilldr.vercel.app">
 
-
-
+<style>
+.loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#f1f1f1;display:flex;justify-content:center;align-items:center;z-index:9999}.loader{border:8px solid #3498db;border-radius:50%;border-top:8px solid #f1f1f1;width:50px;height:50px;animation:spin 1s linear infinite}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.content{display:none;opacity:0;transition:opacity 9s}</style>
+<script>
+        document.addEventListener("DOMContentLoaded",function(){setTimeout(function(){var e=document.querySelector(".loader-wrapper");e.style.display="none";var t=document.querySelector(".content");t.style.display="block";t.style.opacity=1},2e3)});
+</script>
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Skilldr Academy">
 <meta property="og:description" content="Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ">
@@ -46,9 +49,10 @@
 
   </head>
   <body>
-    <!-- <div id="loading-screen">
-      <span id="loading-text">Loading...</span>
-    </div> -->
+    <div class="loader-wrapper"><div class="loader"></div></div>
+    <div class="content">
+
+    
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
         <div class="logoofweb">
@@ -441,7 +445,7 @@
      
     </div>
 
-
+  </div>
 
     <script src="bootstrap/js/all.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

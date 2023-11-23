@@ -27,7 +27,7 @@ function typeWriter(text, i, speed, elementId) {
 
 window.onload = function () {
   var textToType = `You can watch courses with the best teachers with very high quality!`;
-  var speed = 30; // Adjust the speed (milliseconds) to control the typing speed
+  var speed = 10; // Adjust the speed (milliseconds) to control the typing speed
   var elementId = "tittt"; // Set the id of your h4 element
   typeWriter(textToType, 0, speed, elementId);
 };
