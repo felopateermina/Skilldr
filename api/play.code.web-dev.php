@@ -162,6 +162,9 @@ nav a:hover{
     text-decoration: underline;
     color: #de5b00;
 }
+iframe{
+    border-radius: 10px;
+}
 @media screen and (max-width: 1023px) {
     header{
         display: none;
@@ -171,9 +174,7 @@ header{
 box-shadow:  5px 5px 10px #000000,
              -5px -5px 10px #000000;
 }
-iframe{
-    border-radius: 10px;
-}
+
 </style>
 
 </head>
@@ -254,7 +255,6 @@ iframe{
                 $likeNo = $selectedVideo['likeNo'];
                 $dislikeNo = $selectedVideo['dislikeNo'];
                 $saveNo = $selectedVideo['saveNo'];
-                echo "<br>";
                 echo "<div class='video-player'>";
                 echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";
