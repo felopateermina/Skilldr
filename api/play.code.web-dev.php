@@ -18,7 +18,7 @@
         color: white;
         font-family: system-ui;
 
-        background-color: #292929;
+        background-color: #001220;
     }
     .desc{
         background-color: 
@@ -116,15 +116,16 @@ nav a{
 }
 .buttons {
             margin-top: 20px;
+            
         }
 
         .buttons button {
-            margin-right: 10px;
+            margin-right: 20px;
             background-color: transparent;
             border: none;
             color: white;
             cursor: pointer;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .buttons button i {
@@ -151,6 +152,27 @@ nav a{
         .no_ex{
             justify-content: center;
             text-align: center;
+}
+nav a{
+    font-size: 1.4em;
+    margin: 10px;
+    font-weight: 600;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #de5b00;
+}
+@media screen and (max-width: 1023px) {
+    header{
+        display: none;
+    }
+}
+header{
+box-shadow:  5px 5px 10px #000000,
+             -5px -5px 10px #000000;
+}
+iframe{
+    border-radius: 10px;
 }
 </style>
 
@@ -180,10 +202,12 @@ nav a{
 </div>
     <header>
         
-    <a href="../index.html" class="logo">Skill<span style="color:orange;">dr.</span></a>
-        <div class="menu">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </div>
+    <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
+       <nav>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About Us</a>
+        <a href="../index.html#courses">Courses</a>
+       </nav>
         
     </header>
     <div class="container">
