@@ -153,22 +153,21 @@ nav a{
             justify-content: center;
             text-align: center;
 }
+
 nav a{
-    font-size: 1.4em;
-    margin: 10px;
-    font-weight: 600;
+    margin: 6px;
 }
-nav a:hover{
+nav a svg:hover{
     text-decoration: underline;
-    color: #de5b00;
+    fill: #de5b00;
 }
 iframe{
     border-radius: 10px;
 }
 @media screen and (max-width: 1023px) {
-    header{
-        display: none;
-    }
+   .chrme{
+    display: none;
+   }
 }
 header{
 box-shadow:  5px 5px 10px #000000,
@@ -205,9 +204,17 @@ box-shadow:  5px 5px 10px #000000,
         
     <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
        <nav>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#about">About Us</a>
-        <a href="../index.html#courses">Courses</a>
+        <a href="../index.html" >
+        <svg width="36" height="36" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.261 4.745a.375.375 0 0 0-.518 0l-8.63 8.244a.374.374 0 0 0-.115.271l-.002 7.737a1.5 1.5 0 0 0 1.5 1.5h4.505a.75.75 0 0 0 .75-.75v-6.375a.375.375 0 0 1 .375-.375h3.75a.375.375 0 0 1 .375.375v6.375a.75.75 0 0 0 .75.75h4.503a1.5 1.5 0 0 0 1.5-1.5V13.26a.374.374 0 0 0-.116-.271L12.26 4.745Z"></path>
+  <path d="M23.011 11.444 19.505 8.09V3a.75.75 0 0 0-.75-.75h-2.25a.75.75 0 0 0-.75.75v1.5L13.04 1.904c-.254-.257-.632-.404-1.04-.404-.407 0-.784.147-1.038.405l-9.97 9.539a.765.765 0 0 0-.063 1.048.749.749 0 0 0 1.087.05l9.726-9.294a.375.375 0 0 1 .519 0l9.727 9.294a.75.75 0 0 0 1.059-.02c.288-.299.264-.791-.036-1.078Z"></path>
+</svg>
+        </a>
+        <a href="../index.html#about" class="chrme">
+        <svg width="36" height="36" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2.625c-5.17 0-9.375 4.206-9.375 9.375 0 5.17 4.206 9.375 9.375 9.375 5.17 0 9.375-4.206 9.375-9.375 0-5.17-4.206-9.375-9.375-9.375Zm0 3.844a1.219 1.219 0 1 1 0 2.437 1.219 1.219 0 0 1 0-2.437Zm3 10.593H9.375v-1.5h2.063v-4.124h-1.5v-1.5h3v5.624H15v1.5Z"></path>
+</svg>
+        </a>
        </nav>
         
     </header>
