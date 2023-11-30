@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     $newPost = "$username: $content";
 
     // Append the post to the posts.txt file
-    file_put_contents('posts.txt', $newPost . PHP_EOL, FILE_APPEND);
+    file_put_contents('https://skilldr.vercel.app/api/posts.txt', $newPost . PHP_EOL, FILE_APPEND);
 
     // Redirect to avoid form resubmission on page refresh
     header('Location: ' . $_SERVER['PHP_SELF']);
