@@ -114,6 +114,13 @@
                 font-size: 18px;
             }
         }
+
+
+        @media screen and (max-width: 1023px) {
+   .chrme{
+    display: none;
+   }
+}
     </style>
 </head>
 <body style="
