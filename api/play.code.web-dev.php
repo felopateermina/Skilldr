@@ -181,17 +181,7 @@ box-shadow:  5px 5px 10px #000000,
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <br><br><br>
-  <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
-                <input
-                title="Search Skilldr"
-                  type="search"
-                  name="query"
-                  style="border-radius: 10px;color: #de5b00;font-weight: 700;"
-                  placeholder="Search Skilldr Academy ..."
-                  id="search"
-                />
-             
-        </form>
+  
         <br><br>
         <a href="../html/code/intro.html">Return</a>
         <a href="../index.html">Home</a>
@@ -203,20 +193,26 @@ box-shadow:  5px 5px 10px #000000,
     <header>
         
     <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
-       <nav>
-        <a href="../index.html" >
-        <svg width="36" height="36" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12.261 4.745a.375.375 0 0 0-.518 0l-8.63 8.244a.374.374 0 0 0-.115.271l-.002 7.737a1.5 1.5 0 0 0 1.5 1.5h4.505a.75.75 0 0 0 .75-.75v-6.375a.375.375 0 0 1 .375-.375h3.75a.375.375 0 0 1 .375.375v6.375a.75.75 0 0 0 .75.75h4.503a1.5 1.5 0 0 0 1.5-1.5V13.26a.374.374 0 0 0-.116-.271L12.26 4.745Z"></path>
-  <path d="M23.011 11.444 19.505 8.09V3a.75.75 0 0 0-.75-.75h-2.25a.75.75 0 0 0-.75.75v1.5L13.04 1.904c-.254-.257-.632-.404-1.04-.404-.407 0-.784.147-1.038.405l-9.97 9.539a.765.765 0 0 0-.063 1.048.749.749 0 0 0 1.087.05l9.726-9.294a.375.375 0 0 1 .519 0l9.727 9.294a.75.75 0 0 0 1.059-.02c.288-.299.264-.791-.036-1.078Z"></path>
+
+        <div class="chrme" >
+        <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
+    <input
+        title="Search Skilldr"
+        type="search"
+        name="query"
+        style="border-radius: 10px; color: #de5b00; font-weight: 700; width: 700px;"
+        placeholder="Search Skilldr Academy ..."
+        id="search"
+    />
+</form>
+        </div>
+        <div class="rt" style="color: white;">
+         <a href="video.code.web-dev.php" style="color: #de5b00;font-size: 1.5em;">
+         <svg width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1.002 1.002 0 0 1-.326 1.639 1 1 0 0 1-1.094-.219L14 13.41l-1.29 1.3a1.002 1.002 0 0 1-1.64-.325 1 1 0 0 1 .22-1.095l1.3-1.29-1.3-1.29a1.004 1.004 0 1 1 1.42-1.42l1.29 1.3 1.29-1.3a1.004 1.004 0 0 1 1.42 1.42L15.41 12l1.3 1.29Z"></path>
 </svg>
-        </a>
-        <a href="../index.html#about" class="chrme">
-        <svg width="36" height="36" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 2.625c-5.17 0-9.375 4.206-9.375 9.375 0 5.17 4.206 9.375 9.375 9.375 5.17 0 9.375-4.206 9.375-9.375 0-5.17-4.206-9.375-9.375-9.375Zm0 3.844a1.219 1.219 0 1 1 0 2.437 1.219 1.219 0 0 1 0-2.437Zm3 10.593H9.375v-1.5h2.063v-4.124h-1.5v-1.5h3v5.624H15v1.5Z"></path>
-</svg>
-        </a>
-       </nav>
-        
+         </a>
+      </div>
     </header>
     <div class="container">
         <?php
@@ -295,6 +291,7 @@ box-shadow:  5px 5px 10px #000000,
         }
         ?>
     </div>
+
     <script>
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";

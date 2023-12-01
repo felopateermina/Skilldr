@@ -116,7 +116,9 @@
         }
     </style>
 </head>
-<body>
+<body style="
+ background-color: #001220;
+">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br><br><br>
@@ -125,25 +127,35 @@
         <a href="../index.html#about">About Us</a>
         <a href="../index.html#courses">Courses</a>
     </div>
-    <header>
-        <a href="../index.html" class="logo">Skill<span style="color:orange;">dr.</span></a>
-        <div class="menu">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </div>
-    </header>
+    
+<header>
+        
+        <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
+      
+            <div class="chrme" >
+            <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
+        <input
+            title="Search Skilldr"
+            type="search"
+            name="query"
+            style="border-radius: 10px; color: #de5b00; font-weight: 700; width: 700px;"
+            placeholder="Search Skilldr Academy ..."
+            id="search"
+        />
+      </form>
+            </div>
+            <div class="rt" style="color: white;">
+              <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;">
+              <svg width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1.002 1.002 0 0 1-.326 1.639 1 1 0 0 1-1.094-.219L14 13.41l-1.29 1.3a1.002 1.002 0 0 1-1.64-.325 1 1 0 0 1 .22-1.095l1.3-1.29-1.3-1.29a1.004 1.004 0 1 1 1.42-1.42l1.29 1.3 1.29-1.3a1.004 1.004 0 0 1 1.42 1.42L15.41 12l1.3 1.29Z"></path>
+      </svg>
+              </a>
+           </div>
+        </header>
 
-    <form method="get" action="#" style="display: flex; justify-content: center;padding:20px;" class="search_form">
-            <input
-                title="Search Skilldr"
-                type="search"
-                name="query"
-                style="border-radius: 10px;color: #de5b00;font-weight: 700;"
-                placeholder="Search Skilldr Web Development ..."
-                id="search"
-            />
-        </form>
+
     <div class="container">
-    <h1 style="opacity:60%;text-decoration:underline;">Web Development</h1>
+    <h1 style="text-decoration:underline;">" Web Development "</h1>
         <div class="video-container">
             <?php
             $videos = [
