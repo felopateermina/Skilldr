@@ -238,6 +238,15 @@ box-shadow:  5px 5px 10px #000000,
                     'dislikeNo' => '+ 400',
                     'saveNo' => '+ 300k',
                 ],
+                [
+                    'id' => 3,
+                    'title' => '[Arabic] Learn JavaScript In One Video - Part One',
+                    'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'youtubeId' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK',
+                    'likeNo' => '+ 5k',
+                    'dislikeNo' => '+ 300',
+                    'saveNo' => '+ 200k',
+                ],
                 // Add more videos as needed
             ];
 

@@ -120,6 +120,9 @@
    .chrme{
     display: none;
    }
+}header{
+box-shadow:  5px 5px 10px #000000,
+             -5px -5px 10px #000000;
 }
     </style>
 </head>
@@ -160,23 +163,30 @@
            </div>
         </header>
 
-
+<br>
     <div class="container">
     <h1 style="text-decoration:underline;">" Web Development "</h1>
+    <br>
         <div class="video-container">
             <?php
             $videos = [
                 [
                     'id' => 1,
-                    'title' => '[Arabic] Learn HTML in 2022 In One Video',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn HTML in 2022 In One Video',
                     'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
                     'filename' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE'
                 ],
                 [
                     'id' => 2,
-                    'title' => '[Arabic] Learn CSS in 2022 In One Video',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn CSS in 2022 In One Video',
                     'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos',
                     'filename' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O'
+                ],
+                [
+                    'id' => 3,
+                    'title' => '<span style="color:red;">[Arabic]</span>:  Learn JavaScript In One Video - Part One',
+                    'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos',
+                    'filename' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK'
                 ],
                 // Add more videos as needed
             ];
