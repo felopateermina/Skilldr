@@ -38,6 +38,8 @@
 .navbar {
   background-color: #001220;
   justify-content: space-between;
+  box-shadow:  5px 5px 10px #000000,
+             -5px -5px 10px #000000;
 }
 .navbar .navbar-nav .nav-link {
   color: white;
@@ -709,7 +711,6 @@ box-shadow:  15px 15px 15px #909090;
 
 #courses{
   justify-content: center;
-  text-align: center;
   align-items: center;
   padding: 20px;
 }

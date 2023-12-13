@@ -110,6 +110,18 @@ box-shadow:  5px 5px 10px #000000,
     display: none;
    }
 }
+
+
+#ioc{
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
+      text-align: center;
+}
+        #ioc:hover{
+          transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
     </style>
     <link
       rel="shortcut icon"
@@ -162,9 +174,8 @@ box-shadow:  5px 5px 10px #000000,
 <div class="cards">
   
 
-<a href="../../api/video.code.web-dev.php" style="text-decoration: none;">
-  <div class="card wow fadeInDown" data-wow-delay=".9s" style="  box-shadow:  5px 5px 10px #bebebe,
-  -5px -5px 10px #ffffff; border: white 2px solid; color: white; background-color: black; cursor: default;border-radius: 10px">
+<a href="../../api/video.code.web-dev.php" style="text-decoration: none;" id="ioc">
+  <div class="card wow fadeInDown" data-wow-delay=".9s" style=" border: white 2px solid; color: white; background-color: black; cursor: default;border-radius: 10px">
     <div class="child_card">
       <center>
         <h1 class="titl" style="margin: auto;justify-content: center; font-weight: 700;">
