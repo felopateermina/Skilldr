@@ -214,6 +214,7 @@ box-shadow:  5px 5px 10px #000000,
          </a>
       </div>
     </header>
+    <br>
     <div class="container">
         <?php
         // Check if the video ID is provided in the query parameter
@@ -225,8 +226,8 @@ box-shadow:  5px 5px 10px #000000,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
                     'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
-                    'likeNo' => '15k',
-                    'dislikeNo' => '843',
+                    'likeNo' => '+ 15k',
+                    'dislikeNo' => '+ 500',
                     'saveNo' => '+ 400k',
                 ],
                 [
@@ -315,5 +316,23 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
     </script>
+<br><br><br><br><br>
+<footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+
+<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felo ❤️</span>
+<br>
+--------------------------------------------------
+<br><br>
+<form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
+        <input
+            title="Search Skilldr"
+            type="search"
+            name="query"
+            style="border-radius: 10px; color: #de5b00; font-weight: 700; width: 700px;"
+            placeholder="Search Skilldr Academy ..."
+            id="search"
+        />
+      </form>
+</footer>
 </body>
 </html>

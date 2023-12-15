@@ -33,10 +33,13 @@
             width: 100%;
         }
         .video-item{
-            transition: .3s ease;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
         }
 .video-item:hover{
-    transform:scale(1.02);
+    transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
         .logo {
             text-decoration: none;
@@ -184,7 +187,7 @@ box-shadow:  5px 5px 10px #000000,
                 ],
                 [
                     'id' => 3,
-                    'title' => '<span style="color:red;">[Arabic]</span>:  Learn JavaScript In One Video - Part One',
+                    'title' => '<span style="color:red;">[Arabic]</span>:  Learn JavaScript In One Video <span style="color:red;">(1)</span>',
                     'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos',
                     'filename' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK'
                 ],
@@ -205,9 +208,9 @@ box-shadow:  5px 5px 10px #000000,
                     $videoId = $video['id'];
                     $videoTitle = $video['title'];
                     $videoDescription = $video['description'];
-                    echo "<div class='video-item'>";
+                    echo "<div class='video-item' >";
                     echo "<a href='play.code.web-dev.php?id=$videoId'>";
-                    echo "<div class='video-info'>";
+                    echo "<div class='video-info' >";
                     echo "<h2>$videoTitle</h2>";
                     echo "<p>$videoDescription</p>";
                     echo "</div>";
@@ -234,6 +237,24 @@ box-shadow:  5px 5px 10px #000000,
         </div>
     </div>
 
+    <br><br><br>
+    <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+
+<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felo ❤️</span>
+<br>
+--------------------------------------------------
+<br><br>
+<form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
+        <input
+            title="Search Skilldr"
+            type="search"
+            name="query"
+            style="border-radius: 10px; color: #de5b00; font-weight: 700; width: 700px;"
+            placeholder="Search Skilldr Academy ..."
+            id="search"
+        />
+      </form>
+</footer>
     <script>
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";

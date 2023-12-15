@@ -8,6 +8,34 @@ $products = [
         'time' => "2/11/2023",
         'id' => "../html/code/intro.html",
     ],
+    [
+        'name' => 'learn javascript course of javascript i need to learn javascript js',
+        'price' => "Learn Javascript with love in Arabic and English",
+        'category' => 'Programming',
+        'time' => "15/12/2023",
+        'id' => "play.code.web-dev.php?id=3",
+    ],
+    [
+        'name' => 'learn html course of html i need to learn html',
+        'price' => "Learn HTML with love in Arabic and English",
+        'category' => 'Programming',
+        'time' => "15/12/2023",
+        'id' => "play.code.web-dev.php?id=1",
+    ],
+    [
+        'name' => 'learn css course of css i need to learn css',
+        'price' => "Learn CSS with love in Arabic and English",
+        'category' => 'Programming',
+        'time' => "15/12/2023",
+        'id' => "play.code.web-dev.php?id=2",
+    ],
+    [
+        'name' => 'learn web development course of web development i need to learn web development front end back end front-end back-end html css js',
+        'price' => "Learn Web Development with love in Arabic and English",
+        'category' => 'Programming',
+        'time' => "15/12/2023",
+        'id' => "video.code.web-dev.php",
+    ],
     
     // ... Add more products as needed
 ];
