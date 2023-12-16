@@ -36,10 +36,17 @@
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       color: white;
+      background-color: #181818;
+
+        }
+        .video-item h2{
+            color: white;
+
         }
 .video-item:hover{
     transform: translateY(-10px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      background-color:#313535;
 }
         .logo {
             text-decoration: none;
@@ -208,7 +215,7 @@ box-shadow:  5px 5px 10px #000000,
                     $videoId = $video['id'];
                     $videoTitle = $video['title'];
                     $videoDescription = $video['description'];
-                    echo "<div class='video-item' >";
+                    echo "<div class='video-item'>";
                     echo "<a href='play.code.web-dev.php?id=$videoId'>";
                     echo "<div class='video-info' >";
                     echo "<h2>$videoTitle</h2>";

@@ -36,6 +36,13 @@ $products = [
         'time' => "15/12/2023",
         'id' => "video.code.web-dev.php",
     ],
+    [
+        'name' => 'fe6d-jnO2-sk7U',
+        'price' => "FREE CAR SERVICES WEBSITE TEMPLATE BY HTML-CODEX",
+        'category' => 'Programming',
+        'time' => "15/12/2023",
+        'id' => "https://htmlcodex.com/downloading/?item=2161",
+    ],
     
     // ... Add more products as needed
 ];
