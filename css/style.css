@@ -85,7 +85,6 @@
   background-color: #de5b00;
   padding: 4px;
   padding-left: 20px;
-  border: #de5b00 solid;
   padding-right: 20px;
   margin-left: 20px;
   transform-origin: right;
@@ -118,7 +117,6 @@
 }
 #login:hover {
   background-color: #8c3a00;
-  
 }
 #gtprm:hover {
   background-color: #8c3a00;
@@ -848,3 +846,11 @@ background-color:#313535;
   justify-content: center;
   align-items: center;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .iotext{
+    display: none;
+  }
+}
+
