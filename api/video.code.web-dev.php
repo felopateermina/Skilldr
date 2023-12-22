@@ -194,9 +194,15 @@ box-shadow:  5px 5px 10px #000000,
                 ],
                 [
                     'id' => 3,
-                    'title' => '<span style="color:red;">[Arabic]</span>:  Learn JavaScript In One Video <span style="color:red;">(1)</span>',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn JavaScript In One Video <span style="color:red;">(1)</span>',
                     'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos',
                     'filename' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK'
+                ],
+                [
+                    'id' => 4,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn JavaScript In One Video <span style="color:red;">(2)</span>',
+                    'description' => 'Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos',
+                    'filename' => 'FKrfis1W1tk?si=wffpm6lkKYF8LNKu'
                 ],
                 // Add more videos as needed
             ];
