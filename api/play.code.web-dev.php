@@ -26,9 +26,11 @@
         width: 60%;
         border-radius: 10px;
         padding: 8px;
-box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
              font-weight: 700;
+
+background: #0f0f0f;
+box-shadow:  5px 5px 0px #0b0b0b,
+             -5px -5px 0px #131313;
     }
     
 header{

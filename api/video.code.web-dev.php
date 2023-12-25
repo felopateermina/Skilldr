@@ -36,7 +36,9 @@
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       color: white;
-      background-color: #181818;
+      background: #0f0f0f;
+box-shadow:  5px 5px 0px #0b0b0b,
+             -5px -5px 0px #131313;
 
         }
         .video-item h2{
@@ -45,7 +47,6 @@
         }
 .video-item:hover{
     transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       background-color:#313535;
 }
         .logo {
