@@ -205,6 +205,12 @@ box-shadow:  5px 5px 10px #000000,
                     'description' => 'Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos',
                     'filename' => 'FKrfis1W1tk?si=wffpm6lkKYF8LNKu'
                 ],
+                [
+                    'id' => 5,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn PHP In 105 Videos',
+                    'description' => 'A Complete PHP Course in 2022',
+                    'filename' => 'videoseries?si=PgA3KHaYp3EjTywe&amp;list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq'
+                ],
                 // Add more videos as needed
             ];
 

@@ -1,6 +1,12 @@
 <?php
 $videos = [
     [
+        'embed_code' => '',
+    ],
+    [
+        'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ik3nna__/video/7235264057442422022" data-video-id="7235264057442422022" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ik3nna__" href="https://www.tiktok.com/@ik3nna__?refer=embed">@ik3nna__</a> <a title="tipsandtricks" target="_blank" href="https://www.tiktok.com/tag/tipsandtricks?refer=embed">#tipsandtricks</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="pythonprogramming" target="_blank" href="https://www.tiktok.com/tag/pythonprogramming?refer=embed">#pythonprogramming</a> <a title="python" target="_blank" href="https://www.tiktok.com/tag/python?refer=embed">#python</a> <a target="_blank" title="♬ original sound - Ikenna" href="https://www.tiktok.com/music/original-sound-7235264053718551302?refer=embed">♬ original sound - Ikenna</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
+    ],
+    [
         'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lewismenelaws/video/7089478998031404294" data-video-id="7089478998031404294" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lewismenelaws" href="https://www.tiktok.com/@lewismenelaws?refer=embed">@lewismenelaws</a> These 3 things will help you learn code FAST 👩‍💻 <a title="softwareengineer" target="_blank" href="https://www.tiktok.com/tag/softwareengineer?refer=embed">#softwareengineer</a> <a title="tech" target="_blank" href="https://www.tiktok.com/tag/tech?refer=embed">#tech</a> <a title="techtok" target="_blank" href="https://www.tiktok.com/tag/techtok?refer=embed">#techtok</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="freelance" target="_blank" href="https://www.tiktok.com/tag/freelance?refer=embed">#freelance</a> <a title="career" target="_blank" href="https://www.tiktok.com/tag/career?refer=embed">#career</a> <a target="_blank" title="♬ Blade Runner 2049 - Synthwave Goose" href="https://www.tiktok.com/music/Blade-Runner-2049-6839324086548563969?refer=embed">♬ Blade Runner 2049 - Synthwave Goose</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
     ],
     [
@@ -8,9 +14,6 @@ $videos = [
     ],
     [
         'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@umacodes/video/7270176763127270699" data-video-id="7270176763127270699" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@umacodes" href="https://www.tiktok.com/@umacodes?refer=embed">@umacodes</a> The most effective way to learn how to code and get better at programming <a title="codinglife" target="_blank" href="https://www.tiktok.com/tag/codinglife?refer=embed">#codinglife</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="programmingtips" target="_blank" href="https://www.tiktok.com/tag/programmingtips?refer=embed">#programmingtips</a> <a title="techtok" target="_blank" href="https://www.tiktok.com/tag/techtok?refer=embed">#techtok</a> <a title="learntocodeforbeginners" target="_blank" href="https://www.tiktok.com/tag/learntocodeforbeginners?refer=embed">#learntocodeforbeginners</a> <a title="javascript" target="_blank" href="https://www.tiktok.com/tag/javascript?refer=embed">#javascript</a> <a title="javascript" target="_blank" href="https://www.tiktok.com/tag/javascript?refer=embed">#javascript</a> <a title="programmingprojects" target="_blank" href="https://www.tiktok.com/tag/programmingprojects?refer=embed">#programmingprojects</a> <a target="_blank" title="♬ original sound - Uma Abu" href="https://www.tiktok.com/music/original-sound-7270176778931505962?refer=embed">♬ original sound - Uma Abu</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
-    ],
-    [
-        'embed_code' => '',
     ],
 ];
 ?>
