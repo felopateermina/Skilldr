@@ -1,13 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(beta) Skilldr Google Engine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skilldr Search Engine</title>
+  <style>
+    body {
+      justify-content: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #search-container {
+      text-align: center;
+    }
+
+    #search-input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    #search-button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #shortcut-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .shortcut {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .shortcut:hover {
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
-<body style="  background-color: #292929;">
-    <script async src="https://cse.google.com/cse.js?cx=05c5e3a15fc254b10">
-    </script>
-    <div class="gcse-search"></div>
+<body>
+    <div class="content">
+        <h1 style="text-align: center;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 4em;">SKILLDR</h1>
+    </div>
+
+
+
+<div id="search-container">
+  <input type="text" id="search-input" placeholder="Search on Skilldr">
+  <button id="search-button">Search</button>
+</div>
+
+
+<br><br><br>
+
+
+<div id="shortcut-container">
+
+
+    <div class="shortcut" onclick="openLink('https://www.youtube.com')">
+ 
+        <svg width="46" height="46" fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.843 6.975c0-2.11-1.552-3.807-3.469-3.807A170.465 170.465 0 0 0 12.422 3h-.844c-2.7 0-5.353.047-7.95.169-1.912 0-3.464 1.706-3.464 3.815A69.732 69.732 0 0 0 0 11.99a72.582 72.582 0 0 0 .16 5.011c0 2.11 1.551 3.82 3.464 3.82 2.728.127 5.526.183 8.372.178 2.85.01 5.64-.05 8.371-.178 1.918 0 3.47-1.71 3.47-3.82a72.41 72.41 0 0 0 .159-5.016 68.19 68.19 0 0 0-.153-5.01Zm-14.14 9.614V7.378L16.5 11.98l-6.797 4.608Z"></path>
+          </svg>
+
+    </div>
+
+<!--  -->
+
+    <div class="shortcut" onclick="openLink('https://www.facebook.com')">
+ 
+        <svg width="46" height="46" fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M22.5 12.063c0-5.799-4.702-10.5-10.5-10.5s-10.5 4.7-10.5 10.5c0 5.24 3.84 9.584 8.86 10.373v-7.337H7.692v-3.037h2.666V9.75c0-2.63 1.568-4.085 3.966-4.085 1.15 0 2.351.205 2.351.205v2.584h-1.324c-1.304 0-1.712.81-1.712 1.64v1.97h2.912l-.465 3.036H13.64v7.337c5.02-.788 8.859-5.131 8.859-10.373Z" clip-rule="evenodd"></path>
+          </svg>
+
+    </div>
+
+<!--  -->
+
+    <div class="shortcut" onclick="openLink('https://www.twitter.com')">
+ 
+        <svg width="46" height="46" fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+          </svg>
+
+    </div>
+
+<!--  -->
+
+    <div class="shortcut" onclick="openLink('https://www.twitch.tv/')">
+ 
+        <svg width="46" height="46" fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m3.75 1.5-1.5 3.75V19.5h4.5v3h3l3-3h3.75l5.25-5.25V1.5h-18Zm15.75 12-3 3H12l-3 3v-3H5.25V3.75H19.5v9.75Z"></path>
+            <path d="M17.25 6.703H15v6.047h2.25V6.703Z"></path>
+            <path d="M12 6.703H9.75v6.047H12V6.703Z"></path>
+          </svg>
+
+    </div>
+
+  
+    <!-- Add more shortcuts as needed -->
+  </div>
+<br><br><br>
+
+<div class="more">
+    <p style="text-align: center;font-weight: bold;">* While using the website, you agree to our <span style="color: blue;">Privacy & Terms</span></p>
+</div>
+
+<script>
+  // Get the search input and button elements
+  var searchInput = document.getElementById("search-input");
+  var searchButton = document.getElementById("search-button");
+
+  // Add click event listener to the search button
+  searchButton.addEventListener("click", performSearch);
+
+  // Add keypress event listener to the search input
+  searchInput.addEventListener("keypress", function(event) {
+    // Check if the pressed key is "Enter"
+    if (event.key === "Enter") {
+      performSearch();
+    }
+  });
+
+  // Function to perform the search
+  function performSearch() {
+    // Get the search query from the input
+    var query = searchInput.value;
+
+    // Check if the query is not empty
+    if (query.trim() !== "") {
+      // Construct the Google search URL and open it in a new tab
+      var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(query);
+      window.open(googleSearchURL, "_blank");
+    }
+  }
+
+  function openLink(url) {
+    // Open the link in a new tab
+    window.open(url, '_blank');
+  }
+</script>
+
 </body>
 </html>
