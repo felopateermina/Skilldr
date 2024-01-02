@@ -89,6 +89,8 @@ $videos = [
             </div>
         <?php endforeach; ?>
     </div>
+    <p style="font-weight: bold;color: black;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
+
 </div>
 <button onclick="location.href='../index.html'" id="scrollToTopBtn" title="Go Home">
 <svg width="34" height="34" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
