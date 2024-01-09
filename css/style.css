@@ -824,8 +824,7 @@ footer svg:hover{
 .video-item{
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   background: #0f0f0f;
-  box-shadow:  5px 5px 0px #0b0b0b,
-               -5px -5px 0px #131313;color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 width: 70%;
 justify-content: center;

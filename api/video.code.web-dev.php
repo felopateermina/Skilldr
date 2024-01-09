@@ -37,8 +37,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       color: white;
       background: #0f0f0f;
-box-shadow:  5px 5px 0px #0b0b0b,
-             -5px -5px 0px #131313;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         }
         .video-item h2{

@@ -4,6 +4,9 @@ $videos = [
         'embed_code' => '',
     ],
     [
+        'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@imancodes/video/7290899576234462472" data-video-id="7290899576234462472" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@imancodes" href="https://www.tiktok.com/@imancodes?refer=embed">@imancodes</a> Master These to Land a Coding Job ✅💻  If you want to learn to code and land your first software engineering but are an absolute beginner coder, here are the skills and programming languages you should be learning. <a title="softwareengineer" target="_blank" href="https://www.tiktok.com/tag/softwareengineer?refer=embed">#softwareengineer</a> <a title="coding" target="_blank" href="https://www.tiktok.com/tag/coding?refer=embed">#coding</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="computerscience" target="_blank" href="https://www.tiktok.com/tag/computerscience?refer=embed">#computerscience</a> <a target="_blank" title="♬ Storytelling - Adriel" href="https://www.tiktok.com/music/Storytelling-7031101555747080194?refer=embed">♬ Storytelling - Adriel</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
+    ],
+    [
         'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ik3nna__/video/7235264057442422022" data-video-id="7235264057442422022" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ik3nna__" href="https://www.tiktok.com/@ik3nna__?refer=embed">@ik3nna__</a> <a title="tipsandtricks" target="_blank" href="https://www.tiktok.com/tag/tipsandtricks?refer=embed">#tipsandtricks</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="pythonprogramming" target="_blank" href="https://www.tiktok.com/tag/pythonprogramming?refer=embed">#pythonprogramming</a> <a title="python" target="_blank" href="https://www.tiktok.com/tag/python?refer=embed">#python</a> <a target="_blank" title="♬ original sound - Ikenna" href="https://www.tiktok.com/music/original-sound-7235264053718551302?refer=embed">♬ original sound - Ikenna</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
     ],
     [
@@ -16,6 +19,17 @@ $videos = [
         'embed_code' => '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@umacodes/video/7270176763127270699" data-video-id="7270176763127270699" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@umacodes" href="https://www.tiktok.com/@umacodes?refer=embed">@umacodes</a> The most effective way to learn how to code and get better at programming <a title="codinglife" target="_blank" href="https://www.tiktok.com/tag/codinglife?refer=embed">#codinglife</a> <a title="programming" target="_blank" href="https://www.tiktok.com/tag/programming?refer=embed">#programming</a> <a title="programmingtips" target="_blank" href="https://www.tiktok.com/tag/programmingtips?refer=embed">#programmingtips</a> <a title="techtok" target="_blank" href="https://www.tiktok.com/tag/techtok?refer=embed">#techtok</a> <a title="learntocodeforbeginners" target="_blank" href="https://www.tiktok.com/tag/learntocodeforbeginners?refer=embed">#learntocodeforbeginners</a> <a title="javascript" target="_blank" href="https://www.tiktok.com/tag/javascript?refer=embed">#javascript</a> <a title="javascript" target="_blank" href="https://www.tiktok.com/tag/javascript?refer=embed">#javascript</a> <a title="programmingprojects" target="_blank" href="https://www.tiktok.com/tag/programmingprojects?refer=embed">#programmingprojects</a> <a target="_blank" title="♬ original sound - Uma Abu" href="https://www.tiktok.com/music/original-sound-7270176778931505962?refer=embed">♬ original sound - Uma Abu</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>',
     ],
 ];
+
+// Handle form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $userEmbedCode = $_POST['embed_code'];
+
+    // Validate user input if necessary
+
+    // Add the user's embed code to the videos array
+    $newVideo = ['embed_code' => $userEmbedCode];
+    array_unshift($videos, $newVideo);
+}
 ?>
 
 <!DOCTYPE html>
@@ -55,49 +69,54 @@ $videos = [
             width: 100%;
             height: 200px; /* Adjust the height as needed */
         }
+
         /* styles.css */
-#scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-}
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-#scrollToTopBtn:hover {
-    background-color: #001220;
-}
-
+        #scrollToTopBtn:hover {
+            background-color: #001220;
+        }
     </style>
 </head>
 <body>
 
 <div id="app">
+    <!-- Form to allow users to input their own TikTok embed code -->
+    <form method="post" style="text-align: center; margin-bottom: 20px;">
+        <label for="embed_code">Paste Your TikTok Embed Code:</label>
+        <textarea id="embed_code" name="embed_code" rows="4" cols="50" required></textarea>
+        <br>
+        <button type="submit">Create</button>
+    </form>
 
     <div id="videos-container">
         <?php foreach ($videos as $video): ?>
-          
             <div class="video-item">
                 <?php echo $video['embed_code']; ?>
             </div>
         <?php endforeach; ?>
     </div>
     <p style="font-weight: bold;color: black;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
-
 </div>
-<button onclick="location.href='../index.html'" id="scrollToTopBtn" title="Go Home">
-<svg width="34" height="34" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1Zm-6-2h5V9.157l-6-5.454-6 5.454V19h5v-6h2v6Z"></path>
-</svg>
-</button>
 
+<button onclick="location.href='../index.html'" id="scrollToTopBtn" title="Go Home">
+    <svg width="34" height="34" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1Zm-6-2h5V9.157l-6-5.454-6 5.454V19h5v-6h2v6Z"></path>
+    </svg>
+</button>
 
 </body>
 </html>
