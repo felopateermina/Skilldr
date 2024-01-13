@@ -52,7 +52,11 @@
             border: none;
             cursor: pointer;
             margin-top: 10px;
+            margin-left: 30px;
+            justify-content: center;
+            align-items: center;
         }
+
     </style>
 </head>
 <body>
@@ -64,11 +68,11 @@
 <button onclick="showFile()">Show File</button>
 
 <p id="fileDisplay"></p>
-<button id="downloadButton" onclick="downloadFile()">Download File</button>
+<button id="downloadButton" onclick="downloadFile()">Get Started</button>
 
 <script>
     const codeToFile = {
-        "8iPo-Ai6V-Qr1z": "",
+        "Skilldr Website": "https://www.mediafire.com/file/eq5zongu1s6xjii/Get_Started.txt/file",
     };
 
     function showFile() {
@@ -92,7 +96,6 @@
         if (fileName) {
             const a = document.createElement('a');
             a.href = fileName; // You can set the actual path to the file on the server
-            a.download = fileName;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
