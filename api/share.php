@@ -12,7 +12,7 @@ function generateSharingLinks($url) {
     return $sharingLinks;
 }
 
-$currentUrl = 'http://skilldr.vercel.app'; // Replace with your current page URL
+$currentUrl = 'https://skilldr.vercel.app'; // Replace with your current page URL
 
 $sharingLinks = generateSharingLinks($currentUrl);
 ?>
@@ -25,10 +25,49 @@ $sharingLinks = generateSharingLinks($currentUrl);
     <title>Share this Website</title>
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/share.css">
+    <style>
+        body{
+            justify-content:center;
+            text-align:center;
+            align-items:center;
+            display: 0px;
+            background-color: black;
+        }
+        .share{
+            background-color: white;
+            position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:20px;
+    border-radius: 20px;
+        }
+        button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 1023px) {
+.share{
+    width: 70%;
+}
+}
+    </style>
 </head>
 <body>
     <br><br><br><br><br><br><br><br>
-    
+    <div class="share">
+
+ 
     <a href="<?php echo $sharingLinks['facebook']; ?>">
        <button class="fcs">
         <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -50,26 +89,8 @@ $sharingLinks = generateSharingLinks($currentUrl);
           </svg>
        </button>
     </a>
-    <a href="<?php echo $sharingLinks['messenger']; ?>">
-       <button class="msgs">
-        <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M4 2h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6l-4 4 .01-18c0-1.1.89-2 1.99-2Zm2 12h12v-2H6v2Zm12-3H6V9h12v2ZM6 8h12V6H6v2Z" clip-rule="evenodd"></path>
-          </svg>
-       </button>
-    </a>
+
   
-   
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <title>Document</title>
-</head>
-<body>
-    
+    </div>
 </body>
 </html>
