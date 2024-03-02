@@ -144,7 +144,7 @@ body{
   }
 input{
     outline: none;
-    border: none;
+    border: white solid;
     background-color: black;
     padding: 10px;
     color: white;

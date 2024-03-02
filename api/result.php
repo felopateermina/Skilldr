@@ -66,6 +66,15 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/res.css">
     <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
+    <style>
+      input{
+        border: white solid;
+        border-radius: 10px;
+      }
+      .buttonofsearch{
+        border-radius: 10px;
+      }
+    </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
 </head>
@@ -136,7 +145,7 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
                   type="search"
                   title="Search - '<?php echo $searchQuery;?>'"
                   name="query"
-                  placeholder="Search Skilldr By Categories ID Or A Code Or Even Name..."
+                  placeholder="Search Skilldr..."
                   id="search"
                   value="<?php echo $searchQuery;?>"
                 />
@@ -166,7 +175,6 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
             <h1 class="e404">404</h1>
             <h3 class="i404">No Results Found</h3>
             <p style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
-
 
             ';
 
