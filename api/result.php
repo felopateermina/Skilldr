@@ -174,7 +174,7 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
             
             <h1 class="e404">404</h1>
             <h3 class="i404">No Results Found</h3>
-            <p style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
+            <p style="font-weight: bold;color: gray;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a></p>
 
             ';
 
