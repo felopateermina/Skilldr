@@ -67,6 +67,175 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
     <link rel="stylesheet" href="../css/res.css">
     <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
     <style>
+      *{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.result {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.result h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.result p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
+    color: #595959;
+    margin-top: 5px;
+}.main{
+    color: #de6b00;
+    text-decoration: none;
+    font-weight: bold;
+}.main:hover{
+    text-decoration: underline;  
+}
+
+:root {
+    --dark-color: #1d2a35;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --main-color-group: #de5b00;
+  }
+  
+  .main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+  }
+  .main-btn:hover {
+    color: var(--yellow-color);
+  }
+  .main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Start Navbar */
+  .navbar {
+    background-color: #001220;
+    justify-content: space-between;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--main-color-group);
+  }
+  .navbar .search {
+    border-left: 1px solid var(--green-color);
+  }
+  .navbar .search svg {
+    color: var(--green-color);
+  }
+  .navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color-group);
+  }
+  .imglogo {
+    vertical-align: middle;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+  }
+  .imglogo:hover {
+    transform: scale(1.1);
+  }
+  
+  #login {
+    color: white;
+    font-weight: 700;
+    background-color: var(--dark-color);
+    padding: 4px;
+    padding-left: 20px;
+    border: #de5b00 solid;
+    padding-right: 20px;
+    margin-left: 20px;
+    transform-origin: right;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  #gtprm {
+    color: white;
+    font-weight: 700;
+    background-color: #00dbde;
+    background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    transform-origin: right;
+    align-items: center;
+    display: flex;
+  }
+  .h1al,
+  .h1al2 {
+    color: var(--main-color-group);
+  }
+  #login:hover {
+    background-color: var(--main-color-group);
+  }
+input{
+    outline: none;
+    border: white solid;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 0px;
+    width: 80%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.buttonofsearch {
+    background-color: #de5b00;
+    outline: none;
+    border: #19283f solid;
+  }
+  .e404{
+    color: #de5b00;font-size: 7em;text-align: center;
+  }.i404{
+    color: white;text-align: center;
+  }
+
+
       input{
         border: white solid;
         border-radius: 10px;
@@ -74,6 +243,7 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
       .buttonofsearch{
         border-radius: 10px;
       }
+      
     </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
@@ -173,7 +343,7 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
             echo '
             
             <h1 class="e404">404</h1>
-            <h3 class="i404">No Results Found</h3>
+            <h3 class="i404">Sorry! ... No Results Found.</h3>
             <p style="font-weight: bold;color: gray;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a></p>
 
             ';
@@ -182,8 +352,12 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
         ?>
     </div>
 
-
-    <script src="../bootstrap/js/all.min.js"></script>
+<script>
+if(window.location.href == "https://skilldr.vercel.app/api/result.php?query="){
+  window.location.href = "https://skilldr.vercel.app/api/result.php?ComPanySkilldrHyperLuxPageError404ErrorPageStuckInSkilldrWebsiteForOnlineCo!ursesNotSearchingThisIsEmpt!yQuerySearchSoIWillStopThatForever";
+}
+</script>
+    <script src="../bootstrap/js/all.min.js"></>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
