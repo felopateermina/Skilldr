@@ -368,7 +368,7 @@ input{
 
 <script>
 if(window.location.href == "https://skilldr.vercel.app/api/result.php?query="){
-  window.location.href = "https://skilldr.vercel.app/api/result.php?query=ComPanySkilldrASTRONAUTPageError404ErrorPageStuckInSkilldrWebsiteForOnlineCo!ursesNotSearchingThisIsEmpt!yQuerySearchSoIWillStopThatForever";
+  window.location.href = "https://skilldr.vercel.app/api/result.php?query=Sorry, Nothing To See...!";
 }
 </script>
     <script src="../bootstrap/js/all.min.js"></>

@@ -852,3 +852,52 @@ background-color:#313535;
     display: none;
   }
 }
+
+
+
+.comment-section {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+.comment-section h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.comment-section form {
+  margin-bottom: 20px;
+}
+.comment-section input, .comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: white;
+}
+.comment-section button {
+  background-color: #de5b00;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.comment {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.comment p {
+  margin: 5px 0;
+}
+@media screen and (max-width: 1023px) {
+  .comment-section {
+  width: 80%;
+}
+}

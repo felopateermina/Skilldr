@@ -104,6 +104,56 @@ $videos = [
         #nextBtn:hover {
             background-color: gray;
         }
+        .comment-section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.comment-section {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 60%;
+}
+.comment-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.comment-section form {
+    margin-bottom: 20px;
+}
+.comment-section input, .comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+}
+.comment-section button {
+    background-color: #de5b00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comment p {
+    margin: 5px 0;
+}
+@media screen and (max-width: 1023px) {
+    .comment-section {
+    width: 80%;
+}
+}
     </style>
 </head>
 <body>
@@ -117,6 +167,22 @@ $videos = [
             </div>
         <?php endforeach; ?>
     </div>
+
+
+    <div class="comment-section-wrapper">
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <form id="commentForm">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="commentsContainer"></div>
+    </div>
+</div>
+
+
+
     <p style="font-weight: bold;color: #ffffff;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
 
 </div>
@@ -177,6 +243,72 @@ $videos = [
         currentVideoIndex = (currentVideoIndex - 1 + totalVideos) % totalVideos;
         showCurrentVideo();
     }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const commentForm = document.getElementById('commentForm');
+    const commentsContainer = document.getElementById('commentsContainer');
+
+    // Function to save comments to local storage
+    function saveCommentsToLocalStorage(comments) {
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+
+    // Function to retrieve comments from local storage
+    function getCommentsFromLocalStorage() {
+        const comments = localStorage.getItem('comments');
+        return comments ? JSON.parse(comments) : [];
+    }
+
+    // Function to display comments
+    function displayComments() {
+        commentsContainer.innerHTML = '';
+        const comments = getCommentsFromLocalStorage();
+        comments.forEach(function(comment) {
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `<p><strong style="color:#de5b00;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path>
+  <path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" clip-rule="evenodd"></path>
+</svg> <span style="font-size: 20px;">${comment.username} :</span></strong></p><p>${comment.text}</p>`;
+            commentsContainer.appendChild(commentElement);
+        });
+    }
+
+    // Display existing comments on page load
+    displayComments();
+
+    commentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get input values
+        const username = document.getElementById('username').value;
+        const commentText = document.getElementById('commentText').value;
+
+        // Create new comment object
+        const newComment = {
+            username: username,
+            text: commentText
+        };
+
+        // Get existing comments from local storage
+        const comments = getCommentsFromLocalStorage();
+
+        // Add new comment to the array of comments
+        comments.push(newComment);
+
+        // Save updated comments to local storage
+        saveCommentsToLocalStorage(comments);
+
+        // Display comments again (including the new one)
+        displayComments();
+
+        // Clear the form
+        commentForm.reset();
+    });
+});
+
+    
 </script>
 
 </body>
