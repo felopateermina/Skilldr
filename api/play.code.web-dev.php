@@ -176,6 +176,57 @@ box-shadow:  5px 5px 10px #000000,
              -5px -5px 10px #000000;
 }
 
+.comment-section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.comment-section {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+.comment-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.comment-section form {
+    margin-bottom: 20px;
+}
+.comment-section input, .comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+}
+.comment-section button {
+    background-color: #de5b00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comment p {
+    margin: 5px 0;
+}
+@media screen and (max-width: 1023px) {
+    .comment-section {
+    width: 90%;
+}
+}
 </style>
 
 </head>
@@ -226,7 +277,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
-                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
                     'likeNo' => '+ 15k',
                     'dislikeNo' => '+ 500',
@@ -235,7 +286,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 2,
                     'title' => '[Arabic] Learn CSS in 2022 In One Video',
-                    'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O',
                     'likeNo' => '+ 7k',
                     'dislikeNo' => '+ 400',
@@ -244,7 +295,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 3,
                     'title' => '[Arabic] Learn JavaScript In One Video - Part One',
-                    'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK',
                     'likeNo' => '+ 5k',
                     'dislikeNo' => '+ 300',
@@ -253,7 +304,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 4,
                     'title' => '[Arabic] Learn JavaScript In One Video - Part Two',
-                    'description' => 'Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'description' => 'Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'FKrfis1W1tk?si=wffpm6lkKYF8LNKu',
                     'likeNo' => '+ 1.4k',
                     'dislikeNo' => '+ 200',
@@ -261,17 +312,42 @@ box-shadow:  5px 5px 10px #000000,
                 ],
                 [
                     'id' => 5,
+                    'title' => '[Arabic] Learn Bootstrap In 12 Videos',
+                    'description' => 'A Complete Bootstrap Course in 2022 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
+                    'youtubeId' => 'videoseries?si=jr_L00-B67GNYRq-&amp;list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ',
+                    'likeNo' => '+ 20k',
+                    'dislikeNo' => '+ 134',
+                    'saveNo' => '+ 443k',
+                ],
+                [
+                    'id' => 6,
                     'title' => '[Arabic] Learn PHP In 105 Videos',
-                    'description' => 'A Complete PHP Course in 2022 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">1 Year Ago</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
+                    'description' => 'A Complete PHP Course in 2022 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
                     'youtubeId' => 'videoseries?si=PgA3KHaYp3EjTywe&amp;list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq',
                     'likeNo' => '+ 6k',
                     'dislikeNo' => '+ 300',
                     'saveNo' => '+ 275k',
                 ],
-                // Add more videos as needed
+                [
+                    'id' => 7,
+                    'title' => '[Arabic] Learn MYSQL In 51 Videos',
+                    'description' => 'A Complete MYSQL Course in 2020 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2020</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
+                    'youtubeId' => 'videoseries?si=pTpW9ajAf691nCdo&amp;list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9',
+                    'likeNo' => '+ 120k',
+                    'dislikeNo' => '+ 300',
+                    'saveNo' => '+ 1.5M',
+                ],
+                [
+                    'id' => 8,
+                    'title' => '[Arabic] Learn MYSQL In 21 Videos',
+                    'description' => 'A Complete MYSQL Course in 2021 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2021</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
+                    'youtubeId' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP',
+                    'likeNo' => '+ 142k',
+                    'dislikeNo' => '+ 600',
+                    'saveNo' => '+ 650k',
+                ],
             ];
 
-            // Find the video with the matching ID
             $selectedVideo = null;
             foreach ($videos as $video) {
                 if ($video['id'] == $videoId) {
@@ -321,6 +397,17 @@ box-shadow:  5px 5px 10px #000000,
         }
         ?>
     </div>
+<br>
+
+<div class="comment-section">
+    <h3>Comments</h3>
+    <form id="commentForm">
+        <input type="text" id="username" placeholder="Your Name" required>
+        <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="commentsContainer"></div>
+</div>
 
     <script>
         function openNav() {
@@ -335,10 +422,74 @@ function closeNav() {
   document.getElementById("mySidenav").style.padding = "0px";
   document.getElementById("main").style.marginLeft= "0";
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const commentForm = document.getElementById('commentForm');
+    const commentsContainer = document.getElementById('commentsContainer');
+
+    // Function to save comments to local storage
+    function saveCommentsToLocalStorage(comments) {
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+
+    // Function to retrieve comments from local storage
+    function getCommentsFromLocalStorage() {
+        const comments = localStorage.getItem('comments');
+        return comments ? JSON.parse(comments) : [];
+    }
+
+    // Function to display comments
+    function displayComments() {
+        commentsContainer.innerHTML = '';
+        const comments = getCommentsFromLocalStorage();
+        comments.forEach(function(comment) {
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `<p><strong style="color:#de5b00;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path>
+  <path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" clip-rule="evenodd"></path>
+</svg> <span style="font-size: 20px;">${comment.username} :</span></strong></p><p>${comment.text}</p>`;
+            commentsContainer.appendChild(commentElement);
+        });
+    }
+
+    // Display existing comments on page load
+    displayComments();
+
+    commentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get input values
+        const username = document.getElementById('username').value;
+        const commentText = document.getElementById('commentText').value;
+
+        // Create new comment object
+        const newComment = {
+            username: username,
+            text: commentText
+        };
+
+        // Get existing comments from local storage
+        const comments = getCommentsFromLocalStorage();
+
+        // Add new comment to the array of comments
+        comments.push(newComment);
+
+        // Save updated comments to local storage
+        saveCommentsToLocalStorage(comments);
+
+        // Display comments again (including the new one)
+        displayComments();
+
+        // Clear the form
+        commentForm.reset();
+    });
+});
+
+
     </script>
 
 <br><br><br><br>
-<h5 style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></h5>
+<h6 style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></h6>
 <br>
 <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 

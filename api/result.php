@@ -43,6 +43,20 @@ $products = [
         'time' => "15/12/2023",
         'id' => "https://htmlcodex.com/downloading/?item=2161",
     ],
+    [
+        'name' => 'mysql learn mysql learning mysql course of mysql',
+        'price' => "Learn MYSQL In 2024",
+        'category' => 'Programming',
+        'time' => "21/5/2024",
+        'id' => "play.code.web-dev.php?id=7",
+    ],
+    [
+        'name' => 'laravel learn laravel learning laravel course of laravel',
+        'price' => "Learn Laravel In 2024",
+        'category' => 'Programming',
+        'time' => "21/5/2024",
+        'id' => "play.code.web-dev.php?id=8",
+    ],
     
     // ... Add more products as needed
 ];
@@ -344,7 +358,7 @@ input{
             
             <h1 class="e404">404</h1>
             <h3 class="i404">Sorry! ... No Results Found.</h3>
-            <p style="font-weight: bold;color: gray;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a></p>
+            <h6 style="font-weight: bold;color: gray;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a></h6>
 
             ';
 
@@ -354,7 +368,7 @@ input{
 
 <script>
 if(window.location.href == "https://skilldr.vercel.app/api/result.php?query="){
-  window.location.href = "https://skilldr.vercel.app/api/result.php?ComPanySkilldrHyperLuxPageError404ErrorPageStuckInSkilldrWebsiteForOnlineCo!ursesNotSearchingThisIsEmpt!yQuerySearchSoIWillStopThatForever";
+  window.location.href = "https://skilldr.vercel.app/api/result.php?query=ComPanySkilldrASTRONAUTPageError404ErrorPageStuckInSkilldrWebsiteForOnlineCo!ursesNotSearchingThisIsEmpt!yQuerySearchSoIWillStopThatForever";
 }
 </script>
     <script src="../bootstrap/js/all.min.js"></>

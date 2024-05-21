@@ -206,9 +206,27 @@ box-shadow:  5px 5px 10px #000000,
                 ],
                 [
                     'id' => 5,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Bootstrap In 12 Videos',
+                    'description' => 'A Complete Bootstrap Course in 2022',
+                    'filename' => 'videoseries?si=jr_L00-B67GNYRq-&amp;list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ',
+                ],
+                [
+                    'id' => 6,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn PHP In 105 Videos',
                     'description' => 'A Complete PHP Course in 2022',
                     'filename' => 'videoseries?si=PgA3KHaYp3EjTywe&amp;list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq'
+                ],
+                [
+                    'id' => 7,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn MYSQL In 51 Videos',
+                    'description' => 'A Complete MYSQL Course in 2020',
+                    'filename' => 'videoseries?si=pTpW9ajAf691nCdo&amp;list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9'
+                ],
+                [
+                    'id' => 8,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Laravel In 21 Videos',
+                    'description' => 'A Complete Laravel Course in 2021',
+                    'filename' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP'
                 ],
                 // Add more videos as needed
             ];
@@ -257,7 +275,7 @@ box-shadow:  5px 5px 10px #000000,
     </div>
 
     <br><br>
-    <p style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
+    <h6 style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></h6>
     <br>
     <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
