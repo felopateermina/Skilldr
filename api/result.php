@@ -1,5 +1,4 @@
 <?php
-// Sample data
 $products = [
     [
         'name' => 'programming html css js javascript python',
@@ -78,8 +77,8 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
     <title>Skilldr - <?php echo $searchQuery;?> - Skilldr</title>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/res.css">
     <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <style>
       *{
   scroll-behavior: smooth;
@@ -298,11 +297,12 @@ input{
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="html/whiteboard.html">Whiteboard</a></li>
                 <li><a class="dropdown-item" href="app.zip">Download</a></li>
-                <li><a class="dropdown-item" href="#about">About Us</a></li>
+                <li><a class="dropdown-item" href="../index.html#about">About Us</a></li>
                 <li><a class="dropdown-item" href="#courses">Categories</a></li>
-                <li><a class="dropdown-item" href="api/share.php">Share The Website</a></li>
-                <!-- <li><a class="dropdown-item" href="../html/search_skilldr.html">(Beta) Skilldr Engine</a></li> -->
-
+                <li><a class="dropdown-item" href="api/share.php">Share</a></li>
+                <li><a class="dropdown-item" href="posts.php">Posts</a></li>
+                <li><a class="dropdown-item" href="shorts.php">Shorts</a></li>
+                
             </ul>
             </div>
             
@@ -312,6 +312,7 @@ input{
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../html/code/intro.html">Programming</a></li>
+                <li><a class="dropdown-item" href="https://typingclub.com">Typing Fast</a></li>
                 </ul>
             </div>
            
@@ -371,7 +372,7 @@ if(window.location.href == "https://skilldr.vercel.app/api/result.php?query="){
   window.location.href = "https://skilldr.vercel.app/api/result.php?query=Sorry, Nothing To See...!";
 }
 </script>
-    <script src="../bootstrap/js/all.min.js"></>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="../bootstrap/js/all.min.js"></script>
+   <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
