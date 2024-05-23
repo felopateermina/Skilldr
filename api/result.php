@@ -295,11 +295,11 @@ input{
                 Menu
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="html/whiteboard.html">Whiteboard</a></li>
+                <li><a class="dropdown-item" href="../html/whiteboard.html">Whiteboard</a></li>
                 <li><a class="dropdown-item" href="app.zip">Download</a></li>
                 <li><a class="dropdown-item" href="../index.html#about">About Us</a></li>
-                <li><a class="dropdown-item" href="#courses">Categories</a></li>
-                <li><a class="dropdown-item" href="api/share.php">Share</a></li>
+                <li><a class="dropdown-item" href="../index.html#courses">Categories</a></li>
+                <li><a class="dropdown-item" href="share.php">Share</a></li>
                 <li><a class="dropdown-item" href="posts.php">Posts</a></li>
                 <li><a class="dropdown-item" href="shorts.php">Shorts</a></li>
                 
