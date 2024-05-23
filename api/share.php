@@ -66,8 +66,16 @@ button:hover {
 <body>
     <br><br><br><br><br><br><br><br>
     <div class="share">
-
- 
+    <i>*Notice: This Academy <span style="color:blue;font-weight:bold;">©Skilldr</span> is made by the company <span style="color:blue;font-weight:bold;">©Astronaut</span>*</i>
+<br><br>
+<svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="m9 13.591 8.607-8.607 1.414 1.414-8.607 8.607H18v2H7v-11h2v7.586Z"></path>
+</svg>
+<svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11 6.853a3.001 3.001 0 0 1 .998-5.83A3 3 0 0 1 13 6.853l.012 12.288 1.813-1.823 1.418 1.41-4.23 4.255-4.255-4.23 1.41-1.419 1.845 1.835-.014-12.316Zm.998-1.83a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" clip-rule="evenodd"></path>
+</svg><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14.59 16.005 5.982 7.398l1.414-1.414 8.607 8.606V7.005h2v11h-11v-2h7.587Z"></path>
+</svg><br>
     <a href="<?php echo $sharingLinks['facebook']; ?>">
        <button class="fcs">
         <svg width="46" height="46" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -89,8 +97,9 @@ button:hover {
           </svg>
        </button>
     </a>
+<br><br>
+<strong>Thanks For Sharing <span style="color:blue;font-weight:bold;">©Skilldr </span>...!</strong><br><br>
 
-  
     </div>
 </body>
 </html>

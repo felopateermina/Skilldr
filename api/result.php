@@ -368,7 +368,7 @@ input{
     </div>
 
 <script>
-if(window.location.href == "https://skilldr.vercel.app/api/result.php?query="){
+if(window.location.href == "https://skilldr.vercel.app/api/result.php?query=" || window.location.href == "https://skilldr.vercel.app/api/result.php?query=+"){
   window.location.href = "https://skilldr.vercel.app/api/result.php?query=Sorry, Nothing To See...!";
 }
 </script>

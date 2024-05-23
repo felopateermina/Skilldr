@@ -151,7 +151,7 @@ $videos = [
 }
 @media screen and (max-width: 1023px) {
     .comment-section {
-    width: 90%;
+    width: 77%;
 }
 }
     </style>
