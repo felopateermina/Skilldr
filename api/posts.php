@@ -183,7 +183,6 @@ $videos = [
 
 
 
-    <p style="font-weight: bold;color: #ffffff;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
 
 </div>
 

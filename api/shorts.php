@@ -177,7 +177,6 @@ $videos = [
     </form>
     <div id="commentsContainer"></div>
 </div>
-    <p style="font-weight: bold;color: #ffffff;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></p>
 </div>
 
 <button onclick="scrollToPreviousVideo()" id="prevBtn" title="Previous Video">
