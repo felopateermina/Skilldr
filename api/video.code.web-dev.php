@@ -166,9 +166,10 @@ box-shadow:  5px 5px 10px #000000,
             </div>
             <div class="rt" style="color: white;">
               <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;">
-              <svg width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-       <path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1.002 1.002 0 0 1-.326 1.639 1 1 0 0 1-1.094-.219L14 13.41l-1.29 1.3a1.002 1.002 0 0 1-1.64-.325 1 1 0 0 1 .22-1.095l1.3-1.29-1.3-1.29a1.004 1.004 0 1 1 1.42-1.42l1.29 1.3 1.29-1.3a1.004 1.004 0 0 1 1.42 1.42L15.41 12l1.3 1.29Z"></path>
-      </svg>
+              <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5 9h11a4 4 0 1 1 0 8h-1"></path>
+  <path d="M9 13 5 9l4-4"></path>
+</svg>
               </a>
            </div>
         </header>
@@ -211,6 +212,12 @@ box-shadow:  5px 5px 10px #000000,
                     'filename' => 'videoseries?si=jr_L00-B67GNYRq-&amp;list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ',
                 ],
                 [
+                    'id' => 999,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn React-JS In 30 Videos',
+                    'description' => 'A Complete React-JS Course in 2022',
+                    'filename' => 'videoseries?si=uoLF7ZiC8TaV-5cx&amp;list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW',
+                ],
+                [
                     'id' => 6,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn PHP In 105 Videos',
                     'description' => 'A Complete PHP Course in 2022',
@@ -228,7 +235,30 @@ box-shadow:  5px 5px 10px #000000,
                     'description' => 'A Complete Laravel Course in 2021',
                     'filename' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP'
                 ],
-                // Add more videos as needed
+                [
+                    'id' => 9,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn HTML & CSS In One Video 2023',
+                    'description' => 'A Complete HTML & CSS Course in 2023',
+                    'filename' => 'HGTJBPNC-Gw?si=i5gJ5fhCxskoxn0e'
+                ],
+                [
+                    'id' => 10,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn JAVASCRIPT In One Video 2024',
+                    'description' => 'A Complete JAVASCRIPT Course in 2024',
+                    'filename' => 'lfmg-EJ8gm4?si=IIlZEQiXAHipOTx0'
+                ],
+                [
+                    'id' => 11,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn Bootstrap In 20 Videos 2021',
+                    'description' => 'A Complete Bootstrap Course in 2021',
+                    'filename' => 'videoseries?si=jLu4BOAOlwlEqNfn&amp;list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR'
+                ],
+                [
+                    'id' => 12,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn React-JS In One Video 2024',
+                    'description' => 'A Complete React-JS Course in 2024',
+                    'filename' => 'CgkZ7MvWUAA?si=4ku4iR4rtnuWrJxr'
+                ],
             ];
 
             // Check if a search query is provided
@@ -279,7 +309,7 @@ box-shadow:  5px 5px 10px #000000,
     <br>
     <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felo ❤️</span>
+<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Astronaut ♡</span>
 <br>
 --------------------------------------------------
 <br><br>

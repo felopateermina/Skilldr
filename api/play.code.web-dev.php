@@ -261,8 +261,9 @@ box-shadow:  5px 5px 10px #000000,
         </div>
         <div class="rt" style="color: white;">
          <a href="video.code.web-dev.php" style="color: #de5b00;font-size: 1.5em;">
-         <svg width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1.002 1.002 0 0 1-.326 1.639 1 1 0 0 1-1.094-.219L14 13.41l-1.29 1.3a1.002 1.002 0 0 1-1.64-.325 1 1 0 0 1 .22-1.095l1.3-1.29-1.3-1.29a1.004 1.004 0 1 1 1.42-1.42l1.29 1.3 1.29-1.3a1.004 1.004 0 0 1 1.42 1.42L15.41 12l1.3 1.29Z"></path>
+         <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5 9h11a4 4 0 1 1 0 8h-1"></path>
+  <path d="M9 13 5 9l4-4"></path>
 </svg>
          </a>
       </div>
@@ -320,6 +321,15 @@ box-shadow:  5px 5px 10px #000000,
                     'saveNo' => '+ 443k',
                 ],
                 [
+                    'id' => 999,
+                    'title' => '[Arabic] Learn React-JS In 30 Videos',
+                    'description' => 'A Complete React-JS Course in 2022 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Unique Coderz Academy</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
+                    'youtubeId' => 'videoseries?si=uoLF7ZiC8TaV-5cx&amp;list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW',
+                    'likeNo' => '+ 50k',
+                    'dislikeNo' => '+ 134',
+                    'saveNo' => '+ 1.2M',
+                ],
+                [
                     'id' => 6,
                     'title' => '[Arabic] Learn PHP In 105 Videos',
                     'description' => 'A Complete PHP Course in 2022 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
@@ -339,12 +349,48 @@ box-shadow:  5px 5px 10px #000000,
                 ],
                 [
                     'id' => 8,
-                    'title' => '[Arabic] Learn MYSQL In 21 Videos',
-                    'description' => 'A Complete MYSQL Course in 2021 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2021</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
+                    'title' => '[Arabic] Learn Laravel In 21 Videos',
+                    'description' => 'A Complete Laravel Course in 2021 . <br><br> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2021</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
                     'youtubeId' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP',
                     'likeNo' => '+ 142k',
                     'dislikeNo' => '+ 600',
                     'saveNo' => '+ 650k',
+                ],
+                [
+                    'id' => 9,
+                    'title' => '[English] Learn HTML & CSS In One Video 2023',
+                    'description' => 'A Complete HTML & CSS Course in 2023 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'youtubeId' => 'HGTJBPNC-Gw?si=i5gJ5fhCxskoxn0e',
+                    'likeNo' => '+ 58k',
+                    'dislikeNo' => '+ 200',
+                    'saveNo' => '+ 1.9M',
+                ],
+                [
+                    'id' => 10,
+                    'title' => '[English] Learn JAVASCRIPT In One Video 2024',
+                    'description' => 'A Complete JAVASCRIPT Course in 2024 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Front-End</a>',
+                    'youtubeId' => 'lfmg-EJ8gm4?si=IIlZEQiXAHipOTx0',
+                    'likeNo' => '+ 40k',
+                    'dislikeNo' => '+ 150',
+                    'saveNo' => '+ 1.1M',
+                ],
+                [
+                    'id' => 11,
+                    'title' => '[English] Learn Bootstrap In 20 Videos 2021',
+                    'description' => 'A Complete Bootstrap Course in 2021 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Net Ninja</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
+                    'youtubeId' => 'videoseries?si=jLu4BOAOlwlEqNfn&amp;list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR',
+                    'likeNo' => '+ 80k',
+                    'dislikeNo' => '+ 400',
+                    'saveNo' => '+ 1.6M',
+                ],
+                [
+                    'id' => 12,
+                    'title' => '[English] Learn React-JS In One Video 2024',
+                    'description' => 'A Complete React-JS Course in 2024 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
+                    'youtubeId' => 'CgkZ7MvWUAA?si=4ku4iR4rtnuWrJxr',
+                    'likeNo' => '+ 20k',
+                    'dislikeNo' => '+ 132',
+                    'saveNo' => '+ 780k',
                 ],
             ];
 
@@ -493,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <br>
 <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felo ❤️</span>
+<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Astronaut ♡</span>
 <br>
 --------------------------------------------------
 <br><br>
