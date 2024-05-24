@@ -46,7 +46,7 @@
         @media screen and (max-width: 1023px) {
             .video-item h3{
             color: white;
-            font-size: 16px;
+            font-size: 14.3px;
         }
 }
 .video-item:hover{
@@ -275,6 +275,12 @@ box-shadow:  5px 5px 10px #000000,
                     'title' => '<span style="color:blue;">[English]</span>: Learn MYSQL In One Video 2024',
                     'description' => 'A Complete MYSQL Course in 2024',
                     'filename' => '5OdVJbNCSso?si=mzTzMhKgJdwgKBUd'
+                ],
+                [
+                    'id' => 15,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn Laravel In 52 Videos 2024',
+                    'description' => 'A Complete Laravel Course in 2024',
+                    'filename' => 'si=Xwz4kmV8_HFFhkyM&amp;list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU'
                 ],
             ];
 

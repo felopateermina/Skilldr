@@ -228,7 +228,7 @@ box-shadow:  5px 5px 10px #000000,
 }}
 @media screen and (max-width: 1023px) {
     .formobilelabel{
-        font-size:20.2px;
+        font-size:27.2px;
     }
 }
 </style>
@@ -413,6 +413,15 @@ box-shadow:  5px 5px 10px #000000,
                     'likeNo' => '+ 40k',
                     'dislikeNo' => '+ 128',
                     'saveNo' => '+ 1.5M',
+                ],
+                [
+                    'id' => 15,
+                    'title' => '[English] Learn Laravel In 52 Videos 2024',
+                    'description' => 'A Complete Laravel Course in 2024 . <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Yelo Code</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
+                    'youtubeId' => 'videoseries?si=NfeU7r53FAb7yuh3&amp;list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU',
+                    'likeNo' => '+ 92k',
+                    'dislikeNo' => '+ 52',
+                    'saveNo' => '+ 233k',
                 ],
             ];
 
