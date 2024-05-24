@@ -40,10 +40,15 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
         }
-        .video-item h2{
+        .video-item h3{
             color: white;
-
         }
+        @media screen and (max-width: 1023px) {
+            .video-item h3{
+            color: white;
+            font-size: 16px;
+        }
+}
 .video-item:hover{
     transform: translateY(-10px);
       background-color:#313535;
@@ -259,6 +264,18 @@ box-shadow:  5px 5px 10px #000000,
                     'description' => 'A Complete React-JS Course in 2024',
                     'filename' => 'CgkZ7MvWUAA?si=4ku4iR4rtnuWrJxr'
                 ],
+                [
+                    'id' => 13,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn PHP In One Video 2024',
+                    'description' => 'A Complete PHP Course in 2024',
+                    'filename' => 'zZ6vybT1HQs?si=OldtIeWGeqWIW5-H'
+                ],
+                [
+                    'id' => 14,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn MYSQL In One Video 2024',
+                    'description' => 'A Complete MYSQL Course in 2024',
+                    'filename' => '5OdVJbNCSso?si=mzTzMhKgJdwgKBUd'
+                ],
             ];
 
             // Check if a search query is provided
@@ -277,8 +294,8 @@ box-shadow:  5px 5px 10px #000000,
                     $videoDescription = $video['description'];
                     echo "<div class='video-item'>";
                     echo "<a href='play.code.web-dev.php?id=$videoId'>";
-                    echo "<div class='video-info' >";
-                    echo "<h2>$videoTitle</h2>";
+                    echo "<div class='video-info'>";
+                    echo "<h3>$videoTitle</h3>";
                     echo "<p>$videoDescription</p>";
                     echo "</div>";
                     echo "</a>";
@@ -293,7 +310,7 @@ box-shadow:  5px 5px 10px #000000,
                     echo "<div class='video-item'>";
                     echo "<a href='play.code.web-dev.php?id=$videoId'>";
                     echo "<div class='video-info'>";
-                    echo "<h2>$videoTitle</h2>";
+                    echo "<h3>$videoTitle</h3>";
                     echo "<p>$videoDescription</p>";
                     echo "</div>";
                     echo "</a>";
