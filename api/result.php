@@ -359,7 +359,7 @@ input{
             
             <h1 class="e404">404</h1>
             <h3 class="i404">Sorry! ... No Results Found.</h3>
-            <h6 style="font-weight: bold;color: gray;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a></h6>
+            <h6 style="font-weight: bold;color: gray;text-align: center;">*<a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a>*</h6>
 
             ';
 
