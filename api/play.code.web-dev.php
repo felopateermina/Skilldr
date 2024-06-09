@@ -270,7 +270,6 @@ box-shadow:  5px 5px 10px #000000,
     padding: 15px;
     margin-top: 20px;
     width: 60%;
-    margin: 0 auto;
 }
 .comment-section h3 {
     font-weight: bold;
@@ -313,14 +312,31 @@ box-shadow:  5px 5px 10px #000000,
     .formobilelabel{
         font-size:27.2px;
     }
-    .terter{
-        display:none;
-    }
-    .fas.fa-download{
-        margin-left: 1px;
-    }
 }
 
+.buttondown {
+  display: inline-block;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #de5b00;
+  border: solid #de5b00 1px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin:5px;
+}
+
+.buttondown:hover {
+  background-color: #de5b00;
+}
+
+.buttondown:active {
+  background-color: #de5b00;
+}
 
 
 </style>
@@ -542,7 +558,13 @@ box-shadow:  5px 5px 10px #000000,
             echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
             echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
             echo "<button class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
-            echo "<a href='#' style='color:white;text-decoration:none;' download='$videoTitle'><i class='fas fa-download' style='color:#de5b00;'></i> <span style='font-size:20px;' class='xoxo'><span class='terter'>Save</span> Offline</span></a>";
+            echo "<br>";
+            echo "<br>";
+            echo "</div>";
+
+            echo "<div style='align-items:center;'>";
+            echo "<a href='#' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Offline</a>";
+            echo "<a href='../html/report.html' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "</div>";
                     echo "<br>";
                     echo "<br>";
@@ -550,8 +572,6 @@ box-shadow:  5px 5px 10px #000000,
                 echo "<p>$videoDescription</p>";
                 echo "<br>";
                 echo "</div>";
-                echo "<br>";
-                echo "<br>";
          
                 
             // Display the like, dislike, and save buttons
@@ -570,10 +590,7 @@ box-shadow:  5px 5px 10px #000000,
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
-    </div>
-<br>
-
-<div class="comment-section">
+        <div class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
         <input type="text" id="username" placeholder="Your Name" required>
@@ -582,6 +599,10 @@ box-shadow:  5px 5px 10px #000000,
     </form>
     <div id="commentsContainer"></div>
 </div>
+    </div>
+<br>
+
+
 
     <script>
         function openNav() {
