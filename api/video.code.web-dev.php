@@ -348,13 +348,12 @@
     </div>
 
     <br><br>
-    <h6 style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></h6>
+    <h6 style="font-weight: bold;color: white;text-align: center;color:white;">* <a href="../html/Privacy&Policy.html" style="color:white;">Privacy & Policy Terms</a> *</h6>
     <br>
     <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
         <span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Astronaut ♡</span>
         <br>
-        --------------------------------------------------
-        <br><br>
+        <br>
         <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
             <input
                 title="Search Skilldr"

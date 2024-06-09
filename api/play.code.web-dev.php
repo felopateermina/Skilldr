@@ -14,6 +14,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-item a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.thumbnail {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.thumbnail img {
+    position: absolute;
+}
+.thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h2 {
+    font-size: 16px;
+    margin: 0;
+    
+}
+
+.video-info p {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.video-player {
+    margin-bottom: 20px;
+}
+
+.video-player video {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
     body{
         color: white;
         font-family: system-ui;
@@ -230,7 +313,16 @@ box-shadow:  5px 5px 10px #000000,
     .formobilelabel{
         font-size:27.2px;
     }
+    .terter{
+        display:none;
+    }
+    .fas.fa-download{
+        margin-left: 1px;
+    }
 }
+
+
+
 </style>
 
 </head>
@@ -450,12 +542,17 @@ box-shadow:  5px 5px 10px #000000,
             echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
             echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
             echo "<button class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
+            echo "<a href='#' style='color:white;text-decoration:none;' download='$videoTitle'><i class='fas fa-download' style='color:#de5b00;'></i> <span style='font-size:20px;' class='xoxo'><span class='terter'>Save</span> Offline</span></a>";
             echo "</div>";
                     echo "<br>";
                     echo "<br>";
                 echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
+                echo "<br>";
                 echo "</div>";
+                echo "<br>";
+                echo "<br>";
+         
                 
             // Display the like, dislike, and save buttons
             
@@ -566,13 +663,11 @@ document.addEventListener('DOMContentLoaded', function () {
     </script>
 
 <br><br><br><br>
-<h6 style="font-weight: bold;color: white;text-align: center;">* While using the application, you agree to our <a href="../html/Privacy&Policy.html">Privacy & Policy Terms</a></h6>
+<h6 style="font-weight: bold;color: white;text-align: center;color:white;">* <a href="../html/Privacy&Policy.html" style="color:white;">Privacy & Policy Terms</a> *</h6>
 <br>
 <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
 <span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Astronaut ♡</span>
-<br>
---------------------------------------------------
 <br><br>
 <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
         <input
