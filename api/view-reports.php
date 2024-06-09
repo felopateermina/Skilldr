@@ -9,22 +9,35 @@
     <h1>Reported Messages</h1>
     <ul>
         <?php
-        // Read contents of reports.txt and display each report
-        $file = '../reports.txt';
-        if (file_exists($file)) {
-            $reports = file($file, FILE_IGNORE_NEW_LINES);
-            foreach ($reports as $report) {
-                $data = json_decode($report, true);
+        // Database connection
+        $host = 'localhost';
+        $user = 'root';
+        $password = '';
+        $database = 'skilldreport';
+
+        $conn = new mysqli($host, $user, $password, $database);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM reports";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
                 echo "<li>";
-                echo "<strong>Name:</strong> " . $data['name'] . "<br>";
-                echo "<strong>Email:</strong> " . $data['email'] . "<br>";
-                echo "<strong>Message:</strong> " . $data['message'] . "<br>";
-                echo "<strong>Timestamp:</strong> " . $data['timestamp'] . "<br>";
+                echo "<strong>Name:</strong> " . $row['name'] . "<br>";
+                echo "<strong>Email:</strong> " . $row['email'] . "<br>";
+                echo "<strong>Message:</strong> " . $row['message'] . "<br>";
+                echo "<strong>Timestamp:</strong> " . $row['timestamp'] . "<br>";
                 echo "</li>";
             }
         } else {
             echo "<li>No reports yet.</li>";
         }
+
+        $conn->close();
         ?>
     </ul>
 </body>

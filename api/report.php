@@ -1,23 +1,31 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    // Database connection
+    $host = 'localhost';
+    $user = 'root';
+    $password = '';
+    $database = 'skilldreport';
 
-    // Save the report data to a file
-    $report = array(
-        'name' => $name,
-        'email' => $email,
-        'message' => $message,
-        'timestamp' => date('Y-m-d H:i:s')
-    );
+    $conn = new mysqli($host, $user, $password, $database);
 
-    // Append the report to a file (for simplicity)
-    $file = '../reports.txt';
-    file_put_contents($file, json_encode($report) . PHP_EOL, FILE_APPEND | LOCK_EX);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-    // Redirect to a thank-you page
-    header("Location: thank-you.php");
-    exit;
+    $name = $conn->real_escape_string($_POST['name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $message = $conn->real_escape_string($_POST['message']);
+
+    $sql = "INSERT INTO reports (name, email, message) VALUES ('$name', '$email', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        // Redirect to a thank-you page
+        header("Location: thank-you.php");
+        exit;
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
 ?>
