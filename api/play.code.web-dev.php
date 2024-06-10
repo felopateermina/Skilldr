@@ -676,7 +676,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <br>
 <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Astronaut ♡</span>
+<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felopateer ♡</span>
 <br><br>
 <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
         <input
