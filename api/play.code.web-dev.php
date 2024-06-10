@@ -25,7 +25,6 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 h1 {
@@ -100,7 +99,6 @@ h1 {
     body{
         color: white;
         font-family: system-ui;
-
         background-color: #001220;
     }
     .desc{
@@ -306,7 +304,7 @@ box-shadow:  5px 5px 10px #000000,
 }
 @media screen and (max-width: 1023px) {
     .comment-section {
-    width: 90%;
+    width: 100%;
 }}
 @media screen and (max-width: 1023px) {
     .formobilelabel{
@@ -599,24 +597,14 @@ box-shadow:  5px 5px 10px #000000,
     </form>
     <div id="commentsContainer"></div>
 </div>
+
     </div>
 <br>
 
 
 
-    <script>
-        function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-  document.getElementById("mySidenav").style.padding = "10px";
-  document.getElementById("main").style.marginLeft = "250px";
-  
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mySidenav").style.padding = "0px";
-  document.getElementById("main").style.marginLeft= "0";
-}
+    <script>
 document.addEventListener('DOMContentLoaded', function () {
     const commentForm = document.getElementById('commentForm');
     const commentsContainer = document.getElementById('commentsContainer');

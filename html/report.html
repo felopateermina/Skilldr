@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: vertical;
+        }
+        select, button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea{
+            padding: 5px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Submit a Report</h2>
+        <form id="reportForm">
+            <label for="reportType">What are you reporting?</label>
+            <select id="reportType" name="reportType" required>
+                <option value="">Select an option</option>
+                <option value="Inappropriate Content">Inappropriate Content</option>
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Harassment">Harassment</option>
+                <!-- Add more options as needed --> 
+            </select>
+            <br><br>
+            <input type="checkbox" id="gre" required><label for="gre" style="font-weight: bold;">Agree to out terms and privacy policy.</label>
+            <br><br>
+            <label for="report">Please provide details:</label>
+            <br><br>
+            <textarea id="report" name="report" required></textarea>
+            <br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('reportForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var reportType = document.getElementById('reportType').value;
+            var reportText = document.getElementById('report').value;
+            var message = encodeURIComponent("Report Type: " + reportType + "\nDetails: " + reportText);
+            var whatsappURL = "https://wa.me/+201286473686?text=" + message;
+            window.open(whatsappURL, "_blank");
+            alert('Thank you for your report!');
+             window.location.href = 'thankyou.html';
+        });
+    </script>
+</body>
+</html>
