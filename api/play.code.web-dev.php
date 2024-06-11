@@ -23,8 +23,9 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 990px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 h1 {
@@ -100,6 +101,7 @@ h1 {
         color: white;
         font-family: system-ui;
         background-color: #001220;
+        
     }
     .desc{
         background-color: 
@@ -380,6 +382,9 @@ box-shadow:  5px 5px 10px #000000,
     </header>
     <br>
     <div class="container">
+        <div class="mainvids">
+
+     
         <?php
         // Check if the video ID is provided in the query parameter
         if (isset($_GET['id'])) {
@@ -597,6 +602,8 @@ box-shadow:  5px 5px 10px #000000,
     </form>
     <div id="commentsContainer"></div>
 </div>
+</div>
+
 
     </div>
 <br>
