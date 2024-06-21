@@ -1,4 +1,3 @@
-#R2B2-ads.txt-v2.28.0
 r2b2.cz, 2061, DIRECT
 r2b2.io, 2061, DIRECT
 indexexchange.com, 195767, DIRECT
