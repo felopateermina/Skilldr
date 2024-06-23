@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Skilldr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        background-color: #001220;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .rg-cont{
+        display: flex;
+  justify-content: center;
+margin-top: 10px;
+    }
+  
+    #registerForm{
+      background-color: black;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 20px;
+box-shadow:  5px 5px 5px #0f0f0f,
+             -5px -5px 5px #000000;
+             width: 90%;
+    }
+    input{
+        padding: 15px;
+        width: 90%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 19px;
+        margin: 6px;
+        color: #de5b00;
+        font-weight: bold;
+    }
+    button{
+        padding: 10px;
+        width: 60%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 19px;
+        margin: 6px;
+        background-color: #de5b00;
+        color: white;
+        font-weight: bold;
+    }
+    @media screen and (max-width:1023px) {
+            body{
+                background-color: #000000;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="rg-cont">
+    <form id="registerForm">
+        <h3>Register Now!</h3>
+        <input placeholder="Enter Your Username" type="text" id="registerUsername" required><br>
+        <input placeholder="Enter Your Password" type="password" id="registerPassword" required><br>
+        <input placeholder="Enter Your Name" type="text" id="registerName" required><br>
+        <input placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br><br>
+    <a href="login.html" style="color: blue;">Already Have An Account?</a>
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+    <script>
+        // Handle user registration
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('registerUsername').value;
+            const password = document.getElementById('registerPassword').value;
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+
+            if (username && password && name && email) {
+                const user = {
+                    password: password,
+                    name: name,
+                    email: email,
+                    data: {}
+                };
+
+                localStorage.setItem(username, JSON.stringify(user));
+                alert('User registered successfully!');
+                // Redirect to login page after successful registration
+                window.location.href = 'login.html';
+            } else {
+                alert('Please enter valid details.');
+            }
+        });
+    </script>
+</body>
+</html>

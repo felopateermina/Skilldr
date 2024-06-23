@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Page</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Data Page:-</h2>
+    <p>Welcome, <span id="usernameDisplay"></span>!</p>
+    <p>Email: <span id="emailDisplay"></span></p>
+    <button id="logoutButton">Logout</button>
+    <a href="../index.html">Back Home</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Display username and email
+            const currentUser = sessionStorage.getItem('currentUser');
+            if (currentUser) {
+                const storedUser = JSON.parse(localStorage.getItem(currentUser));
+                document.getElementById('usernameDisplay').textContent = storedUser.name;
+                document.getElementById('emailDisplay').textContent = storedUser.email;
+            } else {
+                alert('No user is currently logged in.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            // Logout button functionality
+            document.getElementById('logoutButton').addEventListener('click', function() {
+                sessionStorage.removeItem('currentUser');
+                alert('Logout successful.');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>

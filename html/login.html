@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skilldr</title>
+    <style>
+        body{
+            background-color: #001220;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .rg-cont{
+            display: flex;
+  justify-content: center;
+margin-top: 90px;
+        }
+        @media screen and (max-width:1023px) {
+            body{
+                background-color: #000000;
+            }
+        }
+        #loginForm{
+          background-color: black;
+          padding: 30px;
+          border-radius: 10px;
+          font-size: 20px;
+    box-shadow:  5px 5px 5px #0f0f0f,
+                 -5px -5px 5px #000000;
+                 width: 90%;
+        }
+        input{
+            padding: 15px;
+            width: 90%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 19px;
+            margin: 6px;
+            color: #de5b00;
+            font-weight: bold;
+        }
+        button{
+            padding: 10px;
+            width: 60%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 19px;
+            margin: 6px;
+            background-color: #de5b00;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="rg-cont">
+    <form id="loginForm">
+        <h3>Login In Now!</h3>
+        <input placeholder="Enter Your Username" type="text" id="loginUsername" required><br>
+        <input placeholder="Enter Your Password" type="password" id="loginPassword" required><br>
+        <br>
+        <a href="sign.html" style="color: blue;">Don't Have An Account?</a>
+            <br><br>
+        <button id="submit" type="submit">Login</button>
+    </form>
+</div>
+    <script>
+        // Handle user login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const storedUser = localStorage.getItem(username);
+            if (storedUser) {
+                const user = JSON.parse(storedUser);
+
+                if (user.password === password) {
+                    alert('Login successful!');
+                    // Store current user in session storage
+                    sessionStorage.setItem('currentUser', username);
+                    // Redirect to user data page after successful login
+                    window.location.href = 'userdata.html';
+                } else {
+                    alert('Incorrect password.');
+                }
+            } else {
+                alert('User not found.');
+            }
+        });
+    </script>
+</body>
+</html>
