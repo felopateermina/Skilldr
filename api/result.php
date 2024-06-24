@@ -310,7 +310,7 @@ input{
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../html/code/intro.html">Programming</a></li>
-                <li><a class="dropdown-item" href="https://typingclub.com">Typing Fast</a></li>
+                <li><a class="dropdown-item" href="../html/typefast/typefast.html">Typing Fast</a></li>
                 </ul>
             </div>
            
