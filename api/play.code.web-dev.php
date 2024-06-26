@@ -647,9 +647,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check if a user is logged in
     const currentUser = sessionStorage.getItem('currentUser');
     if (!currentUser) {
-        alert('No user is currently logged in.');
-        // Redirect to login page if no user is logged in
-        window.location.href = '../html/login.html';
+
         return;
     }
 
