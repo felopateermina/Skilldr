@@ -647,7 +647,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check if a user is logged in
     const currentUser = sessionStorage.getItem('currentUser');
     if (!currentUser) {
-        alert("Can't Comment Without An Account - 404")
+        alert("Can't Comment Without An Account - Be Carful")
         return;
     }
 
