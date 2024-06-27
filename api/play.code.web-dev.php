@@ -338,7 +338,13 @@ box-shadow:  5px 5px 10px #000000,
   background-color: #de5b00;
 }
 
-
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding:7px;
+    display:none;
+}
 </style>
 
 </head>
@@ -380,7 +386,10 @@ box-shadow:  5px 5px 10px #000000,
          </a>
       </div>
     </header>
-    <br>
+    <div id="warn" class="alert alert-warning">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Warning: You haven't signed in yet.
+    </div>
     <div class="container">
         <div class="mainvids">
 
@@ -593,7 +602,7 @@ box-shadow:  5px 5px 10px #000000,
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
-        <div class="comment-section">
+        <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
         <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
@@ -605,8 +614,6 @@ box-shadow:  5px 5px 10px #000000,
 
 
     </div>
-<br>
-
 
 
 
@@ -645,9 +652,12 @@ document.addEventListener('DOMContentLoaded', function () {
     displayComments();
 
     // Check if a user is logged in
+    const commentSec = document.getElementById("commentSec");
+const warn = document.getElementById("warn")
     const currentUser = sessionStorage.getItem('currentUser');
     if (!currentUser) {
-        alert("Can't Comment Without An Account - Be Carful")
+        commentSec.style.display = "none";
+        warn.style.display = "block"
         return;
     }
 
@@ -712,5 +722,19 @@ document.addEventListener('DOMContentLoaded', function () {
 </a>
 
 </footer>
+<script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+            (event.ctrlKey && event.shiftKey && event.key === "J") || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -338,6 +338,13 @@ box-shadow:  5px 5px 10px #000000,
   background-color: #de5b00;
 }
 
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding:7px;
+    display:none;
+}
 
 </style>
 
@@ -380,6 +387,10 @@ box-shadow:  5px 5px 10px #000000,
          </a>
       </div>
     </header>
+    <div id="warn" class="alert alert-warning">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Warning: You haven't signed in yet.
+    </div>
     <br>
     <div class="container">
         <div class="mainvids">
@@ -454,7 +465,6 @@ box-shadow:  5px 5px 10px #000000,
             echo "<a href='../html/report.html' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "</div>";
                     echo "<br>";
-                    echo "<br>";
                 echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
                 echo "<br>";
@@ -477,7 +487,7 @@ box-shadow:  5px 5px 10px #000000,
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
-        <div class="comment-section">
+        <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
         <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
@@ -489,7 +499,6 @@ box-shadow:  5px 5px 10px #000000,
 
 
     </div>
-<br>
 
 
 
@@ -527,11 +536,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Display existing comments on page load
     displayComments();
-
-    // Check if a user is logged in
+const commentSec = document.getElementById("commentSec");
+const warn = document.getElementById("warn")
     const currentUser = sessionStorage.getItem('currentUser');
     if (!currentUser) {
-        alert("Can't Comment Without An Account - Be Carful")
+        commentSec.style.display = "none";
+        warn.style.display = "block"
         return;
     }
 
@@ -594,7 +604,21 @@ document.addEventListener('DOMContentLoaded', function () {
     <path d="M2.756 20.584a.75.75 0 0 1-.506-.71c0-3.426.688-6.166 2.046-8.144C5.936 9.338 8.525 8.052 12 7.891V4.125a.75.75 0 0 1 1.268-.542l8.25 7.875a.75.75 0 0 1 0 1.084l-8.25 7.875A.75.75 0 0 1 12 19.875v-3.74c-2.11.064-3.703.406-4.972 1.062-1.371.709-2.365 1.768-3.437 3.14a.75.75 0 0 1-.835.248Z"></path>
   </svg>
 </a>
-
+</div>
 </footer>
+<script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+            (event.ctrlKey && event.shiftKey && event.key === "J") || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+</script>
+
 </body>
 </html>

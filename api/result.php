@@ -370,6 +370,20 @@ if(window.location.href == "https://skilldr.vercel.app/api/result.php?query=" ||
   window.location.href = "https://skilldr.vercel.app/api/result.php?query=Sorry, Nothing To See...!";
 }
 </script>
+<script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+            (event.ctrlKey && event.shiftKey && event.key === "J") || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+</script>
+
    <script src="../bootstrap/js/all.min.js"></script>
    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -94,5 +94,19 @@ button:hover {
 
 <i>*You must make an account for you to watch the courses.Notice: This Academy ©Skilldr is made by ©Felopateer. Your go-to platform for mastering essential skills. Our courses empower you to learn Python programming, data science, web development, and more. Join us to enhance your expertise and achieve your professional goals.*</i>
     </div>
+    <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+            (event.ctrlKey && event.shiftKey && event.key === "J") || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+</script>
+
 </body>
 </html>

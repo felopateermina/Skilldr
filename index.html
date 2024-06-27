@@ -31,6 +31,44 @@
           transform: translateY(-10px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+.fqsc{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+   width: 90%;
+
+}
+
+.question {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.question h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+}
+
+.answer p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
   </style>
 
 <!-- Open Graph Meta Tags -->
@@ -400,25 +438,61 @@
   <h4>- Most FAQS that questioned ? -</h4>
   </center>
   <br>
-  <div class="accordion" style="padding: 20px;" id="accordionExample">
+
+<div class="fqsc">
 
 
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          How can I type fast on keyboard ?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>How can I type fast on keyboard ? :</strong> You can type fast on the keyboard and this is not a hard thing to learn but it takes time . <a href="https://typingclub.com">typingclub.com</a>
 
-        </div>
-      </div>
+
+
+  
+
+
+  <div class="faq-container">
+
+
+
+
+
+
+
+
+    
+    <div class="question" onclick="toggleAnswer(this)">
+        <h2>What types of courses do you offer?</h2>
+    </div>
+    <div class="answer">
+        <p>We offer a wide range of courses including but not limited to programming, data science, business management, creative arts, and personal development.</p>
     </div>
 
 
-  </div>
+
+    
+    <div class="question" onclick="toggleAnswer(this)">
+        <h2>Do you offer any community or networking opportunities?</h2>
+    </div>
+    <div class="answer">
+        <p>Yes, we have forums and discussion groups where you can interact with fellow learners and instructors. We also host regular webinars and networking events.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br>
+</div>
+
+</div>
+
+
+
+
+<br>
  </section>
 
   <footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
@@ -426,16 +500,26 @@
 
 <span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felopateer ♡</span>
 <br><br>
-<div class="comment-section-wrapper">
-  <div class="comment-section">
-      <h3>Comments</h3>
-      <form id="commentForm">
-          <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
-          <button id="submit" type="submit" style="width: 100%;">Submit</button>
-      </form>
-      <div id="commentsContainer"></div>
-  </div>
-</div>
+<div class="icons" style="display: flex;text-align: center;justify-content: center;">
+
+  <a href="api/result.php?query=python" style="color: white;">
+    <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="m21.407 19.753-4.41-4.41a8.148 8.148 0 0 0 1.633-4.903c0-4.516-3.674-8.19-8.19-8.19s-8.19 3.674-8.19 8.19 3.674 8.19 8.19 8.19a8.148 8.148 0 0 0 4.902-1.633l4.41 4.41a1.171 1.171 0 0 0 1.655-1.654ZM4.59 10.44a5.85 5.85 0 1 1 5.85 5.85 5.857 5.857 0 0 1-5.85-5.85Z"></path>
+    </svg>
+  </a>
+  
+  <a href="html/userdata.html" style="color: white;">
+    <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm.094 4.5a3.375 3.375 0 1 1 0 6.75 3.375 3.375 0 0 1 0-6.75ZM12 20.25a8.23 8.23 0 0 1-6.055-2.653C6.359 15.45 10.08 15 12 15s5.64.45 6.055 2.596A8.228 8.228 0 0 1 12 20.25Z"></path>
+    </svg>
+  </a>
+  
+  <a href="api/share.php" style="color: white;">
+    <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.756 20.584a.75.75 0 0 1-.506-.71c0-3.426.688-6.166 2.046-8.144C5.936 9.338 8.525 8.052 12 7.891V4.125a.75.75 0 0 1 1.268-.542l8.25 7.875a.75.75 0 0 1 0 1.084l-8.25 7.875A.75.75 0 0 1 12 19.875v-3.74c-2.11.064-3.703.406-4.972 1.062-1.371.709-2.365 1.768-3.437 3.14a.75.75 0 0 1-.835.248Z"></path>
+    </svg>
+  </a>
+</div>  
 
 </footer>
 
@@ -500,7 +584,7 @@ document.getElementById('installButton').addEventListener('click', () => {
 
               var content = document.querySelector(".content");
               content.classList.add("fade-in");
-          }, 2000);
+          }, 1000);
       });</script>
 
 <script>
@@ -575,8 +659,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 
+<script>
+  function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      if (answer.style.display === "none" || answer.style.display === "") {
+          answer.style.display = "block";
+      } else {
+          answer.style.display = "none";
+      }
+  }
+</script>
 
+<script>
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
+  // Disable specific keyboard shortcuts
+  document.addEventListener('keydown', function(event) {
+      if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+          (event.ctrlKey && event.shiftKey && event.key === "J") || 
+          (event.ctrlKey && event.key === "U")) {
+          event.preventDefault();
+      }
+  });
+</script>
 
   </body>
 </html>
