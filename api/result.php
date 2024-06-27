@@ -305,6 +305,8 @@ input{
                 <li><a class="dropdown-item" href="../index.html#about">About Us</a></li>
                 <li><a class="dropdown-item" href="../index.html#courses">Categories</a></li>
                 <li><a class="dropdown-item" href="share.php">Share</a></li>
+                <li><a class="dropdown-item" href="../html/userdata.html">Account (NEW)</a></li>
+                <li><a class="dropdown-item" href="../html/dnlupd.html">Download Updates (NEW)</a></li>
                
             </ul>
             </div>
