@@ -56,8 +56,13 @@ $products = [
         'time' => "21/5/2024",
         'id' => "play.code.web-dev.php?id=8",
     ],
-    
-    // ... Add more products as needed
+    [
+        'name' => 'py python programming python course learn python robots programming python in arabic python in english master python in english master python in arabic master python',
+        'price' => "Learn Python In 2024 In Arabic And English",
+        'category' => 'Programming',
+        'time' => "27/6/2024",
+        'id' => "video.code.py.php",
+    ],
 ];
 
 // Retrieve the search query
