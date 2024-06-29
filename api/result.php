@@ -38,7 +38,7 @@ $products = [
     [
         'name' => '𝒟𝒢𝒥𝒦𝒪𝒯𝒶𝒵',
         'price' => "FREE CAR SERVICES WEBSITE TEMPLATE BY HTML-CODEX PRIZE",
-        'category' => 'Code Prize',
+        'category' => '🎉 Code Prize 🎉',
         'time' => "15/12/2023",
         'id' => "https://htmlcodex.com/downloading/?item=2161",
     ],
