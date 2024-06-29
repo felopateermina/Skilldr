@@ -36,9 +36,9 @@ $products = [
         'id' => "video.code.web-dev.php",
     ],
     [
-        'name' => 'fe6d-jnO2-sk7U',
-        'price' => "FREE CAR SERVICES WEBSITE TEMPLATE BY HTML-CODEX",
-        'category' => 'Programming',
+        'name' => '𝒟𝒢𝒥𝒦𝒪𝒯𝒶𝒵',
+        'price' => "FREE CAR SERVICES WEBSITE TEMPLATE BY HTML-CODEX PRIZE",
+        'category' => 'Code Prize',
         'time' => "15/12/2023",
         'id' => "https://htmlcodex.com/downloading/?item=2161",
     ],
@@ -62,6 +62,13 @@ $products = [
         'category' => 'Programming',
         'time' => "27/6/2024",
         'id' => "video.code.py.php",
+    ],
+    [
+        'name' => 'typing fast type fast how to type fast ? typing fast course type fast course typingclub improve typing speed typing with high speed',
+        'price' => "Learn Typing Fast In 2024.",
+        'category' => 'Typing Fast',
+        'time' => "29/6/2024",
+        'id' => "../html/typefast/typefast.html",
     ],
 ];
 
