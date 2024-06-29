@@ -40,7 +40,7 @@ $products = [
         'price' => "CAR SERVICES WEBSITE TEMPLATE",
         'category' => '🎉 Code Prize 🎉',
         'time' => "15/12/2023",
-        'id' => "https://www.file.io/m3AO/download/iTWnAJHdJcci",
+        'id' => "https://easyupload.io/zlxhgo",
     ],
     [
         'name' => 'mysql learn mysql learning mysql course of mysql',
