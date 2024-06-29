@@ -37,10 +37,10 @@ $products = [
     ],
     [
         'name' => '𝒟𝒢𝒥𝒦𝒪𝒯𝒶𝒵',
-        'price' => "FREE CAR SERVICES WEBSITE TEMPLATE BY HTML-CODEX PRIZE",
+        'price' => "CAR SERVICES WEBSITE TEMPLATE",
         'category' => '🎉 Code Prize 🎉',
         'time' => "15/12/2023",
-        'id' => "https://htmlcodex.com/downloading/?item=2161",
+        'id' => "https://www.file.io/m3AO/download/iTWnAJHdJcci",
     ],
     [
         'name' => 'mysql learn mysql learning mysql course of mysql',
@@ -313,6 +313,7 @@ input{
                 <li><a class="dropdown-item" href="../index.html#courses">Categories</a></li>
                 <li><a class="dropdown-item" href="share.php">Share</a></li>
                 <li><a class="dropdown-item" href="../html/userdata.html">Account (NEW)</a></li>               
+                <li><a class="dropdown-item" href="../html/redeemcode.html">Redeem Code (NEW)</a></li>               
             </ul>
             </div>
             

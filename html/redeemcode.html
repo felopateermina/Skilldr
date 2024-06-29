@@ -5,49 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REDEEM CODE - Skilldr</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            body{
+        background-color: #001220;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .rg-cont{
+        display: flex;
+  justify-content: center;
+margin-top: 10px;
+    }
+  
+    #registerForm{
+      background-color: black;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 20px;
+box-shadow:  5px 5px 5px #0f0f0f,
+             -5px -5px 5px #000000;
+             width: 90%;
+    }
+    input{
+        padding: 15px;
+        width: 90%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 19px;
+        margin: 6px;
+        color: #de5b00;
+        font-weight: bold;
+    }
+    button{
+        padding: 10px;
+        width: 90%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 19px;
+        margin: 6px;
+        background-color: #de5b00;
+        color: white;
+        font-weight: bold;
+    }
+    @media screen and (max-width:1023px) {
+            body{
+                background-color: #000000;
+            }
         }
     </style>
 </head>
-<body style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-    <form method="get" action="../api/result.php" style=" justify-content: center;" class="search_form">
-        <input
-            title="REDEEM CODE"
-            type="search"
-            name="query"
-            style=" color: #de5b00; font-weight: 700; width: 100%;padding: 15px;font-size: 15px;"
-            placeholder="REDEEM CODE ..."
-            id="search"
-        />
+<body>
+    <br><br><br><br>
+    <div class="rg-cont">
+        <form id="registerForm" method="get" action="../api/result.php" class="search_form">
+            <h3>Redeem Code Now !</h3>
 
-
-
-
-<p style="padding-left: 20px;padding-right: 20px;padding-top: 10px;">Unlock Your Reward!
-
-    Congratulations on receiving a redeem code! You're about to unlock something special just for you. Redeem your code now to receive exclusive benefits that will enhance your learning experience:
-    <br><br>
-    Website Template or Folder: Each code grants you access to a professionally designed website template or a curated folder of resources.
-    Additional Resources: Enhance your skills with extra materials tailored to complement your courses.
-    Surprise Rewards: Enjoy additional surprises and perks as a token of our appreciation.
-    <br><br>
-    To redeem your code and start exploring these exciting rewards, simply follow these steps:
-    <br><br>
-    Redemption: Enter your code in the designated field below.
-    <br><br>
-    Claim Your Reward: Click or tap on "Redeem" to instantly unlock your benefits.
-    Enjoy Learning: Dive into your new resources and elevate your learning journey.
-    Thank you for choosing us to be a part of your educational growth. Let's make learning even more rewarding together!</p>
-
-    <br><br><br>
-    <i> -> CLICK HERE TO REDEEM & RECEIVE! -< </i>
-    <br><br>
-<button style="padding: 20px;background-color: black;color: white;border-radius: 10px;">REDEEM</button>
-
-</form>
+            <input
+                title="REDEEM CODE"
+                type="search"
+                name="query"
+                placeholder="REDEEM CODE ..."
+                id="search"
+            />
+    
+    
+    <button class="submit">REDEEM</button><br><br>
+    <i>*Now, You can receive a prize or gift for redeeming a code* <a href="https://x.com/Felopateer66264" target="_blank" style="color: blue;">Check Codes</a></i>
+    </form>
+    </div>
+   
 <script>
     // Disable right-click context menu
     document.addEventListener('contextmenu', event => event.preventDefault());
