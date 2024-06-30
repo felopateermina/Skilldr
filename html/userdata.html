@@ -33,7 +33,6 @@
                 document.getElementById('usernameDisplay').textContent = storedUser.name;
                 document.getElementById('emailDisplay').textContent = storedUser.email;
             } else {
-                alert('No user is currently logged in.');
                 window.location.href = 'login.html';
                 return;
             }
@@ -60,7 +59,7 @@
                 commentsContainer.innerHTML = ''; // Clear existing content
                 const comments = getCommentsFromLocalStorage();
                 if (comments.length === 0) {
-                    commentsContainer.innerHTML = '<p>No comments yet.</p>';
+                    commentsContainer.innerHTML = '<p>No DATA yet.</p>';
                     return;
                 }
                 comments.forEach(function(comment) {
