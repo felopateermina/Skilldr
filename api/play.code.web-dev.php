@@ -567,7 +567,7 @@ box-shadow:  5px 5px 10px #000000,
                     echo "<h2 class='formobilelabel'>$videoTitle</h2>";
                 
                     echo "<div class='buttons'>";
-            echo "<button class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
+            echo "<button id='lkb' class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
             echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
             echo "<button class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
             echo "<br>";
@@ -575,7 +575,7 @@ box-shadow:  5px 5px 10px #000000,
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Offline</a>";
+            echo "<a href='#' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Page</a>";
             echo "<a href='../html/report.html' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "</div>";
                     echo "<br>";
@@ -621,6 +621,8 @@ box-shadow:  5px 5px 10px #000000,
 document.addEventListener('DOMContentLoaded', function () {
     const commentForm = document.getElementById('commentForm');
     const commentsContainer = document.getElementById('commentsContainer');
+    const commentSec = document.getElementById("commentSec");
+    const warn = document.getElementById("warn");
 
     // Function to save comments to local storage
     function saveCommentsToLocalStorage(comments) {
@@ -638,27 +640,32 @@ document.addEventListener('DOMContentLoaded', function () {
         commentsContainer.innerHTML = '';
         const comments = getCommentsFromLocalStorage();
         comments.forEach(function(comment) {
-            const commentElement = document.createElement('div');
-            commentElement.classList.add('comment');
-            commentElement.innerHTML = `<p><strong style="color:#de5b00;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M16 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path>
-                <path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" clip-rule="evenodd"></path>
-            </svg> <span style="font-size: 20px;">${comment.username} :</span></strong></p><p>${comment.text}</p>`;
+            const commentElement = createCommentElement(comment);
             commentsContainer.appendChild(commentElement);
         });
+    }
+
+    // Function to create a comment element
+    function createCommentElement(comment) {
+        const commentElement = document.createElement('div');
+        commentElement.classList.add('comment');
+        commentElement.innerHTML = `
+            <p><strong style="color:#de5b00;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path>
+                <path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" clip-rule="evenodd"></path>
+            </svg> <span style="font-size: 20px;">${comment.username} :</span></strong></p>
+            <p>${comment.text}</p>`;
+        return commentElement;
     }
 
     // Display existing comments on page load
     displayComments();
 
-    // Check if a user is logged in
-    const commentSec = document.getElementById("commentSec");
-const warn = document.getElementById("warn")
+    // Check if user is logged in
     const currentUser = sessionStorage.getItem('currentUser');
     if (!currentUser) {
         commentSec.style.display = "none";
-        warn.style.display = "block"
-        return;
+        warn.style.display = "block";
     }
 
     // Event listener for comment submission
@@ -688,6 +695,28 @@ const warn = document.getElementById("warn")
 
         // Clear the form
         commentForm.reset();
+    });
+
+    // Example: Adding a specific comment on button click
+    const addButton = document.getElementById('lkb');
+    addButton.addEventListener('click', function() {
+        const specificComment = {
+            username: currentUser, // You can set any username for this comment
+            text: '<i style="color:gray;">Liked A Video</i>'
+        };
+alert("Thanks For Your Like !")
+        // Get existing comments from local storage
+        const comments = getCommentsFromLocalStorage();
+
+        // Add the specific comment to the array of comments
+        comments.push(specificComment);
+
+        // Save updated comments to local storage
+        saveCommentsToLocalStorage(comments);
+
+        // Display comments again (including the new one)
+        displayComments();
+        
     });
 });
 
