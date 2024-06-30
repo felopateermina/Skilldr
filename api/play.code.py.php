@@ -588,20 +588,28 @@ document.addEventListener('DOMContentLoaded', function () {
     addButton.addEventListener('click', function() {
         const specificComment = {
             username: currentUser, // You can set any username for this comment
-            text: '<i style="color:gray;">Liked A Video</i>'
+            text: '<i style="color:gray;">Liked A Video: <?php 
+            echo $videoTitle;
+            ?> </i>'
         };
-alert("Thanks For Your Like !")
-        // Get existing comments from local storage
-        const comments = getCommentsFromLocalStorage();
 
-        // Add the specific comment to the array of comments
-        comments.push(specificComment);
 
-        // Save updated comments to local storage
-        saveCommentsToLocalStorage(comments);
+        if (!currentUser) {
+}else{
+        alert("Thanks For Your Like !");
+             // Get existing comments from local storage
+             const comments = getCommentsFromLocalStorage();
 
-        // Display comments again (including the new one)
-        displayComments();
+// Add the specific comment to the array of comments
+comments.push(specificComment);
+
+// Save updated comments to local storage
+saveCommentsToLocalStorage(comments);
+
+// Display comments again (including the new one)
+displayComments();
+    }
+   
         
     });
 });
