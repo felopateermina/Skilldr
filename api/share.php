@@ -58,8 +58,9 @@ button:hover {
 }
 @media screen and (max-width: 1023px) {
 .share{
-    width: 70%;
+    width: 90%;
 }
+
 }
     </style>
 </head>
