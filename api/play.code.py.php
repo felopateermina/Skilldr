@@ -345,7 +345,17 @@ box-shadow:  5px 5px 10px #000000,
     padding:7px;
     display:none;
 }
-
+#commentSec{
+    display: none;
+}
+#showComments{
+    width:60%;
+}
+@media screen and (max-width:1023px) {
+    #showComments{
+        width:100%;
+    }
+}
 </style>
 
 </head>
@@ -487,6 +497,8 @@ box-shadow:  5px 5px 10px #000000,
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
+                <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
+
         <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
@@ -544,6 +556,21 @@ document.addEventListener('DOMContentLoaded', function () {
         return commentElement;
     }
 
+    let sc = document.getElementById("showComments");
+
+sc.addEventListener("click", function() {
+    if (commentSec.style.display === "none" || commentSec.style.display === "") {
+        commentSec.style.display = "block";
+    } else {
+        commentSec.style.display = "none";
+    }
+});
+// Display existing comments on page load
+displayComments();
+
+
+
+
     // Display existing comments on page load
     displayComments();
 
@@ -552,6 +579,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!currentUser) {
         commentSec.style.display = "none";
         warn.style.display = "block";
+        sc.style.display = "none";
+
     }
 
     // Event listener for comment submission
