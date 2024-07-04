@@ -1,28 +1,28 @@
 <?php
 $products = [
     [
-        'name' => 'programming html css js javascript python',
+        'name' => 'programming html css js javascript python coding tutorials code examples best programming languages coding challenges programming for beginners web development responsive web design web development frameworks front-end development back-end development full-stack development game development unity game development unreal engine tutorials game physics game AI programming game optimization techniques data science machine learning machine learning algorithms python for data science data visualization deep learning frameworks mobile app development',
         'price' => "How To Learn Programming With Love ?",
         'category' => 'Programming',
         'time' => "2/11/2023",
         'id' => "../html/code/intro.html",
     ],
     [
-        'name' => 'learn javascript course of javascript i need to learn javascript js',
+        'name' => 'javascript js javascript tutorials javascript examples javascript projects javascript frameworks javascript libraries javascript functions javascript arrays javascript objects javascript async programming javascript es6 javascript promises javascript closures javascript event handling javascript dom manipulation javascript api javascript node.js javascript react.js javascript angular.js javascript vue.js javascript performance optimization javascript debugging javascript best practices',
         'price' => "Learn Javascript with love in Arabic and English",
         'category' => 'Programming',
         'time' => "15/12/2023",
         'id' => "play.code.web-dev.php?id=3",
     ],
     [
-        'name' => 'learn html course of html i need to learn html',
+        'name' => 'HTML tutorial HTML tags list HTML examples HTML form HTML tables HTML CSS tutorial HTML code examples HTML div tag HTML5 tutorial HTML image tag HTML attributes HTML links HTML lists HTML head tag HTML body tag HTML meta tags HTML responsive design HTML layout HTML semantics HTML best practices HTML editor HTML validation HTML templates HTML colors HTML forms tutorial HTML input types HTML buttons HTML audio tag HTML video tag HTML canvas',
         'price' => "Learn HTML with love in Arabic and English",
         'category' => 'Programming',
         'time' => "15/12/2023",
         'id' => "play.code.web-dev.php?id=1",
     ],
     [
-        'name' => 'learn css course of css i need to learn css',
+        'name' => 'CSS tutorial CSS examples CSS selectors CSS properties list CSS layout CSS grid CSS flexbox CSS animation CSS transitions CSS media queries CSS frameworks CSS preprocessors CSS box model CSS specificity CSS positioning CSS pseudo-classes CSS pseudo-elements',
         'price' => "Learn CSS with love in Arabic and English",
         'category' => 'Programming',
         'time' => "15/12/2023",
@@ -345,11 +345,7 @@ input{
                   id="search"
                   value="<?php echo $searchQuery;?>"
                 />
-                <button title="Search"  class="buttonofsearch" id="opensearchresults">
-                  <svg class="svgg" width="46" height="46" class="thde" fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m21.75 20.063-5.816-5.818a7.523 7.523 0 0 0 1.44-4.433c0-4.17-3.393-7.562-7.562-7.562-4.17 0-7.562 3.392-7.562 7.562s3.392 7.562 7.562 7.562a7.523 7.523 0 0 0 4.433-1.44l5.818 5.816 1.687-1.688ZM9.812 14.986a5.174 5.174 0 1 1-.002-10.35 5.174 5.174 0 0 1 0 10.349Z"></path>
-                  </svg>
-                </button>
+
 </form>
 <br><br>
       </div>
@@ -370,7 +366,7 @@ input{
             
             <h1 class="e404">404</h1>
             <h3 class="i404">Sorry! ... No Results Found.</h3>
-            <h6 style="font-weight: bold;color: gray;text-align: center;">*<a href="../html/Privacy&Policy.html" style="color:gray;">Privacy & Policy Terms</a>*</h6>
+            <h6 style="font-weight: bold;color: gray;text-align: center;"><a href="../index.html" style="color:gray;">Go Back Home ?</a> / <a href="../html/redeemcode.html" style="color:blue;">Win A Prize ?</a></h6>
 
             ';
 
