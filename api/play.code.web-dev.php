@@ -674,7 +674,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return commentElement;
     }
 
-
     let sc = document.getElementById("showComments");
 
 sc.addEventListener("click", function() {
@@ -684,6 +683,11 @@ sc.addEventListener("click", function() {
         commentSec.style.display = "none";
     }
 });
+// Display existing comments on page load
+displayComments();
+
+
+
 
     // Display existing comments on page load
     displayComments();
@@ -693,6 +697,8 @@ sc.addEventListener("click", function() {
     if (!currentUser) {
         commentSec.style.display = "none";
         warn.style.display = "block";
+        sc.style.display = "none";
+
     }
 
     // Event listener for comment submission
