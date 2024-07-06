@@ -3,6 +3,11 @@
 <head>
     <title>Register - Skilldr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
+      type="image/x-icon"
+    />
     <style>
         body {
             background-color: #001220;
@@ -14,11 +19,11 @@
         .rg-cont {
             display: flex;
             justify-content: center;
-            margin-top: 10px;
+            margin-top: 20px;
         }
         #registerForm {
-            background-color: black;
-            padding: 30px;
+            background-color: #000c15;
+            padding: 20px;
             border-radius: 10px;
             font-size: 20px;
             box-shadow: 5px 5px 5px #0f0f0f, -5px -5px 5px #000000;
@@ -44,7 +49,7 @@
         }
         button {
             padding: 10px;
-            width: 60%;
+            width: 50%;
             border-radius: 10px;
             outline: none;
             border: none;
@@ -55,12 +60,9 @@
             font-weight: bold;
         }
         @media screen and (max-width:1023px) {
-            body {
-                background-color: #000000;
-            }
             #registerForm {
             box-shadow: none;
-            width: 100%;
+            width: 95%;
         }
         }
     </style>
@@ -69,19 +71,49 @@
     <br>
     <div class="rg-cont">
         <form id="registerForm">
+            <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
             <h3>Register Now!</h3>
             <input placeholder="Enter Your Username" type="text" id="registerUsername" required><br>
             <span id="usernameError" class="error-message"></span>
 
             <input placeholder="Enter Your Password" type="password" id="registerPassword" required><br>
             <input placeholder="Enter Your Name" type="text" id="registerName" required><br>
-            <input placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br><br>
-            <a href="login.html" style="color: blue; font-size: 15px;">Have An Account?</a> / <a href="../index.html" style="font-size: 15px; color: rgb(255, 255, 255);">Back To Home?</a>
-            <br><br>
+            <input placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br>
+            
             <button type="submit">Register</button>
+            <br><br>
+            <a href="login.html" style="color: blue; font-size: 15px;">Have An Account?</a> / <a href="../index.html" style="font-size: 15px; color: rgb(255, 255, 255);">Back To Home?</a>
         </form>
     </div>
-    <br>
+    <br><br> <br><br>
+<div class="ins" style="text-align: left;padding: 20px;">
+    <h1>Online Safety Tips</h1>
+    <ul>
+        <li><strong style="color: #de5b00;">Use Strong Passwords:</strong><br>
+            Create complex passwords that include a mix of letters, numbers, and special characters. Avoid using easily guessable information such as birthdays or common words.</li>
+       <br> <li><strong style="color: #de5b00;">Enable Two-Factor Authentication:</strong><br>
+            Whenever possible, use two-factor authentication for an added layer of security.</li>
+            <br><li><strong style="color: #de5b00;">Be Cautious with Emails:</strong><br>
+            Do not open attachments or click on links from unknown senders. Be wary of phishing emails that ask for personal information or direct you to suspicious websites.</li>
+            <br><li><strong style="color: #de5b00;">Keep Software Up-to-Date:</strong><br>
+            Regularly update your operating system, browser, and other software to protect against security vulnerabilities.</li>
+            <br> <li><strong style="color: #de5b00;">Use Secure Connections:</strong><br>
+            Ensure websites are secure by looking for “https” in the URL and a padlock icon in the address bar. Avoid using public Wi-Fi for sensitive transactions, such as online banking.</li>
+            <br> <li><strong style="color: #de5b00;">Protect Personal Information:</strong><br>
+            Limit the amount of personal information you share online. Be mindful of the privacy settings on social media platforms and review them regularly.</li>
+            <br><li><strong style="color: #de5b00;">Beware of Scams:</strong><br>
+            Be cautious of offers that seem too good to be true. Verify the legitimacy of websites and online stores before making purchases.</li>
+            <br> <li><strong style="color: #de5b00;">Regularly Monitor Accounts:</strong><br>
+            Check your financial and online accounts regularly for any unauthorized activity. Report any suspicious activity to the appropriate authorities immediately.</li>
+            <br> <li><strong style="color: #de5b00;">Use Antivirus Software:</strong><br>
+            Install and maintain antivirus software to protect against malware and other threats. Perform regular scans to detect and remove any potential threats.</li>
+            <br><li><strong style="color: #de5b00;">Educate Yourself:</strong><br>
+            Stay informed about the latest online security threats and best practices. Participate in online safety courses and follow reputable cybersecurity blogs and websites.</li>
+    </ul>
+</div>
+<footer>
+    <h2>Skill<span style="color: #de5b00;">dr.</span></h2>
+</footer>
     <script>
         // Handle user registration
         document.getElementById('registerForm').addEventListener('submit', function(event) {
@@ -119,7 +151,6 @@
                 alert('Please enter valid details.');
             }
         });
-
         // Disable right-click context menu
         document.addEventListener('contextmenu', event => event.preventDefault());
 

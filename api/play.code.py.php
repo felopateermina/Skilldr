@@ -106,7 +106,7 @@ h1 {
     .desc{
         background-color: 
         black;
-        width: 60%;
+        width: 100%;
         border-radius: 10px;
         padding: 8px;
              font-weight: 700;
@@ -269,7 +269,7 @@ box-shadow:  5px 5px 10px #000000,
     border-radius: 10px;
     padding: 15px;
     margin-top: 20px;
-    width: 60%;
+    width: 100%;
 }
 .comment-section h3 {
     font-weight: bold;
@@ -349,11 +349,20 @@ box-shadow:  5px 5px 10px #000000,
     display: none;
 }
 #showComments{
-    width:60%;
+    width:100%;
 }
 @media screen and (max-width:1023px) {
     #showComments{
         width:100%;
+    }
+}
+
+#jj{
+    width:48.92%;
+}
+@media screen and (max-width:1023px) {
+    #jj{
+        width:47%;
     }
 }
 </style>
@@ -401,7 +410,6 @@ box-shadow:  5px 5px 10px #000000,
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             Warning: You haven't signed in yet.
     </div>
-    <br>
     <div class="container">
         <div class="mainvids">
 
@@ -458,21 +466,21 @@ box-shadow:  5px 5px 10px #000000,
                 $dislikeNo = $selectedVideo['dislikeNo'];
                 $saveNo = $selectedVideo['saveNo'];
                 echo "<div class='video-player'>";
-                echo "<iframe width='560' height='315' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
+                echo "<iframe width='100%' height='400' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";
                     echo "<h2 class='formobilelabel'>$videoTitle</h2>";
                 
                     echo "<div class='buttons'>";
-            echo "<button id='lkb' class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
-            echo "<button class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
-            echo "<button class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
+            echo "<button style='font-weight:bold;' id='lkb' class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
+            echo "<button style='font-weight:bold;' class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
+            echo "<button style='font-weight:bold;' class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
             echo "<br>";
             echo "<br>";
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Page</a>";
-            echo "<a href='../html/report.html' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
+            echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Page</a>";
+            echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "</div>";
                     echo "<br>";
                 echo "<div class='desc'>";
