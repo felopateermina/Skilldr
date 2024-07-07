@@ -775,10 +775,10 @@ displayComments();
 <br><br><br><br>
 <h6 style="font-weight: bold;color: white;text-align: center;color:white;">* <a href="../html/Privacy&Policy.html" style="color:white;">Privacy & Policy Terms</a> *</h6>
 <br>
-<footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+<footer style="background-color: #000c15; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felopateer ♡</span>
-<br><br>
+<h4>© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">Felopateer Mina</span></h4>
+<br>
 
 <div class="icons" style="display: flex;text-align: center;justify-content: center;">
 
@@ -799,7 +799,7 @@ displayComments();
     <path d="M2.756 20.584a.75.75 0 0 1-.506-.71c0-3.426.688-6.166 2.046-8.144C5.936 9.338 8.525 8.052 12 7.891V4.125a.75.75 0 0 1 1.268-.542l8.25 7.875a.75.75 0 0 1 0 1.084l-8.25 7.875A.75.75 0 0 1 12 19.875v-3.74c-2.11.064-3.703.406-4.972 1.062-1.371.709-2.365 1.768-3.437 3.14a.75.75 0 0 1-.835.248Z"></path>
   </svg>
 </a>
-
+</div>
 </footer>
 <script>
     // Disable right-click context menu

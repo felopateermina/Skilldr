@@ -652,10 +652,10 @@ displayComments();
 <br><br><br><br>
 <h6 style="font-weight: bold;color: white;text-align: center;color:white;">* <a href="../html/Privacy&Policy.html" style="color:white;">Privacy & Policy Terms</a> *</h6>
 <br>
-<footer style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+<footer style="background-color: #000c15; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<span style="font-weight: 700;color: #de5b00;">© 2023 Skilldr. Made by Felopateer ♡</span>
-<br><br>
+<h4>© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">Felopateer Mina</span></h4>
+<br>
 
 <div class="icons" style="display: flex;text-align: center;justify-content: center;">
 

@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REDEEM CODE - Skilldr</title>
+    <title>Redeem Code - Skilldr</title>
+        
+    <link
+      rel="shortcut icon"
+      href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
+      type="image/x-icon"
+    />
     <style>
             body{
         background-color: #001220;
@@ -19,7 +25,7 @@ margin-top: 10px;
     }
   
     #registerForm{
-      background-color: black;
+        background-color: #000c15;
       padding: 30px;
       border-radius: 10px;
       font-size: 20px;
@@ -60,23 +66,43 @@ box-shadow:  5px 5px 5px #0f0f0f,
 <body>
     <br><br><br><br>
     <div class="rg-cont">
-        <form id="registerForm" method="get" action="../api/result.php" class="search_form">
+        <form id="registerForm" method="get" action="../api/resultcodes.php" class="search_form">
+            <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
+
             <h3>Redeem Code Now !</h3>
 
             <input
-                title="REDEEM CODE"
+                title="Redeem Now!"
                 type="search"
                 name="query"
-                placeholder="REDEEM CODE ..."
+                placeholder="Redeem Now!"
                 id="search"
             />
     
     
-    <button class="submit">REDEEM</button><br><br>
-    <i>*Now, You can receive a prize or gift for redeeming a code* <a href="https://x.com/Felopateer66264" target="_blank" style="color: blue;">Check Codes</a></i>
+    <button class="submit">Let's Go !</button><br><br>
+    <i style="font-size: 15px;">*Now, You can receive a prize or gift for redeeming a code* <a href="https://x.com/Felopateer66264" target="_blank" style="color: blue;">Check Codes</a></i>
     </form>
     </div>
-   
+    <br> 
+    <div class="instructions" style="text-align: left;padding: 20px;">
+        <h2 style="color: #de5b00;">How It Works:</h2>
+        <p>1. Enter the code you received in the field above.</p>
+        <p>2. Click on the "Let's Go !" button.</p>
+        <p>3. Your prize will be automatically applied to your account.</p>
+        <h2 style="color: #de5b00;">Note:</h2>
+        <p>- Each code can only be used once.</p>
+        <p>- Ensure you enter the code exactly as you received it.</p>
+        <p>- If you encounter any issues, please contact our support team.</p>
+        <h2 style="color: #de5b00;">Terms and Conditions:</h2>
+        <p>- Redeemed prizes are subject to availability.</p>
+        <p>- Codes must be redeemed by their expiration date.</p>
+        <p>- Prizes are non-transferable and cannot be exchanged for cash.</p>
+    </div>
+    <br><br>
+    <footer>
+        <h2>Skill<span style="color: #de5b00;">dr.</span></h2>
+    </footer>
 <script>
     // Disable right-click context menu
     document.addEventListener('contextmenu', event => event.preventDefault());

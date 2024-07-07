@@ -1,81 +1,11 @@
 <?php
 $products = [
     [
-        'name' => 'programming html css js javascript python coding tutorials code examples best programming languages coding challenges programming for beginners web development responsive web design web development frameworks front-end development back-end development full-stack development game development unity game development unreal engine tutorials game physics game AI programming game optimization techniques data science machine learning machine learning algorithms python for data science data visualization deep learning frameworks mobile app development',
-        'price' => "How To Learn Programming With Love ?",
-        'category' => 'Programming',
-        'time' => "2/11/2023",
-        'id' => "../html/code/intro.html",
-    ],
-    [
-        'name' => 'javascript js javascript tutorials javascript examples javascript projects javascript frameworks javascript libraries javascript functions javascript arrays javascript objects javascript async programming javascript es6 javascript promises javascript closures javascript event handling javascript dom manipulation javascript api javascript node.js javascript react.js javascript angular.js javascript vue.js javascript performance optimization javascript debugging javascript best practices',
-        'price' => "Learn Javascript with love in Arabic and English",
-        'category' => 'Programming',
+        'name' => '𝒟𝒢𝒥𝒦𝒪𝒯𝒶𝒵',
+        'price' => "CAR SERVICES WEBSITE TEMPLATE",
+        'category' => '🎉 Code Prize 🎉',
         'time' => "15/12/2023",
-        'id' => "play.code.web-dev.php?id=3",
-    ],
-    [
-        'name' => 'html html tutorials html examples html5 html tags html forms html tables html attributes html elements html semantics html templates html best practices html css html js html responsive design html accessibility html seo html canvas html audio html video html svg html boilerplate html forms validation html meta tags html semantic elements html layout html email templates',
-        'price' => "Learn HTML with love in Arabic and English",
-        'category' => 'Programming',
-        'time' => "15/12/2023",
-        'id' => "play.code.web-dev.php?id=1",
-    ],
-    [
-        'name' => 'css css tutorials css examples css3 css selectors css properties css animations css transitions css flexbox css grid css layouts css frameworks css libraries css best practices css variables css typography css responsive design css media queries css preprocessors sass css bootstrap css materialize css tailwind css css hover effects css position css display css box model css z-index css pseudo-classes css pseudo-elements',
-        'price' => "Learn CSS with love in Arabic and English",
-        'category' => 'Programming',
-        'time' => "15/12/2023",
-        'id' => "play.code.web-dev.php?id=2",
-    ],
-    [
-        'name' => 'web development web development tutorials web development frameworks web development tools front-end development back-end development full-stack development responsive web design web development best practices web development projects web development languages html css javascript react.js angular.js vue.js node.js express.js web development libraries web development trends web development courses web development bootcamps web development certifications web development jobs web development salary web development career path web development portfolio web development for beginners web development roadmap',
-        'price' => "Learn Web Development with love in Arabic and English",
-        'category' => 'Programming',
-        'time' => "15/12/2023",
-        'id' => "video.code.web-dev.php",
-    ],
-    [
-        'name' => 'mysql mysql tutorials mysql examples mysql database mysql queries mysql syntax mysql commands mysql joins mysql stored procedures mysql indexing mysql optimization mysql performance tuning mysql backup mysql restore mysql replication mysql clustering mysql security mysql workbench mysql php mysql node.js mysql java mysql python mysql connection mysql database design mysql normalization mysql foreign keys mysql constraints mysql triggers mysql functions mysql transactions',
-        'price' => "Learn MYSQL In 2024",
-        'category' => 'Programming',
-        'time' => "21/5/2024",
-        'id' => "play.code.web-dev.php?id=7",
-    ],
-    [
-        'name' => 'laravel laravel tutorials laravel examples laravel framework laravel installation laravel setup laravel controllers laravel models laravel views laravel routes laravel migrations laravel eloquent laravel blade templating laravel authentication laravel authorization laravel middleware laravel api development laravel rest api laravel crud laravel validation laravel form handling laravel sessions laravel caching laravel deployment laravel best practices laravel packages laravel artisan commands laravel queues laravel event handling laravel testing laravel performance optimization laravel security laravel projects',
-        'price' => "Learn Laravel In 2024",
-        'category' => 'Programming',
-        'time' => "21/5/2024",
-        'id' => "play.code.web-dev.php?id=8",
-    ],
-    [
-        'name' => 'python python tutorials python examples python programming python for beginners python projects python scripts python functions python libraries python frameworks python data science python machine learning python web development python django python flask python pandas python numpy python matplotlib python seaborn python scikit-learn python tensorflow python keras python data analysis python automation python scripting python file handling python exceptions python debugging python best practices python performance optimization python oop python threading python asyncio python regex python gui python tkinter python projects for beginners',
-        'price' => "Learn Python In 2024 In Arabic And English",
-        'category' => 'Programming',
-        'time' => "27/6/2024",
-        'id' => "video.code.py.php",
-    ],
-    [
-        'name' => 'type fast type faster typing fast typing speed typing speed test improve typing speed typing practice touch typing learn touch typing typing exercises typing games typing lessons typing courses typing accuracy typing techniques typing tutorials typing programs typing apps typing software typing drills typing challenges typing tests online typing test typing trainer fast typing tips typing skills keyboard shortcuts typing efficiency typing for beginners typing master typing fast on computer typing fast on keyboard increase typing speed fast typing practice',
-        'price' => "Learn Typing Fast In 2024.",
-        'category' => 'Typing Fast',
-        'time' => "29/6/2024",
-        'id' => "../html/typefast/typefast.html",
-    ],
-    [
-        'name' => 'php php tutorials php examples php programming php for beginners php projects php scripts php functions php arrays php objects php classes php oops php form handling php file handling php sessions php cookies php mysql php pdo php mysqli php laravel php codeigniter php symfony php composer php artisan php api development php rest api php validation php authentication php authorization php security php debugging php performance optimization php best practices php error handling php mvc framework php cms development php wordpress development php projects for beginners',
-        'price' => "Learn PHP In 2024 In Arabic.",
-        'category' => 'Programming',
-        'time' => "5/7/2024",
-        'id' => "play.code.web-dev.php?id=6",
-    ],
-    [
-        'name' => 'php php tutorials php examples php programming php for beginners php projects php scripts php functions php arrays php objects php classes php oops php form handling php file handling php sessions php cookies php mysql php pdo php mysqli php laravel php codeigniter php symfony php composer php artisan php api development php rest api php validation php authentication php authorization php security php debugging php performance optimization php best practices php error handling php mvc framework php cms development php wordpress development php projects for beginners',
-        'price' => "Learn PHP In 2024 In English.",
-        'category' => 'Programming',
-        'time' => "5/7/2024",
-        'id' => "play.code.web-dev.php?id=13",
+        'id' => "https://easyupload.io/zlxhgo",
     ],
 ];
 
@@ -344,7 +274,7 @@ input{
     </nav>
     <br>
     <div class="search_bar">
-      <form method="get" action="result.php" style="display: flex; justify-content: center" class="search_form">
+      <form method="get" action="resultcodes.php" style="display: flex; justify-content: center" class="search_form">
                 <input
                   type="search"
                   title="Search - '<?php echo $searchQuery;?>'"
@@ -383,8 +313,8 @@ input{
     </div>
 
 <script>
-if(window.location.href == "https://skilldr.vercel.app/api/result.php?query=" || window.location.href == "https://skilldr.vercel.app/api/result.php?query=+" || window.location.href == "https://skilldr.vercel.app/api/result.php?query" || window.location.href == "https://skilldr.vercel.app/api/result.php"){
-  window.location.href = "https://skilldr.vercel.app/api/result.php?query=Sorry, Nothing To See...!";
+if(window.location.href == "https://skilldr.vercel.app/api/resultcodes.php?query=" || window.location.href == "https://skilldr.vercel.app/api/resultcodes.php?query=+" || window.location.href == "https://skilldr.vercel.app/api/resultcodes.php?query" || window.location.href == "https://skilldr.vercel.app/api/resultcodes.php"){
+  window.location.href = "https://skilldr.vercel.app/api/resultcodes.php?query=Sorry, Nothing To See...!";
 }
 </script>
 <script>
