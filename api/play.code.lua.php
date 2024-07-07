@@ -110,7 +110,7 @@ h1 {
         border-radius: 10px;
         padding: 8px;
              font-weight: 700;
-
+             font-size:18px;
 background: #0f0f0f;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
