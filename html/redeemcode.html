@@ -21,7 +21,6 @@
     .rg-cont{
         display: flex;
   justify-content: center;
-margin-top: 10px;
     }
   
     #registerForm{
@@ -56,15 +55,15 @@ box-shadow:  5px 5px 5px #0f0f0f,
         color: white;
         font-weight: bold;
     }
-    @media screen and (max-width:1023px) {
-            body{
-                background-color: #000000;
-            }
-        }
+@media screen and (max-width:1023px) {
+    #registerForm{
+        box-shadow: none;
+    }
+}
     </style>
 </head>
 <body>
-    <br><br><br><br>
+    <br><br>
     <div class="rg-cont">
         <form id="registerForm" method="get" action="../api/resultcodes.php" class="search_form">
             <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
