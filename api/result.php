@@ -351,6 +351,7 @@ input{
                   name="query"
                   placeholder="Search Skilldr..."
                   id="search"
+                  required
                   value="<?php echo $searchQuery;?>"
                 />
 

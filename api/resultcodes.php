@@ -277,11 +277,12 @@ input{
       <form method="get" action="resultcodes.php" style="display: flex; justify-content: center" class="search_form">
                 <input
                   type="search"
-                  title="Search - '<?php echo $searchQuery;?>'"
+                  title="Code - '<?php echo $searchQuery;?>'"
                   name="query"
-                  placeholder="Search Skilldr..."
+                  placeholder="Redeem Code..."
                   id="search"
                   value="<?php echo $searchQuery;?>"
+                  required
                 />
 
 </form>
