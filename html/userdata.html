@@ -13,46 +13,65 @@
             padding: 10px;
             border: 1px solid #ccc;
         }
+        #pinPrompt {
+            display: none;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <h2>User Data Page:-</h2>
-    <p>Welcome, <span id="usernameDisplay"></span>!</p>
-    <p>Email: <span id="emailDisplay"></span></p>
-    <button id="logoutButton">Logout</button>
-    <a href="../index.html">Back Home</a>
+    <div id="pinPrompt">
+        <label for="pinInput">Enter 4-digit PIN:</label>
+        <input type="number" id="pinInput" required>
+        <button id="submitPin">Submit</button>
+        <p id="pinError" style="color: red; display: none;">Invalid PIN. Please try again.</p>
+    </div>
+    <div id="userData" style="display: none;">
+        <p>Welcome, <span id="usernameDisplay"></span>!</p>
+        <p>Email: <span id="emailDisplay"></span></p>
+        <button id="logoutButton">Logout</button>
+        <a href="../index.html">Back Home</a>
+        <div id="commentsContainer" style="padding: 40px; font-weight: bold;"></div>
+    </div>
 
-    <!-- Container for displaying comments -->
-    <div id="commentsContainer" style="padding: 40px;font-weight: bold;"></div>
-<script>
-           document.addEventListener('DOMContentLoaded', function () {
-            // Display username and email
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             const currentUser = sessionStorage.getItem('currentUser');
-            if (currentUser) {
-                const storedUser = JSON.parse(localStorage.getItem(currentUser));
-                document.getElementById('usernameDisplay').textContent = storedUser.name;
-                document.getElementById('emailDisplay').textContent = storedUser.email;
-            } else {
+            const storedUser = currentUser ? JSON.parse(localStorage.getItem(currentUser)) : null;
+            const userPin = sessionStorage.getItem('userPin');
+
+            if (!currentUser || !storedUser || !userPin) {
                 window.location.href = 'login.html';
                 return;
             }
 
-            // Logout button functionality
-            document.getElementById('logoutButton').addEventListener('click', function() {
+            document.getElementById('pinPrompt').style.display = 'block';
+
+            document.getElementById('submitPin').addEventListener('click', function () {
+                const enteredPin = document.getElementById('pinInput').value;
+                if (enteredPin === userPin) {
+                    document.getElementById('pinPrompt').style.display = 'none';
+                    document.getElementById('userData').style.display = 'block';
+                    document.getElementById('usernameDisplay').textContent = storedUser.name;
+                    document.getElementById('emailDisplay').textContent = storedUser.email;
+                    displayComments();
+                } else {
+                    document.getElementById('pinError').style.display = 'block';
+                }
+            });
+
+            document.getElementById('logoutButton').addEventListener('click', function () {
                 sessionStorage.removeItem('currentUser');
+                sessionStorage.removeItem('userPin');
                 window.location.href = '../other/logout.html';
             });
-        });
-</script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to retrieve comments from local storage
+
             function getCommentsFromLocalStorage() {
                 const comments = localStorage.getItem('comments');
                 return comments ? JSON.parse(comments) : [];
             }
 
-            // Function to display comments
             function displayComments() {
                 const commentsContainer = document.getElementById('commentsContainer');
                 commentsContainer.innerHTML = ''; // Clear existing content
@@ -61,13 +80,12 @@
                     commentsContainer.innerHTML = '<p>No DATA yet.</p>';
                     return;
                 }
-                comments.forEach(function(comment) {
+                comments.forEach(function (comment) {
                     const commentElement = createCommentElement(comment);
                     commentsContainer.appendChild(commentElement);
                 });
             }
 
-            // Function to create a comment element
             function createCommentElement(comment) {
                 const commentElement = document.createElement('div');
                 commentElement.classList.add('comment');
@@ -79,29 +97,7 @@
                     <p>${comment.text}</p>`;
                 return commentElement;
             }
-
-            // Display existing comments on page load
-            displayComments();
-
-            // Logout button functionality
-            document.getElementById('logoutButton').addEventListener('click', function() {
-                sessionStorage.removeItem('currentUser');
-                window.location.href = '../other/logout.html';
-            });
         });
     </script>
-    <!-- <script>
-        // Disable right-click context menu
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    
-        // Disable specific keyboard shortcuts
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
-                (event.ctrlKey && event.shiftKey && event.key === "J") || 
-                (event.ctrlKey && event.key === "U")) {
-                event.preventDefault();
-            }
-        });
-    </script> -->
 </body>
 </html>

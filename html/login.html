@@ -3,36 +3,29 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Skilldr</title>
-    
-    <link
-      rel="shortcut icon"
-      href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon"/>
     <style>
-        body{
+        body {
             background-color: #001220;
             color: white;
             font-family: sans-serif;
             font-weight: bold;
             text-align: center;
         }
-        .rg-cont{
+        .rg-cont {
             display: flex;
-  justify-content: center;
-margin-top: 70px;
+            justify-content: center;
+            margin-top: 70px;
         }
-
-        #loginForm{
+        #loginForm {
             background-color: #000c15;
-          padding: 20px;
-          border-radius: 10px;
-          font-size: 20px;
-    box-shadow:  5px 5px 5px #0f0f0f,
-                 -5px -5px 5px #000000;
-                 width: 70%;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 5px 5px 5px #0f0f0f, -5px -5px 5px #000000;
+            width: 70%;
         }
-        input{
+        input {
             padding: 15px;
             width: 90%;
             border-radius: 10px;
@@ -43,7 +36,7 @@ margin-top: 70px;
             color: #de5b00;
             font-weight: bold;
         }
-        button{
+        button {
             padding: 10px;
             width: 50%;
             border-radius: 10px;
@@ -55,12 +48,11 @@ margin-top: 70px;
             color: white;
             font-weight: bold;
         }
-        
-        @media screen and (max-width:1023px){
-            #loginForm{
+        @media screen and (max-width: 1023px) {
+            #loginForm {
                 width: 95%;
                 box-shadow: none;
-        }
+            }
         }
     </style>
 </head>
@@ -71,79 +63,81 @@ margin-top: 70px;
         <h3>Login In Now!</h3>
         <input placeholder="Enter Your Username" type="text" id="loginUsername" required><br>
         <input placeholder="Enter Your Password" type="password" id="loginPassword" required><br>
-       
+        <input placeholder="Set Your PIN (4-digit)" type="number" id="loginPin" required><br>
         <button id="submit" type="submit">Login</button>
-         <br><br>
-         <a href="sign.html" style="color: blue;font-size: 15px;">Don't Have An Account?</a> / <a href="../index.html" style="font-size: 15px;color: rgb(255, 255, 255);">Back To Home?</a>
-
-     
+        <br><br>
+        <a href="sign.html" style="color: blue; font-size: 15px;">Don't Have An Account?</a> / <a href="../index.html" style="font-size: 15px; color: rgb(255, 255, 255);">Back To Home?</a>
     </form>
 </div>
 <br><br> <br><br>
-<div class="ins" style="text-align: left;padding: 20px;">
+<div class="ins" style="text-align: left; padding: 20px;">
     <h1>Online Safety Tips</h1>
     <ul>
-        <li><strong style="color: #de5b00;">Use Strong Passwords:</strong><br>
-            Create complex passwords that include a mix of letters, numbers, and special characters. Avoid using easily guessable information such as birthdays or common words.</li>
-       <br> <li><strong style="color: #de5b00;">Enable Two-Factor Authentication:</strong><br>
-            Whenever possible, use two-factor authentication for an added layer of security.</li>
-            <br><li><strong style="color: #de5b00;">Be Cautious with Emails:</strong><br>
-            Do not open attachments or click on links from unknown senders. Be wary of phishing emails that ask for personal information or direct you to suspicious websites.</li>
-            <br><li><strong style="color: #de5b00;">Keep Software Up-to-Date:</strong><br>
-            Regularly update your operating system, browser, and other software to protect against security vulnerabilities.</li>
-            <br> <li><strong style="color: #de5b00;">Use Secure Connections:</strong><br>
-            Ensure websites are secure by looking for “https” in the URL and a padlock icon in the address bar. Avoid using public Wi-Fi for sensitive transactions, such as online banking.</li>
-            <br> <li><strong style="color: #de5b00;">Protect Personal Information:</strong><br>
-            Limit the amount of personal information you share online. Be mindful of the privacy settings on social media platforms and review them regularly.</li>
-            <br><li><strong style="color: #de5b00;">Beware of Scams:</strong><br>
-            Be cautious of offers that seem too good to be true. Verify the legitimacy of websites and online stores before making purchases.</li>
-            <br> <li><strong style="color: #de5b00;">Regularly Monitor Accounts:</strong><br>
-            Check your financial and online accounts regularly for any unauthorized activity. Report any suspicious activity to the appropriate authorities immediately.</li>
-            <br> <li><strong style="color: #de5b00;">Use Antivirus Software:</strong><br>
-            Install and maintain antivirus software to protect against malware and other threats. Perform regular scans to detect and remove any potential threats.</li>
-            <br><li><strong style="color: #de5b00;">Educate Yourself:</strong><br>
-            Stay informed about the latest online security threats and best practices. Participate in online safety courses and follow reputable cybersecurity blogs and websites.</li>
+        <li><strong style="color: #de5b00;">Use Strong Passwords:</strong><br>Create complex passwords that include a mix of letters, numbers, and special characters. Avoid using easily guessable information such as birthdays or common words.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Put The 4-digit PIN For Security:</strong><br>Whenever possible, use two-factor authentication for an added layer of security.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Be Cautious with Emails:</strong><br>Do not open attachments or click on links from unknown senders. Be wary of phishing emails that ask for personal information or direct you to suspicious websites.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Keep Software Up-to-Date:</strong><br>Regularly update your operating system, browser, and other software to protect against security vulnerabilities.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Use Secure Connections:</strong><br>Ensure websites are secure by looking for “https” in the URL and a padlock icon in the address bar. Avoid using public Wi-Fi for sensitive transactions, such as online banking.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Protect Personal Information:</strong><br>Limit the amount of personal information you share online. Be mindful of the privacy settings on social media platforms and review them regularly.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Beware of Scams:</strong><br>Be cautious of offers that seem too good to be true. Verify the legitimacy of websites and online stores before making purchases.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Regularly Monitor Accounts:</strong><br>Check your financial and online accounts regularly for any unauthorized activity. Report any suspicious activity to the appropriate authorities immediately.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Use Antivirus Software:</strong><br>Install and maintain antivirus software to protect against malware and other threats. Perform regular scans to detect and remove any potential threats.</li>
+        <br>
+        <li><strong style="color: #de5b00;">Educate Yourself:</strong><br>Stay informed about the latest online security threats and best practices. Participate in online safety courses and follow reputable cybersecurity blogs and websites.</li>
     </ul>
 </div>
 <footer>
     <h2>Skill<span style="color: #de5b00;">dr.</span></h2>
 </footer>
-    <script>
-        // Handle user login
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
+<script>
+    // Handle user login
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
 
-            const username = document.getElementById('loginUsername').value;
-            const password = document.getElementById('loginPassword').value;
+        const username = document.getElementById('loginUsername').value;
+        const password = document.getElementById('loginPassword').value;
+        const pin = document.getElementById('loginPin').value;
 
-            const storedUser = localStorage.getItem(username);
-            if (storedUser) {
-                const user = JSON.parse(storedUser);
+        if (pin.length !== 4) {
+            alert('PIN must be 4 digits');
+            return;
+        }
 
-                if (user.password === password) {
-                    sessionStorage.setItem('currentUser', username);
-                    window.location.href = '../other/successLogin.html';
-                } else {
-                    alert('Incorrect password.');
-                }
+        const storedUser = localStorage.getItem(username);
+        if (storedUser) {
+            const user = JSON.parse(storedUser);
+
+            if (user.password === password) {
+                sessionStorage.setItem('currentUser', username);
+                sessionStorage.setItem('userPin', pin);
+                window.location.href = 'userdata.html';
             } else {
-                alert('User not found.');
+                alert('Incorrect password.');
             }
-        });
-    </script>
-    <script>
-        // Disable right-click context menu
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    
-        // Disable specific keyboard shortcuts
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
-                (event.ctrlKey && event.shiftKey && event.key === "J") || 
-                (event.ctrlKey && event.key === "U")) {
-                event.preventDefault();
-            }
-        });
-    </script>
-    
+        } else {
+            alert('User not found.');
+        }
+    });
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+            (event.ctrlKey && event.shiftKey && event.key === "J") || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+</script>
 </body>
 </html>
