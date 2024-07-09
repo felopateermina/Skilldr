@@ -118,7 +118,7 @@
             if (user.password === password) {
                 sessionStorage.setItem('currentUser', username);
                 sessionStorage.setItem('userPin', pin);
-                window.location.href = 'userdata.html';
+                window.location.href = '../other/successLogin.html';
             } else {
                 alert('Incorrect password.');
             }
