@@ -4,37 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User-Data Page - Skilldr</title>
-    <style>
+<style>
         body {
             font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #de5b00;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #de5b00;
+        }
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #de5b00;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c65000;
+        }
+        .error {
+            color: red;
+            display: none;
         }
         .comment {
             margin-bottom: 20px;
             padding: 10px;
             border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #fafafa;
         }
-        #pinPrompt {
-            display: none;
+        .user-info, .actions {
             margin-bottom: 20px;
+        }
+        .actions a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #de5b00;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+        .password-section {
+            display: none;
         }
     </style>
 </head>
 <body>
-    <h2>User Data Page:-</h2>
-    <div id="pinPrompt">
-        <form action="#=?ref=tab?enter=sec.time?security=upgraded?account=protected?security.com?second.entry">
-        <label for="pinInput">Enter 4-digit PIN:</label>
-        <input type="number" id="pinInput" required>
-        <button id="submitPin">Submit</button>
-        <p id="pinError" style="color: red; display: none;">Invalid PIN. Please try again.</p>
-        </form>
-    </div>
-    <div id="userData" style="display: none;">
-        <p>Welcome, <span id="usernameDisplay"></span>!</p>
-        <p>Email: <span id="emailDisplay"></span></p>
-        <button id="logoutButton">Logout</button>
-        <a href="../index.html">Back Home</a>
-        <div id="commentsContainer" style="padding: 40px; font-weight: bold;"></div>
+    <div class="container">
+        <h2>User Data Page</h2>
+        <div id="pinPrompt">
+            <form action="#?ref=tab?security.com">
+                <label for="pinInput">Enter 4-digit PIN:</label>
+                <input type="number" id="pinInput" required>
+                <button id="submitPin" type="button">Submit</button>
+                <p id="pinError" class="error">Invalid PIN. Please try again.</p>
+            </form>
+        </div>
+        <div id="userData" style="display: none;">
+            <div class="user-info">
+                <p>Welcome, <span id="usernameDisplay"></span>!</p>
+                <p>Email: <span id="emailDisplay"></span></p>
+            </div>
+            <div class="actions">
+                <button id="showPasswordButton">Show Password</button>
+                <br>
+                <button id="logoutButton">Logout</button>
+                <a href="../index.html">Back Home</a>
+            </div>
+            <div id="commentsContainer"></div>
+        </div>
+        <div id="passwordPrompt" class="password-section">
+            <form action="#?ref=tab?security.com">
+                <label for="passwordPinInput">Enter 4-digit PIN to view password:</label>
+                <input type="number" id="passwordPinInput" required>
+                <button id="submitPasswordPin" type="button">Submit</button><br>
+                <p id="passwordDisplay" style="display: none;">Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
+<br>
+                <button style="border-radius: 0px;" onclick="window.location.href = 'userdata.html'" type="button">Back To Data</button>
+                <button style="border-radius: 0px;" onclick="window.location.href = '../index.html'" type="button">Back Home</button>
+                <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
+            </form>
+            <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
+        </div>
     </div>
 
     <script>
@@ -60,6 +147,22 @@
                     displayComments();
                 } else {
                     document.getElementById('pinError').style.display = 'block';
+                }
+            });
+
+            document.getElementById('showPasswordButton').addEventListener('click', function () {
+                document.getElementById('userData').style.display = 'none';
+                document.getElementById('passwordPrompt').style.display = 'block';
+            });
+
+            document.getElementById('submitPasswordPin').addEventListener('click', function () {
+                const enteredPin = document.getElementById('passwordPinInput').value;
+                if (enteredPin === userPin) {
+                    document.getElementById('passwordPinError').style.display = 'none';
+                    document.getElementById('passwordText').textContent = storedUser.password;
+                    document.getElementById('passwordDisplay').style.display = 'block';
+                } else {
+                    document.getElementById('passwordPinError').style.display = 'block';
                 }
             });
 
@@ -92,10 +195,7 @@
                 const commentElement = document.createElement('div');
                 commentElement.classList.add('comment');
                 commentElement.innerHTML = `
-                    <p><strong style="color:#de5b00;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M16 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path>
-                        <path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1ZM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0 1 12.065 14a8.984 8.984 0 0 1 7.092 3.458A9 9 0 1 0 3 12Zm9 9a8.963 8.963 0 0 1-5.672-2.012A6.992 6.992 0 0 1 12.065 16a6.991 6.991 0 0 1 5.689 2.92A8.964 8.964 0 0 1 12 21Z" clip-rule="evenodd"></path>
-                    </svg> <span style="font-size: 20px;">${comment.username} :</span></strong></p>
+                    <p><strong style="color:#de5b00;">@ ${comment.username} :</strong></p>
                     <p>${comment.text}</p>`;
                 return commentElement;
             }
