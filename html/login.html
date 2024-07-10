@@ -48,6 +48,11 @@
             color: white;
             font-weight: bold;
         }
+        .error {
+            color: red;
+            display: none;
+            margin-top: 5px;
+        }
         @media screen and (max-width: 1023px) {
             #loginForm {
                 width: 95%;
@@ -61,12 +66,19 @@
     <form id="loginForm">
         <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
         <h3>Login In Now!</h3>
+        <div id="errorContainer">
+            <p id="usernameError" class="error">Username is required.</p>
+            <p id="passwordError" class="error">Password is required.</p>
+            <p id="pinError" class="error">PIN must be 4 digits.</p>
+            <p id="loginError" class="error">Incorrect username or password.</p>
+        </div>
         <input placeholder="Enter Your Username" type="text" id="loginUsername" required><br>
         <input placeholder="Enter Your Password" type="password" id="loginPassword" required><br>
         <input placeholder="Set Your PIN (4-digit)" type="number" id="loginPin" required><br>
         <button id="submit" type="submit">Login</button>
         <br><br>
         <a href="sign.html" style="color: blue; font-size: 15px;">Don't Have An Account?</a> / <a href="../index.html" style="font-size: 15px; color: rgb(255, 255, 255);">Back To Home?</a>
+
     </form>
 </div>
 <br><br> <br><br>
@@ -102,15 +114,40 @@
     document.getElementById('loginForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
 
-        const username = document.getElementById('loginUsername').value;
-        const password = document.getElementById('loginPassword').value;
-        const pin = document.getElementById('loginPin').value;
+        // Reset error messages
+        document.getElementById('usernameError').style.display = 'none';
+        document.getElementById('passwordError').style.display = 'none';
+        document.getElementById('pinError').style.display = 'none';
+        document.getElementById('loginError').style.display = 'none';
 
-        if (pin.length !== 4) {
-            alert('PIN must be 4 digits');
-            return;
+        // Get input values
+        const username = document.getElementById('loginUsername').value.trim();
+        const password = document.getElementById('loginPassword').value.trim();
+        const pin = document.getElementById('loginPin').value.trim();
+
+        // Validate inputs
+        let isValid = true;
+
+        if (username === '') {
+            document.getElementById('usernameError').style.display = 'block';
+            isValid = false;
         }
 
+        if (password === '') {
+            document.getElementById('passwordError').style.display = 'block';
+            isValid = false;
+        }
+
+        if (pin.length !== 4 || isNaN(pin)) {
+            document.getElementById('pinError').style.display = 'block';
+            isValid = false;
+        }
+
+        if (!isValid) {
+            return; // Exit function if any validation fails
+        }
+
+        // Check credentials and redirect if valid
         const storedUser = localStorage.getItem(username);
         if (storedUser) {
             const user = JSON.parse(storedUser);
@@ -120,10 +157,10 @@
                 sessionStorage.setItem('userPin', pin);
                 window.location.href = '../other/successLogin.html';
             } else {
-                alert('Incorrect password.');
+                document.getElementById('loginError').style.display = 'block';
             }
         } else {
-            alert('User not found.');
+            document.getElementById('loginError').style.display = 'block';
         }
     });
 
