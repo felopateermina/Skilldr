@@ -214,6 +214,13 @@
                     'thumbnail' => 'https://i.ytimg.com/vi/mvZHDpCHphk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCnbMi_h1t-_fAQ2BEl0xZAhLGq1A'
                 ],
                 [
+                    'id' => 4,
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Python in 2020 In 51 Videos',
+                    'description' => 'A complete python course with 51 separated videos.',
+                    'filename' => 'videoseries?si=5Io6MXF9FWIGfMlE&amp;list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ',
+                    'thumbnail' => 'https://i.ytimg.com/vi/h3VCQjyaLws/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjsE653Tm7DRxYkxQeFM4gOe_rQw'
+                ],
+                [
                     'id' => 3,
                     'title' => '<span style="color:blue;">[English]</span>: Learn Python in 2021 In One Video',
                     'description' => 'A complete python course with One Video.',
