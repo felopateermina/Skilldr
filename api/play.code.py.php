@@ -359,11 +359,11 @@ box-shadow:  5px 5px 10px #000000,
 }
 
 #jj{
-    width:48.92%;
+    width:100%;
 }
 @media screen and (max-width:1023px) {
     #jj{
-        width:47%;
+        width:100%;
     }
 }
 </style>
@@ -511,7 +511,9 @@ box-shadow:  5px 5px 10px #000000,
         <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
-        <textarea id="commentText" placeholder="Your Comment" rows="4" required></textarea>
+    <h6><i>Nobody Can See Your Comments As It's A Data For You Only, Likes & Comments.</i></h6>
+    <br>
+        <textarea style="font-family:sans-serif;font-weight:bold;" id="commentText" placeholder="Your Comment" rows="4" required></textarea>
         <button type="submit">Submit</button>
     </form>
     <div id="commentsContainer"></div>
