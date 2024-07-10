@@ -89,7 +89,7 @@
     <div class="container">
         <h2>User Data Page</h2>
         <div id="pinPrompt">
-            <form action="#?ref=tab?security.com">
+            <form id="pinForm" action="#?ref=tab?security">
                 <label for="pinInput">Enter 4-digit PIN:</label>
                 <input type="number" id="pinInput" required>
                 <button id="submitPin" type="button">Submit</button>
@@ -110,15 +110,15 @@
             <div id="commentsContainer"></div>
         </div>
         <div id="passwordPrompt" class="password-section">
-            <form action="#?ref=tab?security.com">
+            <form id="passwordPinForm">
                 <label for="passwordPinInput">Enter 4-digit PIN to view password:</label>
                 <input type="number" id="passwordPinInput" required>
                 <button id="submitPasswordPin" type="button">Submit</button>
                 <br>
                 <p id="passwordDisplay" style="display: none;">Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
                 <br>
-                <button style="border-radius: 0px;" onclick="window.location.href = 'userdata.html'" type="button">Back To Data</button>
-                <button style="border-radius: 0px;" onclick="window.location.href = '../index.html'" type="button">Back Home</button>
+                <button style="border-radius: 0px;" onclick="backToData()">Back To Data</button>
+                <button style="border-radius: 0px;" onclick="backHome()">Back Home</button>
                 <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
             </form>
             <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
@@ -173,17 +173,12 @@
                 window.location.href = '../other/logout.html';
             });
 
-            function getCommentsFromLocalStorage() {
-                const comments = localStorage.getItem('comments');
-                return comments ? JSON.parse(comments) : [];
-            }
-
             function displayComments() {
                 const commentsContainer = document.getElementById('commentsContainer');
                 commentsContainer.innerHTML = ''; // Clear existing content
                 const comments = getCommentsFromLocalStorage();
                 if (comments.length === 0) {
-                    commentsContainer.innerHTML = '<p>No DATA yet.</p>';
+                    commentsContainer.innerHTML = '<p>No comments yet.</p>';
                     return;
                 }
                 comments.forEach(function (comment) {
@@ -192,14 +187,28 @@
                 });
             }
 
+            function getCommentsFromLocalStorage() {
+                const comments = localStorage.getItem('comments');
+                return comments ? JSON.parse(comments) : [];
+            }
+
             function createCommentElement(comment) {
                 const commentElement = document.createElement('div');
                 commentElement.classList.add('comment');
                 commentElement.innerHTML = `
-                    <p><strong style="color:#de5b00;">@ ${comment.username} :</strong></p>
+                    <p><strong>@${comment.username}:</strong></p>
                     <p>${comment.text}</p>`;
                 return commentElement;
             }
+
+            window.backToData = function () {
+                document.getElementById('passwordPrompt').style.display = 'none';
+                document.getElementById('userData').style.display = 'block';
+            };
+
+            window.backHome = function () {
+                window.location.href = '../index.html';
+            };
         });
     </script>
 </body>

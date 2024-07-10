@@ -66,19 +66,18 @@
     <form id="loginForm">
         <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
         <h3>Login In Now!</h3>
-        <div id="errorContainer">
-            <p id="usernameError" class="error">Username is required.</p>
-            <p id="passwordError" class="error">Password is required.</p>
-            <p id="pinError" class="error">PIN must be 4 digits.</p>
-            <p id="loginError" class="error">Incorrect username or password.</p>
-        </div>
         <input placeholder="Enter Your Username" type="text" id="loginUsername" required><br>
         <input placeholder="Enter Your Password" type="password" id="loginPassword" required><br>
         <input placeholder="Set Your PIN (4-digit)" type="number" id="loginPin" required><br>
         <button id="submit" type="submit">Login</button>
         <br><br>
         <a href="sign.html" style="color: blue; font-size: 15px;">Don't Have An Account?</a> / <a href="../index.html" style="font-size: 15px; color: rgb(255, 255, 255);">Back To Home?</a>
-
+        <div id="errorContainer">
+            <p id="usernameError" class="error">Username is required.</p>
+            <p id="passwordError" class="error">Password is required.</p>
+            <p id="pinError" class="error">PIN must be 4 digits.</p>
+            <p id="loginError" class="error">Check Your Info Again</p>
+        </div>
     </form>
 </div>
 <br><br> <br><br>
@@ -147,15 +146,15 @@
             return; // Exit function if any validation fails
         }
 
-        // Check credentials and redirect if valid
+        // Check credentials and PIN, redirect if valid
         const storedUser = localStorage.getItem(username);
         if (storedUser) {
             const user = JSON.parse(storedUser);
 
-            if (user.password === password) {
+            if (user.password === password && user.pin === pin) {
                 sessionStorage.setItem('currentUser', username);
                 sessionStorage.setItem('userPin', pin);
-                window.location.href = '../other/successLogin.html';
+                window.location.href = 'userdata.html';
             } else {
                 document.getElementById('loginError').style.display = 'block';
             }
