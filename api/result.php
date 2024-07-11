@@ -314,14 +314,15 @@ input{
                 Menu
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../html/whiteboard.html">Whiteboard</a></li>
-                <li><a class="dropdown-item" href="app.zip">Download</a></li>
-                <li><a class="dropdown-item" href="../index.html#about">About Us</a></li>
-                <li><a class="dropdown-item" href="../index.html#courses">Categories</a></li>
-                <li><a class="dropdown-item" href="share.php">Share</a></li>
-                <li><a class="dropdown-item" href="../html/userdata.html">Account</a></li>               
-                <li><a class="dropdown-item" href="../html/redeemcode.html">Redeem Code</a></li>             
-                <li><a class="dropdown-item" href="../html/community.html">Community (NEW)</a></li>             
+
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/whiteboard.html"><i class="fas fa-chalkboard-teacher"></i> Whiteboard</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../index.html#about"><i class="fas fa-question-circle"></i> About Us</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../index.html#courses"><i class="fas fa-video"></i> Courses</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="share.php"><i class="fas fa-share"></i> Share</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/userdata.html"><i class="fas fa-user"></i> Account</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/community.html"><i class="fas fa-comments"></i> Community</a></li>
+                  
             </ul>
             </div>
             
@@ -330,8 +331,8 @@ input{
                 Courses
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../html/code/intro.html">Programming</a></li>
-                <li><a class="dropdown-item" href="../html/typefast/typefast.html">Typing Fast</a></li>
+              <li><a style="font-weight: bold;" class="dropdown-item" href="../html/code/intro.html"><i class="fas fa-code"></i> Programming</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/typefast/typefast.html"><i class="fas fa-keyboard"></i> Typing Fast</a></li>
                 </ul>
             </div>
            
