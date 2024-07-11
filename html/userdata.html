@@ -94,10 +94,10 @@
     <div class="container">
         <h2>User Data Page</h2>
         <div id="pinPrompt">
-            <form id="pinForm" action="#?ref=tab?security">
+            <form id="pinForm" action="#?=ref=tab?security?reCaptcha?click=submit?ok?rocketdev=security">
                 <label for="pinInput">Enter 4-digit PIN:</label>
                 <input type="number" id="pinInput" required>
-                <button id="submitPin" type="button">Submit</button>
+                <button style="font-weight: bold;" id="submitPin" type="button">Submit</button>
                 <p id="pinError" class="error">Invalid PIN. Please try again.</p>
             </form>
         </div>
@@ -107,25 +107,24 @@
                 <p>Email: <span id="emailDisplay"></span></p>
             </div>
             <div class="actions">
-                <button id="showPasswordButton">Show Password</button>
-                <br>
-                <button id="logoutButton">Logout</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton">Show Password</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="logoutButton">Logout</button>
                 <a href="../index.html">Back Home</a>
             </div>
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
-            <button id="deleteCommentsButton">Delete All Comments</button>
+            <button style="font-weight: bold;" id="deleteCommentsButton">Delete All Comments</button>
         </div>
         <div id="passwordPrompt" class="password-section">
-            <form id="passwordPinForm">
+            <form id="passwordPinForm" action="#?=ref=tab?security?reCaptcha?click=submit?ok?rocketdev=security">
                 <label for="passwordPinInput">Enter 4-digit PIN to view password:</label>
                 <input type="number" id="passwordPinInput" required>
-                <button id="submitPasswordPin" type="button">Submit</button>
+                <button style="font-weight: bold;" id="submitPasswordPin" type="button">Submit</button>
                 <br>
                 <p id="passwordDisplay" style="display: none;">Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
                 <br>
-                <button style="border-radius: 0px;" onclick="backToData()">Back To Data</button>
-                <button style="border-radius: 0px;" onclick="backHome()">Back Home</button>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()">Back To Data</button>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()">Back Home</button>
                 <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
             </form>
             <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
@@ -214,7 +213,7 @@
                 const commentElement = document.createElement('div');
                 commentElement.classList.add('comment');
                 commentElement.innerHTML = `
-                    <p><strong>@${comment.username}:</strong></p>
+                    <p><strong style="color:#de5b00;">@ ${comment.username}:</strong></p>
                     <p>${comment.text}</p>`;
                 return commentElement;
             }
