@@ -90,10 +90,6 @@ button:hover {
           </svg>
        </button>
     </a>
-<br><br>
-<strong>Thanks For Sharing <span style="color:blue;font-weight:bold;">©Skilldr </span>...!</strong><br><br>
-
-<i>*You must make an account for you to watch the courses.Notice: This Academy ©Skilldr is made by ©Felopateer. Your go-to platform for mastering essential skills. Our courses empower you to learn Python programming, data science, web development, and more. Join us to enhance your expertise and achieve your professional goals.*</i>
     </div>
     <script>
     // Disable right-click context menu

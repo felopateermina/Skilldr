@@ -77,6 +77,13 @@ $products = [
         'time' => "5/7/2024",
         'id' => "play.code.web-dev.php?id=13",
     ],
+    [
+        'name' => 'my account password my account password my account pin my account management email e-mail account settings of my account',
+        'price' => "My Account Management.",
+        'category' => 'Settings',
+        'time' => "11/7/2024",
+        'id' => "../html/userdata.html",
+    ],
 ];
 
 // Retrieve the search query

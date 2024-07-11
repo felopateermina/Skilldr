@@ -363,7 +363,7 @@ box-shadow:  5px 5px 10px #000000,
 }
 @media screen and (max-width:1023px) {
     #jj{
-        width:30%;
+        width:20%;
     }
 }
 </style>
@@ -489,7 +489,7 @@ box-shadow:  5px 5px 10px #000000,
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Save Page</a>";
+            echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "</div>";
