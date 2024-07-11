@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User-Data Page - Skilldr</title>
+    <link
+      rel="shortcut icon"
+      href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
+      type="image/x-icon"
+    />
     <style>
         body {
             font-family: sans-serif;
@@ -108,6 +113,8 @@
                 <a href="../index.html">Back Home</a>
             </div>
             <div id="commentsContainer"></div>
+            <!-- Button to delete comments -->
+            <button id="deleteCommentsButton">Delete All Comments</button>
         </div>
         <div id="passwordPrompt" class="password-section">
             <form id="passwordPinForm">
@@ -173,12 +180,23 @@
                 window.location.href = '../other/logout.html';
             });
 
+            document.getElementById('deleteCommentsButton').addEventListener('click', function () {
+                if (confirm('Are you sure you want to delete all comments?')) {
+                    deleteComments();
+                    displayComments(); // Update UI after deletion
+                }
+            });
+
+            function deleteComments() {
+                localStorage.removeItem('comments');
+            }
+
             function displayComments() {
                 const commentsContainer = document.getElementById('commentsContainer');
                 commentsContainer.innerHTML = ''; // Clear existing content
                 const comments = getCommentsFromLocalStorage();
                 if (comments.length === 0) {
-                    commentsContainer.innerHTML = '<p>No comments yet.</p>';
+                    commentsContainer.innerHTML = '<p>No DATA yet.</p>';
                     return;
                 }
                 comments.forEach(function (comment) {
