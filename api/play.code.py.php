@@ -363,7 +363,7 @@ box-shadow:  5px 5px 10px #000000,
 }
 @media screen and (max-width:1023px) {
     #jj{
-        width:20%;
+        width:30%;
     }
 }
 </style>
@@ -423,7 +423,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 1,
                     'title' => '[Arabic] Learn Python in 2020 In 53 Videos',
-                    'description' => 'A Complete Python Course With 53 separated videos. <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Abdelrahman Gamal</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course With 53 separated videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Abdelrahman Gamal</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=SOHulmvIAScQQ9nl&amp;list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE',
                     'likeNo' => '+ 460k',
                     'dislikeNo' => '+ 2180',
@@ -432,7 +432,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 2,
                     'title' => '[Arabic] Learn Python in 2020 In 153 Videos',
-                    'description' => 'A Complete Python Course With 153 separated videos. <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Elzero Web School</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course With 153 separated videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=WgF7EPmOZFmI3i3T&amp;list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs',
                     'likeNo' => '+ 580k',
                     'dislikeNo' => '+ 1270',
@@ -441,7 +441,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 4,
                     'title' => '[Arabic] Learn Python in 2020 In 51 Videos',
-                    'description' => 'A Complete Python Course With 51 Separated Videos. <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Codezilla</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course With 51 Separated Videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Codezilla</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=5Io6MXF9FWIGfMlE&amp;list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ',
                     'likeNo' => '+ 760k',
                     'dislikeNo' => '+ 3374',
@@ -450,7 +450,7 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 3,
                     'title' => '[English] Learn Python in 2021 In One Video',
-                    'description' => 'A Complete Python Course With One Video. <br><br> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course With One Video. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'XKHEtdqhLK8?si=LhVmWx3UEvy2d0Qf',
                     'likeNo' => '+ 884k',
                     'dislikeNo' => '+ 3930',
