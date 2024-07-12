@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
-    <title>PYTHON - Skilldr</title>
+    <title>Python Courses - Skilldr</title>
+    <meta name="description" content="Watch Skilldr Python Courses For Free In Arabic And English!">
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -194,8 +195,8 @@
     </header>
 
     <div class="container">
-    <div class="txt" style="width:100%; background-color: #c95400;padding: 10px;border-radius: 20px;">
-            <h2 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Python Courses"</h2>
+    <div class="txt" style="width:100%; background-color: #c95400;padding: 5px;border-radius: 10px;">
+            <h3 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Python Courses"</h3>
     </div>        
         <div class="video-container">
             <?php

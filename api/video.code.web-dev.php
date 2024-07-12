@@ -2,8 +2,9 @@
 <html>
 <head>
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
-    <title>Web development - Skilldr</title>
+    <title>Web Development Courses - Skilldr</title>
     <link rel="stylesheet" type="text/css" href="../css/video.css">
+    <meta name="description" content="Watch Skilldr Web Development Courses For Free In Arabic And English!">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -196,8 +197,8 @@
 
     
     <div class="container">
-    <div class="txt" style="width:100%; background-color: #c95400;padding: 10px;border-radius: 20px;">
-            <h2 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Web Development Courses"</h2>
+    <div class="txt" style="width:100%; background-color: #c95400;padding: 5px;border-radius: 10px;">
+            <h3 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Web Development Courses"</h3>
     </div>
         <div class="video-container">
             <?php

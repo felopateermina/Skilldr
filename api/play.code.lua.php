@@ -443,12 +443,22 @@ box-shadow:  5px 5px 10px #000000,
                 [
                     'id' => 3,
                     'title' => '[Arabic] Learn Lua Script in 2023 In 7 Videos',
-                    'description' => '<i class="fas fa-newspaper"></i> A complete Lua Script course with 7 Videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">0xWaleed</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'description' => '<i class="fas fa-newspaper"></i> A complete Lua Script course with 7 videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">0xWaleed</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
                     'youtubeId' => 'videoseries?si=vdVYzCAhZ54zX3Jt&amp;list=PL3KnC8_o_BSlPDf439a5ecZnflwqQ-r8W',
                     'likeNo' => '+ 43k',
                     'dislikeNo' => '+ 3372',
                     'saveNo' => '+ 144k',
                 ],
+                [
+                    'id' => 4,
+                    'title' => '[English] Learn Lua Script in 2021 In 39 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A complete Lua Script course with 7 videos. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Steve"s Teacher</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'youtubeId' => 'videoseries?si=dhh87ZfasYn2gLy3&amp;list=PLYBJzqz8zpWavt37pA6NANJTGStIHpybU',
+                    'likeNo' => '+ 71k',
+                    'dislikeNo' => '+ 248',
+                    'saveNo' => '+ 155k',
+                ],
+                
           
             ];
 

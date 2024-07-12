@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
-    <title>Lua Script - Skilldr</title>
+    <title>Lua Script Courses - Skilldr</title>
+    <meta name="description" content="Watch Skilldr Lua Script Courses For Free In Arabic And English!">
     <link rel="stylesheet" type="text/css" href="../css/video.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -195,33 +196,41 @@
     </header>
 
     <div class="container">
-    <div class="txt" style="width:100%; background-color: #c95400;padding: 10px;border-radius: 20px;">
-            <h2 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Lua Script Courses"</h2>
+    <div class="txt" style="width:100%; background-color: #c95400;padding: 5px;border-radius: 10px;">
+            <h3 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Lua Script Courses"</h3>
     </div>
         <div class="video-container">
             <?php
             $videos = [
                 [
                     'id' => 1,
-                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2023 In 37 Videos',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2023 In 37 Videos.',
                     'description' => 'A complete Lua Script course with 37 separated videos.',
                     'filename' => 'videoseries?si=Tv56LMMkjL9fJvSf&amp;list=PL1s2Olz3_bXG4GZ6EoEvWu1kVpZLbp6Le',
                     'thumbnail' => 'https://i.ytimg.com/vi/vvJYXbBAAkg/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCBZF-19qYV9hwq81GgHOY4n3ks6A'
                 ],
                 [
                     'id' => 2,
-                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2019 In 10 Videos',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2019 In 10 Videos.',
                     'description' => 'A complete Lua Script course with 10 separated videos.',
                     'filename' => 'videoseries?si=_Li3pD8Sb63FA4Jx&amp;list=PL6yhZuIk6Ic4oiNcQuf7Cw77fwbqFVxpD',
                     'thumbnail' => 'https://i.ytimg.com/vi/3TOT-0nmids/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB1mlG09-C3UOuV83Ij0cZhGLcm6w'
                 ],
                 [
                     'id' => 3,
-                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2023 In 7 Videos',
-                    'description' => 'A complete Lua Script course with 7 Videos.',
+                    'title' => '<span style="color:red;">[Arabic]</span>: Learn Lua Script in 2023 In 7 Videos.',
+                    'description' => 'A complete Lua Script course with 7 videos.',
                     'filename' => 'videoseries?si=vsNDxOMj4hNU7_wh&amp;list=PL3KnC8_o_BSlPDf439a5ecZnflwqQ-r8W',
                     'thumbnail' => 'https://i.ytimg.com/vi/wyIGBqz0114/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC_3R3nANDIAsW5ADdK9Gru7gRX2w'
                 ],
+                [
+                    'id' => 4,
+                    'title' => '<span style="color:blue;">[English]</span>: Learn Lua Script in 2021 In 39 Videos.',
+                    'description' => 'A complete Lua Script course with 39 videos.',
+                    'filename' => 'videoseries?si=dhh87ZfasYn2gLy3&amp;list=PLYBJzqz8zpWavt37pA6NANJTGStIHpybU',
+                    'thumbnail' => 'https://i.ytimg.com/vi/PW8NRGAZQs8/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBx18T3kkzClE6nbqxoaRGO66mehg'
+                ],
+                
                 
             ];
 
