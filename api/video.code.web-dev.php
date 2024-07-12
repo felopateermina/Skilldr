@@ -104,6 +104,8 @@
             overflow: hidden;
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
             width: 280px;
+            margin-top:20px;
+
         }
 
         .video-item:hover {
@@ -192,10 +194,11 @@
         </div>
     </header>
 
-    <br>
+    
     <div class="container">
-        <h1 style="text-decoration: underline;">" Web Development "</h1>
-        <br>
+    <div class="txt" style="width:100%; background-color: #c95400;padding: 10px;border-radius: 20px;">
+            <h2 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Web Development Courses"</h2>
+    </div>
         <div class="video-container">
             <?php
             $videos = [
