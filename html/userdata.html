@@ -113,7 +113,7 @@
             </div>
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
-            <button style="font-weight: bold;" id="deleteCommentsButton">Delete All Comments</button>
+            <button style="font-weight: bold;" id="deleteCommentsButton">Delete All DATA</button>
         </div>
         <div id="passwordPrompt" class="password-section">
             <form id="passwordPinForm" action="#?=ref=tab?security?reCaptcha?click=submit?ok?rocketdev=security">
@@ -122,10 +122,11 @@
                 <button style="font-weight: bold;" id="submitPasswordPin" type="button">Submit</button>
                 <br>
                 <p id="passwordDisplay" style="display: none;">Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
+                <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
+                <p id="notice">Password Of Your Account: <span style="color: #de5b00;">******</span></p>
                 <br>
                 <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()">Back To Data</button>
                 <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()">Back Home</button>
-                <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
             </form>
             <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
         </div>
@@ -168,8 +169,10 @@
                     document.getElementById('passwordPinError').style.display = 'none';
                     document.getElementById('passwordText').textContent = storedUser.password;
                     document.getElementById('passwordDisplay').style.display = 'block';
+                    document.getElementById('notice').style.display = "none"
                 } else {
                     document.getElementById('passwordPinError').style.display = 'block';
+                    document.getElementById('passwordDisplay').style.display = 'none';
                 }
             });
 
