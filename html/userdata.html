@@ -89,31 +89,31 @@
             display: none;
         }
     </style>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h2>User Data Page</h2>
+        <h2><i class="fas fa-user"></i> Welcome, <span id="userdatapage"></span></h2>
         <div id="pinPrompt">
             <form id="pinForm" action="#?=ref=tab?security?reCaptcha?click=submit?ok?rocketdev=security">
-                <label for="pinInput">Enter 4-digit PIN:</label>
+                <label for="pinInput"><i class="fas fa-star"></i> Enter 4-digit PIN:</label>
                 <input type="number" id="pinInput" required>
                 <button style="font-weight: bold;" id="submitPin" type="button">Submit</button>
-                <p id="pinError" class="error">Invalid PIN. Please try again.</p>
+                <p id="pinError" class="error"><i class="fas fa-exclamation-triangle"></i> Invalid PIN. Please try again.</p>
             </form>
         </div>
         <div id="userData" style="display: none;">
             <div class="user-info">
-                <p>Welcome, <span id="usernameDisplay"></span>!</p>
-                <p>Email: <span id="emailDisplay"></span></p>
+                <p><i class="fas fa-envelope"></i> Email: <span id="emailDisplay"></span></p>
             </div>
             <div class="actions">
-                <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton">Show Password</button>
-                <button style="border-radius: 0px;font-weight: bold;" id="logoutButton">Logout</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton"><i class="fas fa-eye"></i> Show Password</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 <a href="../index.html">Back Home</a>
             </div>
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
-            <button style="font-weight: bold;" id="deleteCommentsButton">Delete All DATA</button>
+            <button style="font-weight: bold;" id="deleteCommentsButton"><i class="fas fa-trash"></i> Delete All DATA</button>
         </div>
         <div id="passwordPrompt" class="password-section">
             <form id="passwordPinForm" action="#?=ref=tab?security?reCaptcha?click=submit?ok?rocketdev=security">
@@ -121,12 +121,12 @@
                 <input type="number" id="passwordPinInput" required>
                 <button style="font-weight: bold;" id="submitPasswordPin" type="button">Submit</button>
                 <br>
-                <p id="passwordDisplay" style="display: none;">Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
+                <p id="passwordDisplay" style="display: none;"><i class="fas fa-star"></i> Password Of Your Account: <span id="passwordText" style="color: #de5b00;"></span></p>
                 <p id="passwordPinError" class="error">Invalid PIN. Please try again.</p>
-                <p id="notice">Password Of Your Account: <span style="color: #de5b00;">******</span></p>
+                <p id="notice"><i class="fas fa-star"></i> Password Of Your Account: <span style="color: #de5b00;">******</span></p>
                 <br>
-                <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()">Back To Data</button>
-                <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()">Back Home</button>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()"><i class="fas fa-database"></i> Back To Data</button>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()"><i class="fas fa-home"></i> Back Home</button>
             </form>
             <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
         </div>
@@ -150,7 +150,6 @@
                 if (enteredPin === userPin) {
                     document.getElementById('pinPrompt').style.display = 'none';
                     document.getElementById('userData').style.display = 'block';
-                    document.getElementById('usernameDisplay').textContent = storedUser.name;
                     document.getElementById('emailDisplay').textContent = storedUser.email;
                     displayComments();
                 } else {
@@ -169,7 +168,10 @@
                     document.getElementById('passwordPinError').style.display = 'none';
                     document.getElementById('passwordText').textContent = storedUser.password;
                     document.getElementById('passwordDisplay').style.display = 'block';
-                    document.getElementById('notice').style.display = "none"
+                    document.getElementById('notice').style.display = "none";
+                    setTimeout(() => {
+                        window.location.href = "userdata.html";
+                    }, 4000);
                 } else {
                     document.getElementById('passwordPinError').style.display = 'block';
                     document.getElementById('passwordDisplay').style.display = 'none';
@@ -185,7 +187,7 @@
             document.getElementById('deleteCommentsButton').addEventListener('click', function () {
                 if (confirm('Are you sure you want to delete all comments?')) {
                     deleteComments();
-                    displayComments(); // Update UI after deletion
+                    displayComments();
                 }
             });
 
@@ -198,7 +200,8 @@
                 commentsContainer.innerHTML = ''; // Clear existing content
                 const comments = getCommentsFromLocalStorage();
                 if (comments.length === 0) {
-                    commentsContainer.innerHTML = '<p>No DATA yet.</p>';
+                    commentsContainer.innerHTML = '<p>No Activity Yet!</p>';
+                    document.getElementById("deleteCommentsButton").style.display = "none";
                     return;
                 }
                 comments.forEach(function (comment) {
@@ -229,6 +232,8 @@
             window.backHome = function () {
                 window.location.href = '../index.html';
             };
+            document.getElementById("userdatapage").innerHTML = storedUser.name;
+            window.document.title = `${storedUser.name} - Skilldr`;
         });
     </script>
 </body>
