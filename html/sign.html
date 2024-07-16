@@ -72,13 +72,13 @@
         <form id="registerForm">
             <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
             <h3><i class="fas fa-user"></i> Register Now!</h3>
-            <input placeholder="Enter Your Username" type="text" id="registerUsername" required><br>
-            <input placeholder="Enter Your PIN (4 digits)" type="password" id="registerPIN" required><br>
+            <input maxlength="10" placeholder="Enter Your Username" type="text" id="registerUsername" required><br>
+            <input maxlength="4" placeholder="Enter Your PIN (4 digits)" type="password" id="registerPIN" required><br>
             <span id="pinError" class="error-message"></span>
 
-            <input placeholder="Enter Your Password" type="password" id="registerPassword" required><br>
-            <input placeholder="Enter Your Name" type="text" id="registerName" required><br>
-            <input placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br>
+            <input maxlength="20" placeholder="Enter Your Password" type="password" id="registerPassword" required><br>
+            <input maxlength="15" placeholder="Enter Your Name" type="text" id="registerName" required><br>
+            <input maxlength="20" placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br>
             
             <button type="submit"><i class="fas fa-user"></i> Register</button>
             <br><br>
