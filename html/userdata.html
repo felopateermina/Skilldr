@@ -40,7 +40,8 @@
             font-weight: bold;
             color: #de5b00;
         }
-        input[type="number"] {
+        input[type="number"],
+        input[type="password"] {
             width: 90%;
             padding: 10px;
             margin-bottom: 10px;
@@ -85,11 +86,16 @@
         .actions a:hover {
             text-decoration: underline;
         }
-        .password-section {
+        .password-section, .change-password-section {
             display: none;
         }
+        @media screen and (max-width:1023px) {
+            button{
+                width: 100%;
+            }
+        }
     </style>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -108,6 +114,7 @@
             </div>
             <div class="actions">
                 <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton"><i class="fas fa-eye"></i> Show Password</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="changePasswordButton"><i class="fas fa-key"></i> Change Password</button>
                 <button style="border-radius: 0px;font-weight: bold;" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 <a href="../index.html">Back Home</a>
             </div>
@@ -129,6 +136,22 @@
                 <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()"><i class="fas fa-home"></i> Back Home</button>
             </form>
             <i style="color: rgb(112, 112, 112);">* Security-Tip: Don't Share Your Password With The Others.</i>
+        </div>
+        <div id="changePasswordPrompt" class="change-password-section">
+            <form id="changePasswordForm">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" required>
+                <label for="confirmNewPassword">Confirm New Password:</label>
+                <input type="password" id="confirmNewPassword" required>
+                <button style="font-weight: bold;" id="submitChangePassword" type="button">Change Password</button>
+                <p id="changePasswordError" class="error"><i class="fas fa-exclamation-triangle"></i> Error changing password. Please try again.</p>
+                <p id="changePasswordSuccess" style="display: none; color: green;"><i class="fas fa-check"></i> Password changed successfully!</p>
+                <br>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()"><i class="fas fa-database"></i> Back To Data</button>
+                <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()"><i class="fas fa-home"></i> Back Home</button>
+            </form>
         </div>
     </div>
 
@@ -162,6 +185,11 @@
                 document.getElementById('passwordPrompt').style.display = 'block';
             });
 
+            document.getElementById('changePasswordButton').addEventListener('click', function () {
+                document.getElementById('userData').style.display = 'none';
+                document.getElementById('changePasswordPrompt').style.display = 'block';
+            });
+
             document.getElementById('submitPasswordPin').addEventListener('click', function () {
                 const enteredPin = document.getElementById('passwordPinInput').value;
                 if (enteredPin === userPin) {
@@ -175,6 +203,25 @@
                 } else {
                     document.getElementById('passwordPinError').style.display = 'block';
                     document.getElementById('passwordDisplay').style.display = 'none';
+                }
+            });
+
+            document.getElementById('submitChangePassword').addEventListener('click', function () {
+                const currentPassword = document.getElementById('currentPassword').value;
+                const newPassword = document.getElementById('newPassword').value;
+                const confirmNewPassword = document.getElementById('confirmNewPassword').value;
+
+                if (currentPassword === storedUser.password && newPassword === confirmNewPassword) {
+                    storedUser.password = newPassword;
+                    localStorage.setItem(currentUser, JSON.stringify(storedUser));
+                    document.getElementById('changePasswordSuccess').style.display = 'block';
+                    document.getElementById('changePasswordError').style.display = 'none';
+                    setTimeout(() => {
+                        window.location.href = "userdata.html";
+                    }, 2000);
+                } else {
+                    document.getElementById('changePasswordError').style.display = 'block';
+                    document.getElementById('changePasswordSuccess').style.display = 'none';
                 }
             });
 
@@ -226,6 +273,7 @@
 
             window.backToData = function () {
                 document.getElementById('passwordPrompt').style.display = 'none';
+                document.getElementById('changePasswordPrompt').style.display = 'none';
                 document.getElementById('userData').style.display = 'block';
             };
 
