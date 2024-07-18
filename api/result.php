@@ -84,6 +84,13 @@ $products = [
         'time' => "11/7/2024",
         'id' => "../html/userdata.html",
     ],
+    [
+        'name' => 'my account password my account password my account pin my account management email e-mail account settings of my account password password changing',
+        'price' => "My Account Password Changing.",
+        'category' => 'Settings',
+        'time' => "18/7/2024",
+        'id' => "../html/userdata.html",
+    ],
 ];
 
 // Retrieve the search query
@@ -105,6 +112,8 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <meta name="description" content="See what you are looking for in Skilldr!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
       *{
   scroll-behavior: smooth;
@@ -292,11 +301,6 @@ input{
 <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
-          <!-- <img
-            class="imglogo"
-            src="../imgs/images.png"
-            alt="imgs/download.png"
-          /> -->
           <span style="font-size: 1.6em;color: white;font-weight: 900;">
               Skill<span style="color: #de5b00;">dr.</span>
             </span>
@@ -348,7 +352,6 @@ input{
        
       </div>
     
- 
     </nav>
     <br>
     <div class="search_bar">
@@ -370,23 +373,21 @@ input{
     <?php
         if (!empty($results)) {
             foreach ($results as $result) {
-                $link = $result['id']; // Custom link with product ID
+                $link = $result['id'];
                 echo '<div class="result">';
-                echo '<h3><a href="' . $link . '" class="main">' . $result['price'] . '</a></h3>';
+                echo '<h3 style="color:#de5b00;"><i class="fas fa-search"></i> <a href="' . $link . '" class="main">' . $result['price'] . '</a></h3>';
                 echo '<p>Category: ' . $result['category'] . '</p>';
                 echo '<p>Time: ' . $result['time'] . '</p>';
                 echo '</div>';
                 echo "<br>";
             }
         } else {
-            echo '
+            echo "
             
-            <h1 class="e404">404</h1>
-            <h3 class="i404">Sorry! ... No Results Found.</h3>
-            <h6 style="font-weight: bold;color: gray;text-align: center;"><a href="../index.html" style="color:gray;">Go Back Home ?</a> / <a href="../html/redeemcode.html" style="color:blue;">Win A Prize ?</a></h6>
-
-            ';
-
+            <h1 class='e404'>404</h1>
+            <h3 class='i404' style='font-weight:bold;'>Sorry, Nothing Like That!</h3>
+            <h5 style='font-weight:bold;text-align:center;color:gray;'>If you think it's error or something, <a href='../html/report.html'>Tell Us</a></h2>
+            ";
         }
         ?>
     </div>
