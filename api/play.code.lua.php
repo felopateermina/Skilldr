@@ -364,6 +364,9 @@ box-shadow:  5px 5px 10px #000000,
         width:30%;
     }
 }
+textarea{
+    resize:none;
+}
 </style>
 
 </head>
