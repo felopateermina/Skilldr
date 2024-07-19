@@ -252,7 +252,8 @@ input{
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/userdata.html"><i class="fas fa-user"></i> Account</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/community.html"><i class="fas fa-comments"></i> Community</a></li>
-                  
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+
               </ul>
             </div>
             
@@ -302,14 +303,12 @@ input{
                 echo "<br>";
             }
         } else {
-            echo '
+          echo "
             
-            <h1 class="e404">404</h1>
-            <h3 class="i404">Sorry! ... No Results Found.</h3>
-            <h6 style="font-weight: bold;color: gray;text-align: center;"><a href="../index.html" style="color:gray;">Go Back Home ?</a> / <a href="../html/redeemcode.html" style="color:blue;">Win A Prize ?</a></h6>
-
-            ';
-
+          <h1 class='e404'>404</h1>
+          <h3 class='i404' style='font-weight:bold;'>Sorry, Nothing Like That!</h3>
+          <h5 style='font-weight:bold;text-align:center;color:gray;'>If you think it's error or something, <a href='../html/report.html'>Tell Us</a></h2>
+          ";
         }
         ?>
     </div>
