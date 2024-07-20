@@ -115,20 +115,15 @@
         </div>
         <div id="userData" style="display: none;">
             <div class="user-info">
-                <p><i class="fas fa-envelope"></i> Email: <span id="emailDisplay"></span></p>
-                <p><i class="fas fa-signal"></i> Status: <span id="userStatus" style="color: green;">Online</span></p>
-                <div class="user-info">
-                    <div class="description-section">
-                        <label for="userDescription"><i class="fas fa-pen"></i> Description:</label>
-                        <textarea id="userDescription" rows="4" style="width: 96%; padding: 10px; border-radius: 3px;resize: none;outline: none;border: none;font-weight: bold;"></textarea>
-                        <button style="font-weight: bold;" id="saveDescriptionButton"><i class="fas fa-save"></i> Save Description</button>
-                    </div>
-                </div>
-                
+                <p  style="color: #de5b00;"><i class="fas fa-envelope"></i> Email: <span id="emailDisplay" style="color: black;"></span></p>
+                <p  style="color: #de5b00;"><i class="fas fa-signal"></i> Status: <span id="userStatus" style="color: green;">Online</span></p>
+                <p  style="color: #de5b00;"><i class="fas fa-info-circle"></i> About Me: <span id="descriptionDisplay" style="color: black;"></span></p>
+
             </div>
             <div class="actions">
                 <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton"><i class="fas fa-eye"></i> Show Password</button>
                 <button style="border-radius: 0px;font-weight: bold;" id="changePasswordButton"><i class="fas fa-key"></i> Change Password</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="cdescb"><i class="fas fa-pen"></i> Change Your About</button>
                 <button style="border-radius: 0px;font-weight: bold;" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 <a href="../index.html">Back Home</a>
             </div>
@@ -168,10 +163,25 @@
                 <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()"><i class="fas fa-home"></i> Back Home</button>
             </form>
         </div>
+        <div id="cdesc" class="change-password-section">
+            
+            <div class="user-info">
+                <form>
+                <div class="description-section">
+                    <label for="userDescription"><i class="fas fa-pen"></i> About Me:</label>
+                    <textarea id="userDescription" rows="4" style="width: 96%; padding: 10px; border-radius: 3px;resize: none;outline: none;border: none;font-weight: bold;font-size: 15px;"></textarea>
+                    <button style="font-weight: bold;" id="saveDescriptionButton"><i class="fas fa-save"></i> Change Description</button>
+                </div>
+            </form>
+            <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()"><i class="fas fa-database"></i> Back To Data</button>
+            <button style="border-radius: 0px;font-weight: bold;" onclick="backHome()"><i class="fas fa-home"></i> Back Home</button>
+     
+            </div>
+        </div>
     </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const currentUser = sessionStorage.getItem('currentUser');
     const storedUser = currentUser ? JSON.parse(localStorage.getItem(currentUser)) : null;
     const userPin = sessionStorage.getItem('userPin');
@@ -190,6 +200,7 @@
             document.getElementById('userData').style.display = 'block';
             document.getElementById('emailDisplay').textContent = storedUser.email;
             document.getElementById('userDescription').value = storedUser.description || '';
+            document.getElementById('descriptionDisplay').textContent = storedUser.description || 'No description available'; // Display description
             displayComments();
         } else {
             document.getElementById('pinError').style.display = 'block';
@@ -247,6 +258,7 @@
         window.location.href = '../other/logout.html';
     });
 
+
     document.getElementById('deleteCommentsButton').addEventListener('click', function () {
         if (confirm('Are you sure you want to delete all comments?')) {
             deleteComments();
@@ -259,6 +271,7 @@
         const description = document.getElementById('userDescription').value;
         storedUser.description = description;
         localStorage.setItem(currentUser, JSON.stringify(storedUser));
+        document.getElementById('descriptionDisplay').textContent = description; // Update displayed description
         alert('Description saved!');
     });
 
@@ -304,6 +317,7 @@
     window.backHome = function () {
         window.location.href = '../index.html';
     };
+
     document.getElementById("userdatapage").innerHTML = storedUser.name;
     window.document.title = `${storedUser.name} - Skilldr`;
 });
@@ -332,6 +346,31 @@ window.addEventListener('offline', function () {
     updateStatus(false);
 });
 
+// Disable right-click context menu
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable specific keyboard shortcuts
+document.addEventListener('keydown', function(event) {
+    if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
+        (event.ctrlKey && event.shiftKey && event.key === "J") || 
+        (event.ctrlKey && event.key === "U")) {
+        event.preventDefault();
+    }
+});
+
+document.getElementById('cdescb').addEventListener('click', function () {
+    document.getElementById("cdesc").style.display = "block";
+    document.getElementById("userData").style.display = "none";
+    
+    window.backToData = function () {
+        document.getElementById("cdesc").style.display = "none";
+     document.getElementById('userData').style.display = 'block';
+    };
+
+    window.backHome = function () {
+        window.location.href = '../index.html';
+    };
+    });
     </script>
     <script>
         // Disable right-click context menu
