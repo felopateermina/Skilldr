@@ -170,7 +170,7 @@
                 <div class="description-section">
                     <label for="userDescription"><i class="fas fa-pen"></i> About Me:</label>
                     <textarea id="userDescription" rows="4" style="width: 96%; padding: 10px; border-radius: 3px;resize: none;outline: none;border: none;font-weight: bold;font-size: 15px;"></textarea>
-                    <button style="font-weight: bold;" id="saveDescriptionButton"><i class="fas fa-save"></i> Change Description</button>
+                    <button style="font-weight: bold;" id="saveDescriptionButton"><i class="fas fa-pen"></i> Change Description</button>
                 </div>
             </form>
             <button style="border-radius: 0px;font-weight: bold;" onclick="backToData()"><i class="fas fa-database"></i> Back To Data</button>
@@ -312,6 +312,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('passwordPrompt').style.display = 'none';
         document.getElementById('changePasswordPrompt').style.display = 'none';
         document.getElementById('userData').style.display = 'block';
+        document.getElementById("cdesc").style.display = "none";
+
     };
 
     window.backHome = function () {
@@ -361,15 +363,7 @@ document.addEventListener('keydown', function(event) {
 document.getElementById('cdescb').addEventListener('click', function () {
     document.getElementById("cdesc").style.display = "block";
     document.getElementById("userData").style.display = "none";
-    
-    window.backToData = function () {
-        document.getElementById("cdesc").style.display = "none";
-     document.getElementById('userData').style.display = 'block';
-    };
 
-    window.backHome = function () {
-        window.location.href = '../index.html';
-    };
     });
     </script>
     <script>
