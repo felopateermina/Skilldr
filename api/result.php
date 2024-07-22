@@ -294,17 +294,22 @@ input{
       
     </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-    <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
-</head>
+
+    <link
+      rel="shortcut icon"
+      href="../imgs/logo.png"
+      type="image/x-icon"
+    />
+  </head>
 <body style="background-color: #001220;">
  
 <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <span style="font-size: 1.6em;color: white;font-weight: 900;">
-              Skill<span style="color: #de5b00;">dr.</span>
-            </span>
-        </a>
+       
+      <a  href="../index.html">
+
+<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" style="width: 90%;height: 10vh;">
+</a>
         <button
           class="navbar-toggler"
           type="button"

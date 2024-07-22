@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <link
       rel="shortcut icon"
-      href="../imgs/skilldr-high-resolution-logo-black-transparent.png"
+      href="../imgs/logo.png"
       type="image/x-icon"
     />
     <title>Python Video - Skilldr</title>
@@ -387,8 +388,11 @@ textarea{
 </div>
     <header>
         
-    <a href="../index.html" class="logo">Skill<span style="color:#de5b00;">dr.</span></a>
+       
+    <a  href="../index.html">
 
+<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" style="width: 90%;height: 10vh;">
+</a>
         <div class="chrme" >
         <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
     <input

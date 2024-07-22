@@ -22,9 +22,14 @@ $sharingLinks = generateSharingLinks($currentUrl);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks For Sharing...!</title>
-    <link rel="shortcut icon" href="../imgs/skilldr-high-resolution-logo-black-transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/share.css">
+    <title>Share - Skilldr</title>
+
+    <link
+      rel="shortcut icon"
+      href="../imgs/logo.png"
+      type="image/x-icon"
+    />
+        <link rel="stylesheet" href="../css/share.css">
     <style>
         body{
             justify-content:center;
