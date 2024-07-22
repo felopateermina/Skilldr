@@ -117,17 +117,20 @@
             <div class="user-info">
                 <p  style="color: #de5b00;"><i class="fas fa-envelope"></i> Email: <span id="emailDisplay" style="color: black;"></span></p>
                 <p  style="color: #de5b00;"><i class="fas fa-signal"></i> Status: <span id="userStatus" style="color: green;">Online</span></p>
-                <p  style="color: #de5b00;"><i class="fas fa-info-circle"></i> About Me: <span id="descriptionDisplay" style="color: black;"></span></p>
-
+                <p  style="color: #de5b00;"><i class="fas fa-info-circle"></i> About Me: <br><br> <span id="descriptionDisplay" style="color: black;padding-left: 20px;"></span></p>
+<br>
             </div>
+            <h3 style="color: #de5b00;padding: 3px;"><i class="fas fa-edit"></i> Account Control:</h3>
             <div class="actions">
+                <button style="border-radius: 0px;font-weight: bold;" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                <button style="border-radius: 0px;font-weight: bold;" id="cdescb"><i class="fas fa-pen"></i> Change Your About</button>
                 <button style="border-radius: 0px;font-weight: bold;" id="showPasswordButton"><i class="fas fa-eye"></i> Show Password</button>
                 <button style="border-radius: 0px;font-weight: bold;" id="changePasswordButton"><i class="fas fa-key"></i> Change Password</button>
-                <button style="border-radius: 0px;font-weight: bold;" id="cdescb"><i class="fas fa-pen"></i> Change Your About</button>
-                <button style="border-radius: 0px;font-weight: bold;" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 <a href="../index.html">Back Home</a>
+                <br><br>
             </div>
-            
+            <h3 style="color: #de5b00;padding: 3px;"><i class="fas fa-database"></i> Account Data:</h3>
+
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
             <button style="font-weight: bold;" id="deleteCommentsButton"><i class="fas fa-trash"></i> Delete All DATA</button>
@@ -379,5 +382,10 @@ document.getElementById('cdescb').addEventListener('click', function () {
             }
         });
       </script>
+      <script>
+        if(window.location.href == "https://skilldr.vercel.app/html/userdata.html"){
+        window.location.href = "https://skilldr.vercel.app/html/userdata.html?ref=tab";
+    }
+    </script>
 </body>
 </html>

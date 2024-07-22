@@ -387,7 +387,7 @@ input{
             
             <h1 class='e404'>404</h1>
             <h3 class='i404' style='font-weight:bold;'>Sorry, Nothing Like That!</h3>
-            <h5 style='font-weight:bold;text-align:center;color:gray;'>If you think it's error or something, <a href='../html/report.html'>Tell Us</a></h2>
+            <h5 style='font-weight:bold;text-align:center;color:gray;padding:5px;'>If you think it's error or something, <a href='../html/report.html'>Tell Us</a></h2>
             ";
         }
         ?>
