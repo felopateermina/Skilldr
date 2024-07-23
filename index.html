@@ -114,6 +114,14 @@
     display: none;
   }
 }
+.itslogo{
+    width: 90%;height: 7vh;
+}
+@media screen and (max-width:1023px) {
+    .itslogo{
+        width: 90%;height: 5vh;
+    }
+}
   </style>
 
 <!-- Open Graph Meta Tags -->
@@ -159,9 +167,9 @@
       <div class="container">
         <div class="logoofweb">
           
-          <a style="margin-right: 30px;text-decoration: none;" href="index.html">
+          <a style="margin-right: 30px;text-decoration: none;" href="index.html" >
 
-            <img src="imgs/skilldr-high-resolution-logo-white-transparent.png" style="width: 70%;height: 10vh;">
+            <img src="imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
           </a>
         </div>
         
@@ -652,19 +660,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 </script>
 
-<script>
-  // Disable right-click context menu
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Disable specific keyboard shortcuts
-  document.addEventListener('keydown', function(event) {
-      if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I") || 
-          (event.ctrlKey && event.shiftKey && event.key === "J") || 
-          (event.ctrlKey && event.key === "U")) {
-          event.preventDefault();
-      }
-  });
-</script>
 
   </body>
 </html>

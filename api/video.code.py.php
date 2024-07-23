@@ -162,7 +162,14 @@
             }
         }
 
-        
+        .itslogo{
+    width: 90%;height: 7vh;
+}
+@media screen and (max-width:1023px) {
+    .itslogo{
+        width: 90%;height: 5vh;
+    }
+}
     </style>
 </head>
 <body style="background-color: #001220;">
@@ -179,7 +186,7 @@
        
     <a  href="../index.html">
 
-<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" style="width: 90%;height: 10vh;">
+<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
 </a>        <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input

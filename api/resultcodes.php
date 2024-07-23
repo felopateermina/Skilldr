@@ -205,6 +205,14 @@ input{
       .buttonofsearch{
         border-radius: 10px;
       }
+      .itslogo{
+    width: 90%;height: 7vh;
+}
+@media screen and (max-width:1023px) {
+    .itslogo{
+        width: 90%;height: 5vh;
+    }
+}
       
     </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
@@ -222,7 +230,7 @@ input{
          
       <a  href="../index.html">
 
-<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" style="width: 90%;height: 10vh;">
+<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
 </a>
         <button
           class="navbar-toggler"
