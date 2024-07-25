@@ -683,7 +683,7 @@ displayComments();
 <br>
 <footer style="background-color: #000c15; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
 
-<h4>© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">Felopateer Mina</span></h4>
+<h4>© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">Dark Alpha</span></h4>
 <br>
 
 <div class="icons" style="display: flex;text-align: center;justify-content: center;">

@@ -43,7 +43,8 @@
             color: #de5b00;
         }
         input[type="number"],
-        input[type="password"] {
+        input[type="password"], 
+        input[type="email"] {
             width: 96%;
             padding: 10px;
             margin-bottom: 10px;
@@ -117,7 +118,7 @@
         </div>
         <div id="userData" style="display: none;">
             <div class="user-info">
-                <p  style="color: #de5b00;"><i class="fas fa-envelope"></i> Email: <span id="emailDisplay" style="color: black;"></span></p>
+                <p  style="color: #de5b00;"><i class="fas fa-envelope"></i> Email: <span id="emailDisplay" style="color: black;">Nothing Available</span></p>
                 <p  style="color: #de5b00;"><i class="fas fa-signal"></i> Status: <span id="userStatus" style="color: green;">Online</span></p>
                 <p  style="color: #de5b00;"><i class="fas fa-info-circle"></i> About Me: <br><br> <span id="descriptionDisplay" style="color: black;padding-left: 20px;"></span></p>
 <br>
@@ -158,9 +159,9 @@
         <div id="changeEmailPrompt" class="change-email-section" style="display: none;">
             <form id="changeEmailForm">
                 <label for="newEmail">New Email:</label>
-                <input type="email" id="newEmail" required>
+                <input type="email" id="newEmail" required >
                 <label for="confirmNewEmail">Confirm New Email:</label>
-                <input type="email" id="confirmNewEmail" required>
+                <input type="email" id="confirmNewEmail" required >
                 <button style="font-weight: bold;" id="submitChangeEmail" type="button"><i class="fas fa-envelope"></i> Change Email</button>
                 <p id="changeEmailError" class="error"><i class="fas fa-exclamation-triangle"></i> Error changing email. Please try again.</p>
                 <p id="changeEmailSuccess" style="display: none; color: green;"><i class="fas fa-check"></i> Email changed successfully!</p>
@@ -438,6 +439,7 @@ document.getElementById('cdescb').addEventListener('click', function () {
             setTimeout(() => {
                 window.location.href = "userdata.html";
             }, 2000);
+
         } else {
             document.getElementById('changeEmailError').style.display = 'block';
             document.getElementById('changeEmailSuccess').style.display = 'none';
