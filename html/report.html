@@ -46,6 +46,21 @@
             font-size: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        .btn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: 1px black solid;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        .btn:hover {
+            background-color: #000000;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +80,7 @@
             <br><br>
             <label for="report">Please provide details:</label>
             <br><br>
-            <textarea id="report" name="report" required></textarea>
+            <textarea id="report" name="report" required placeholder="There is a problem in..."></textarea>
             <br>
             <button type="submit" class="btn">Submit</button>
         </form>
@@ -74,12 +89,6 @@
     <script>
         document.getElementById('reportForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            var reportType = document.getElementById('reportType').value;
-            var reportText = document.getElementById('report').value;
-            var message = encodeURIComponent("Report Type: " + reportType + "\nDetails: " + reportText);
-            var whatsappURL = "https://wa.me/+201286473686?text=" + message;
-            window.open(whatsappURL, "_blank");
-            alert('Thank you for your report!');
              window.location.href = 'thankyou.html';
         });
     </script>
