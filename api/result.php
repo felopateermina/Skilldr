@@ -345,7 +345,7 @@ input{
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/userdata.html"><i class="fas fa-user"></i> Account</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/community.html"><i class="fas fa-comments"></i> Community</a></li>
-                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/studio.html"><i class="fa-brands fa-studiovinari"></i> Studio</a></li>
 
             </ul>
             </div>
