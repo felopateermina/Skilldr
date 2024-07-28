@@ -436,7 +436,7 @@ textarea{
             $videoId = $_GET['id'];
             $videos = [
                 [
-                    'id' => 1,
+                    'id' => "vandamGHv",
                     'title' => '[Arabic] Learn Python in 2020 In 53 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020 <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Abdelrahman Gamal</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=SOHulmvIAScQQ9nl&amp;list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE',
@@ -445,7 +445,7 @@ textarea{
                     'saveNo' => '+ 3M',
                 ],
                 [
-                    'id' => 2,
+                    'id' => "lkhvoejVt",
                     'title' => '[Arabic] Learn Python in 2020 In 153 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=WgF7EPmOZFmI3i3T&amp;list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs',
@@ -454,7 +454,7 @@ textarea{
                     'saveNo' => '+ 4.9M',
                 ],
                 [
-                    'id' => 4,
+                    'id' => "klhvoVehav",
                     'title' => '[Arabic] Learn Python in 2020 In 51 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Codezilla</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'videoseries?si=5Io6MXF9FWIGfMlE&amp;list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ',
@@ -463,7 +463,7 @@ textarea{
                     'saveNo' => '+ 13M',
                 ],
                 [
-                    'id' => 3,
+                    'id' => "mbGvjedv",
                     'title' => '[English] Learn Python in 2021 In One Video',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2021. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
                     'youtubeId' => 'XKHEtdqhLK8?si=LhVmWx3UEvy2d0Qf',
@@ -523,6 +523,7 @@ textarea{
                 echo '<center><svg class="no_ex" width="80" height="80" fill="none" stroke="#de5b00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M17.344 17.719c1.354 1.102 2.156 2.16 2.156 4.031"></path> <path d="M6.656 17.719C5.302 18.82 4.5 19.878 4.5 21.75"></path> <path d="M18 9.75c1.354-1.102 1.5-2.628 1.5-4.5"></path> <path d="M6 9.656C4.646 8.554 4.5 7.122 4.5 5.25"></path> <path d="M21.75 13.508H18"></path> <path d="M6 13.508H2.25"></path> <path d="M12 9v12"></path> <path d="M12 21.003c-3.3 0-6-2.7-6-6V10.5C6 7.45 8.7 6 12 6s6 1.2 6 4.5v4.503c0 3.3-2.7 6-6 6Z"></path> <path d="M8.41 6.728a2.3 2.3 0 0 1-.16-.738 3.75 3.75 0 0 1 3.74-3.74h.02a3.75 3.75 0 0 1 3.74 3.74c-.01.23-.059.457-.146.67"></path> </svg></center>';
                 echo "<br>";
                 echo "<h2 style='justify-content:center;text-align:center;color:white;'>Sorry! ... Nothing To Watch.</h2>";
+                
             }
         } else {
             echo '<center><svg class="no_ex" width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M17.344 17.719c1.354 1.102 2.156 2.16 2.156 4.031"></path> <path d="M6.656 17.719C5.302 18.82 4.5 19.878 4.5 21.75"></path> <path d="M18 9.75c1.354-1.102 1.5-2.628 1.5-4.5"></path> <path d="M6 9.656C4.646 8.554 4.5 7.122 4.5 5.25"></path> <path d="M21.75 13.508H18"></path> <path d="M6 13.508H2.25"></path> <path d="M12 9v12"></path> <path d="M12 21.003c-3.3 0-6-2.7-6-6V10.5C6 7.45 8.7 6 12 6s6 1.2 6 4.5v4.503c0 3.3-2.7 6-6 6Z"></path> <path d="M8.41 6.728a2.3 2.3 0 0 1-.16-.738 3.75 3.75 0 0 1 3.74-3.74h.02a3.75 3.75 0 0 1 3.74 3.74c-.01.23-.059.457-.146.67"></path> </svg></center>';

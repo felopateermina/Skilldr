@@ -1,14 +1,14 @@
 {
     "name": "Skilldr Academy",
     "short_name": "Skilldr",
-    "description": "Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ",
+    "description": "Watch Free Online Courses!",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "theme_color": "#001220",
     "icons": [
       {
-        "src": "imgs/skilldr-high-resolution-logo-black-transparent.png",
+        "src": "imgs/logo.png",
         "sizes": "192x192",
         "type": "image/png"
       }
