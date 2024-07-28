@@ -358,7 +358,7 @@ box-shadow:  5px 5px 10px #000000,
     }
 }
 #jj{
-    width:20%;
+    width:15%;
 }
 @media screen and (max-width:1023px) {
     #jj{
@@ -447,8 +447,8 @@ textarea{
                     'likeNo' => '+ 19k',
                     'dislikeNo' => '+ 338',
                     'saveNo' => '+ 175k',
-                    'subs' => 'Soon',
-                    'channel' => 'skilldr.vercel.app',
+                    'subs' => '2,09k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCEMA3RbTCeE5GyArZVf2l5A',
                 ],
                 [
                     'id' => "nboFehfDjv",
@@ -522,7 +522,7 @@ textarea{
             echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
-            echo "<a href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
+            echo "<a style='width:40%' href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
             echo "</div>";
                     echo "<br>";
                 echo "<div class='desc'>";
