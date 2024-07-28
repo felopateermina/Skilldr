@@ -376,6 +376,9 @@ textarea{
         width: 90%;height: 5vh;
     }
 }
+#commentsContainer{
+    font-weight:bold;
+}
 </style>
 
 </head>
@@ -444,15 +447,19 @@ textarea{
                     'likeNo' => '+ 19k',
                     'dislikeNo' => '+ 338',
                     'saveNo' => '+ 175k',
+                    'subs' => 'Soon',
+                    'channel' => 'skilldr.vercel.app',
                 ],
                 [
                     'id' => "nboFehfDjv",
                     'title' => '[Arabic] Learn Lua Script in 2019 In 10 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Lua Script Course in 2019. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">JustCarry Explaining</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2019</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
                     'youtubeId' => 'videoseries?si=QDW-8leUXGhIkSkM&amp;list=PL6yhZuIk6Ic4oiNcQuf7Cw77fwbqFVxpD',
-                    'likeNo' => '+ 97k',
-                    'dislikeNo' => '+ 1270',
-                    'saveNo' => '+ 167k',
+                    'likeNo' => '+ 1.4k',
+                    'dislikeNo' => '+ 122',
+                    'saveNo' => '+ 35k',
+                    'subs' => '958 Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCWQY0lm8YabS8omoXIC21sg',
                 ],
                 [
                     'id' => "bnEpdAce",
@@ -462,6 +469,8 @@ textarea{
                     'likeNo' => '+ 43k',
                     'dislikeNo' => '+ 3372',
                     'saveNo' => '+ 144k',
+                    'subs' => '8.61k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCwFmpPW6wKmp47KXSPTVjnA',
                 ],
                 [
                     'id' => "feyGjeav",
@@ -471,6 +480,8 @@ textarea{
                     'likeNo' => '+ 71k',
                     'dislikeNo' => '+ 248',
                     'saveNo' => '+ 155k',
+                    'subs' => '13.6k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCrIsEy0a57Fz3MdEOvhWbkw',
                 ],
                 
           
@@ -492,6 +503,8 @@ textarea{
                 $likeNo = $selectedVideo['likeNo'];
                 $dislikeNo = $selectedVideo['dislikeNo'];
                 $saveNo = $selectedVideo['saveNo'];
+                $subs = $selectedVideo['subs'];
+                $channel = $selectedVideo['channel'];
                 echo "<div class='video-player'>";
                 echo "<iframe width='100%' height='400' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";
@@ -509,6 +522,7 @@ textarea{
             echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
+            echo "<a href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
             echo "</div>";
                     echo "<br>";
                 echo "<div class='desc'>";

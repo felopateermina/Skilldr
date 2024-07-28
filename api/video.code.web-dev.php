@@ -330,6 +330,13 @@
                     'filename' => 'si=Xwz4kmV8_HFFhkyM&amp;list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU',
                     'thumbnail' => 'https://img.youtube.com/vi/Xwz4kmV8_HFFhkyM/hqdefault.jpg'
                 ],
+                [
+                    'id' => "Quan3doSe",
+                    'title' => '<span style="color:blue;">[English]</span>: Learn Next.Js In 7 Hours And In One Video 2023',
+                    'description' => 'A Complete Next.Js Course in 2023',
+                    'filename' => '843nec-IvW0?si=MOoSKU2KUQMGB1nf',
+                    'thumbnail' => 'https://i.ytimg.com/vi/843nec-IvW0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHpJiYDQ5hfQ0RZn1T-ytnGGDybg'
+                ],
             ];
 
             if (isset($_GET['query'])) {

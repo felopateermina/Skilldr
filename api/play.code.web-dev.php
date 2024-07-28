@@ -378,6 +378,10 @@ textarea{
         width: 90%;height: 5vh;
     }
 }
+
+#commentsContainer{
+    font-weight:bold;
+}
 </style>
 
 </head>
@@ -579,6 +583,15 @@ textarea{
                     'dislikeNo' => '+ 526',
                     'saveNo' => '+ 233k',
                 ],
+                [
+                    'id' => "Quan3doSe",
+                    'title' => '[English] Learn Next.Js In 7 Hours And In One Video 2023',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Next.Js Course in 2023 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Dave Gray</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Next.Js</a>',
+                    'youtubeId' => '843nec-IvW0?si=MOoSKU2KUQMGB1nf',
+                    'likeNo' => '+ 10k',
+                    'dislikeNo' => '+ 2053',
+                    'saveNo' => '+ 410k',
+                ],
             ];
 
             $selectedVideo = null;
@@ -597,6 +610,8 @@ textarea{
                 $likeNo = $selectedVideo['likeNo'];
                 $dislikeNo = $selectedVideo['dislikeNo'];
                 $saveNo = $selectedVideo['saveNo'];
+                $subs = $selectedVideo['subs'];
+                $channel = $selectedVideo['channel'];
                 echo "<div class='video-player'>";
                 echo "<iframe width='100%' height='400' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";

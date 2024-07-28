@@ -378,6 +378,9 @@ textarea{
         width: 90%;height: 5vh;
     }
 }
+#commentsContainer{
+    font-weight:bold;
+}
 </style>
 
 </head>
@@ -490,6 +493,8 @@ textarea{
                 $likeNo = $selectedVideo['likeNo'];
                 $dislikeNo = $selectedVideo['dislikeNo'];
                 $saveNo = $selectedVideo['saveNo'];
+                $subs = $selectedVideo['subs'];
+                $channel = $selectedVideo['channel'];
                 echo "<div class='video-player'>";
                 echo "<iframe width='100%' height='400' src='https://www.youtube.com/embed/$youtubeId' frameborder='0' allowfullscreen></iframe>";
                     echo "</div>";
