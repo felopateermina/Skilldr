@@ -8,7 +8,6 @@
       type="image/x-icon"
     />
     <title>Web Development Video - Skilldr</title>
-    <meta http-equiv="refresh" content="0; url=../html/mant.htm">
 
 
     <link rel="stylesheet" type="text/css" href="../css/video.css">
@@ -514,6 +513,8 @@ textarea{
                     'likeNo' => '+ 6k',
                     'dislikeNo' => '+ 300',
                     'saveNo' => '+ 275k',
+                    'subs' => '1.5M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
                     'id' => 7,
@@ -523,6 +524,8 @@ textarea{
                     'likeNo' => '+ 120k',
                     'dislikeNo' => '+ 300',
                     'saveNo' => '+ 1.5M',
+                    'subs' => '1.5M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
                     'id' => 8,
@@ -532,6 +535,8 @@ textarea{
                     'likeNo' => '+ 142k',
                     'dislikeNo' => '+ 600',
                     'saveNo' => '+ 650k',
+                    'subs' => '1.5M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
                     'id' => 9,
@@ -541,6 +546,8 @@ textarea{
                     'likeNo' => '+ 58k',
                     'dislikeNo' => '+ 200',
                     'saveNo' => '+ 1.9M',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
                     'id' => 10,
@@ -550,6 +557,8 @@ textarea{
                     'likeNo' => '+ 40k',
                     'dislikeNo' => '+ 150',
                     'saveNo' => '+ 1.1M',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
                     'id' => 11,
@@ -559,6 +568,8 @@ textarea{
                     'likeNo' => '+ 80k',
                     'dislikeNo' => '+ 400',
                     'saveNo' => '+ 1.6M',
+                    'subs' => '1.52M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg',
                 ],
                 [
                     'id' => 12,
@@ -568,6 +579,8 @@ textarea{
                     'likeNo' => '+ 20k',
                     'dislikeNo' => '+ 132',
                     'saveNo' => '+ 780k',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
                     'id' => 13,
@@ -577,6 +590,8 @@ textarea{
                     'likeNo' => '+ 33k',
                     'dislikeNo' => '+ 200',
                     'saveNo' => '+ 1.2M',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
                     'id' => 14,
@@ -586,6 +601,8 @@ textarea{
                     'likeNo' => '+ 40k',
                     'dislikeNo' => '+ 128',
                     'saveNo' => '+ 1.5M',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
                     'id' => 15,
@@ -595,6 +612,8 @@ textarea{
                     'likeNo' => '+ 92k',
                     'dislikeNo' => '+ 526',
                     'saveNo' => '+ 233k',
+                    'subs' => '14.7k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCGCq3TxiYbLbAfAvGFqZovg',
                 ],
                 [
                     'id' => "Quan3doSe",
@@ -604,8 +623,8 @@ textarea{
                     'likeNo' => '+ 10k',
                     'dislikeNo' => '+ 2053',
                     'saveNo' => '+ 410k',
-                    'subs' => '',
-                    'channel' => '',
+                    'subs' => '325k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCY38RvRIxYODO4penyxUwTg',
                 ],
             ];
 
@@ -644,7 +663,7 @@ textarea{
             echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
-            echo "<a style='width:40%;' href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
+            echo "<a style='width:40%;' target='_blank' href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
 
             echo "</div>";
                     echo "<br>";
