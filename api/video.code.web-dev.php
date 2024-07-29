@@ -219,119 +219,119 @@
             <?php
             $videos = [
                 [
-                    'id' => 1,
+                    'watch' => 1,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn HTML in 2022 In One Video',
                     'description' => 'Learn HTML in 2022 In One Video. The Course In 37 Separated Videos',
                     'filename' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
                     'thumbnail' => 'https://img.youtube.com/vi/qfPUMV9J5yw/hqdefault.jpg'
                 ],
                 [
-                    'id' => 2,
+                    'watch' => 2,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn CSS in 2022 In One Video',
                     'description' => 'Learn CSS in 2022 In One Video. The Course In 88 Separated Videos',
                     'filename' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O',
                     'thumbnail' => 'https://img.youtube.com/vi/qyVkLebgfzY/hqdefault.jpg'
                 ],
                 [
-                    'id' => 3,
+                    'watch' => 3,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn JavaScript In One Video <span style="color:red;">(1)</span>',
                     'description' => 'Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos',
                     'filename' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK',
                     'thumbnail' => 'https://img.youtube.com/vi/gIGGhFlGgLI/hqdefault.jpg'
                 ],
                 [
-                    'id' => 4,
+                    'watch' => 4,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn JavaScript In One Video <span style="color:red;">(2)</span>',
                     'description' => 'Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos',
                     'filename' => 'FKrfis1W1tk?si=wffpm6lkKYF8LNKu',
                     'thumbnail' => 'https://img.youtube.com/vi/FKrfis1W1tk/hqdefault.jpg'
                 ],
                 [
-                    'id' => 5,
+                    'watch' => 5,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn Bootstrap In 12 Videos',
                     'description' => 'A Complete Bootstrap Course in 2022',
                     'filename' => 'videoseries?si=jr_L00-B67GNYRq-&amp;list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ',
                     'thumbnail' => 'https://img.youtube.com/vi/jr_L00-B67GNYRq/hqdefault.jpg'
                 ],
                 [
-                    'id' => 999,
+                    'watch' => 999,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn React-JS In 30 Videos',
                     'description' => 'A Complete React-JS Course in 2022',
                     'filename' => 'videoseries?si=uoLF7ZiC8TaV-5cx&amp;list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW',
                     'thumbnail' => 'https://img.youtube.com/vi/uoLF7ZiC8TaV-5cx/hqdefault.jpg'
                 ],
                 [
-                    'id' => 6,
+                    'watch' => 6,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn PHP In 105 Videos',
                     'description' => 'A Complete PHP Course in 2022',
                     'filename' => 'videoseries?si=PgA3KHaYp3EjTywe&amp;list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq',
                     'thumbnail' => 'https://img.youtube.com/vi/PgA3KHaYp3EjTywe/hqdefault.jpg'
                 ],
                 [
-                    'id' => 7,
+                    'watch' => 7,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn MYSQL In 51 Videos',
                     'description' => 'A Complete MYSQL Course in 2020',
                     'filename' => 'videoseries?si=pTpW9ajAf691nCdo&amp;list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9',
                     'thumbnail' => 'https://img.youtube.com/vi/pTpW9ajAf691nCdo/hqdefault.jpg'
                 ],
                 [
-                    'id' => 8,
+                    'watch' => 8,
                     'title' => '<span style="color:red;">[Arabic]</span>: Learn Laravel In 21 Videos',
                     'description' => 'A Complete Laravel Course in 2021',
                     'filename' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP',
                     'thumbnail' => 'https://img.youtube.com/vi/SmI4WPH26nADZhdS/hqdefault.jpg'
                 ],
                 [
-                    'id' => 9,
+                    'watch' => 9,
                     'title' => '<span style="color:blue;">[English]</span>: Learn HTML & CSS In One Video 2023',
                     'description' => 'A Complete HTML & CSS Course in 2023',
                     'filename' => 'HGTJBPNC-Gw?si=i5gJ5fhCxskoxn0e',
                     'thumbnail' => 'https://img.youtube.com/vi/HGTJBPNC-Gw/hqdefault.jpg'
                 ],
                 [
-                    'id' => 10,
+                    'watch' => 10,
                     'title' => '<span style="color:blue;">[English]</span>: Learn JAVASCRIPT In One Video 2024',
                     'description' => 'A Complete JAVASCRIPT Course in 2024',
                     'filename' => 'lfmg-EJ8gm4?si=IIlZEQiXAHipOTx0',
                     'thumbnail' => 'https://img.youtube.com/vi/lfmg-EJ8gm4/hqdefault.jpg'
                 ],
                 [
-                    'id' => 11,
+                    'watch' => 11,
                     'title' => '<span style="color:blue;">[English]</span>: Learn Bootstrap In 20 Videos 2021',
                     'description' => 'A Complete Bootstrap Course in 2021',
                     'filename' => 'videoseries?si=jLu4BOAOlwlEqNfn&amp;list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR',
                     'thumbnail' => 'https://img.youtube.com/vi/jLu4BOAOlwlEqNfn/hqdefault.jpg'
                 ],
                 [
-                    'id' => 12,
+                    'watch' => 12,
                     'title' => '<span style="color:blue;">[English]</span>: Learn React-JS In One Video 2024',
                     'description' => 'A Complete React-JS Course in 2024',
                     'filename' => 'CgkZ7MvWUAA?si=4ku4iR4rtnuWrJxr',
                     'thumbnail' => 'https://img.youtube.com/vi/CgkZ7MvWUAA/hqdefault.jpg'
                 ],
                 [
-                    'id' => 13,
+                    'watch' => 13,
                     'title' => '<span style="color:blue;">[English]</span>: Learn PHP In One Video 2024',
                     'description' => 'A Complete PHP Course in 2024',
                     'filename' => 'zZ6vybT1HQs?si=OldtIeWGeqWIW5-H',
                     'thumbnail' => 'https://img.youtube.com/vi/zZ6vybT1HQs/hqdefault.jpg'
                 ],
                 [
-                    'id' => 14,
+                    'watch' => 14,
                     'title' => '<span style="color:blue;">[English]</span>: Learn MYSQL In One Video 2024',
                     'description' => 'A Complete MYSQL Course in 2024',
                     'filename' => '5OdVJbNCSso?si=mzTzMhKgJdwgKBUd',
                     'thumbnail' => 'https://img.youtube.com/vi/5OdVJbNCSso/hqdefault.jpg'
                 ],
                 [
-                    'id' => 15,
+                    'watch' => 15,
                     'title' => '<span style="color:blue;">[English]</span>: Learn Laravel In 52 Videos 2024',
                     'description' => 'A Complete Laravel Course in 2024',
                     'filename' => 'si=Xwz4kmV8_HFFhkyM&amp;list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU',
                     'thumbnail' => 'https://img.youtube.com/vi/Xwz4kmV8_HFFhkyM/hqdefault.jpg'
                 ],
                 [
-                    'id' => "Quan3doSe",
+                    'watch' => "Quan3doSe",
                     'title' => '<span style="color:blue;">[English]</span>: Learn Next.Js In 7 Hours And In One Video 2023',
                     'description' => 'A Complete Next.Js Course in 2023',
                     'filename' => '843nec-IvW0?si=MOoSKU2KUQMGB1nf',
@@ -347,7 +347,7 @@
 
                 foreach ($filteredVideos as $video) {
                     echo "<div class='video-item'>";
-                    echo "<a href='play.code.web-dev.php?id=" . $video['id'] . "'>";
+                    echo "<a href='play.php?watch=" . $video['watch'] . "'>";
                     echo "<img src='" . $video['thumbnail'] . "' alt='" . strip_tags($video['title']) . "'>";
                     echo "<div class='video-info'>";
                     echo "<h3>" . $video['title'] . "</h3>";
@@ -359,7 +359,7 @@
             } else {
                 foreach ($videos as $video) {
                     echo "<div class='video-item'>";
-                    echo "<a href='play.code.web-dev.php?id=" . $video['id'] . "'>";
+                    echo "<a href='play.php?watch=" . $video['watch'] . "'>";
                     echo "<img src='" . $video['thumbnail'] . "' alt='" . strip_tags($video['title']) . "'>";
                     echo "<div class='video-info'>";
                     echo "<h3>" . $video['title'] . "</h3>";

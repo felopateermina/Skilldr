@@ -7,7 +7,7 @@
       href="../imgs/logo.png"
       type="image/x-icon"
     />
-    <title>Web Development Video - Skilldr</title>
+    <title>Python Video - Skilldr</title>
 
 
     <link rel="stylesheet" type="text/css" href="../css/video.css">
@@ -110,7 +110,7 @@ h1 {
         width: 100%;
         border-radius: 10px;
         padding: 8px;
-             font-weight: bold;
+             font-weight: 700;
              font-size:18px;
 
 background: #0f0f0f;
@@ -347,7 +347,6 @@ box-shadow:  5px 5px 10px #000000,
     padding:7px;
     display:none;
 }
-
 #commentSec{
     display: none;
 }
@@ -359,6 +358,7 @@ box-shadow:  5px 5px 10px #000000,
         width:100%;
     }
 }
+
 #jj{
     width:15%;
 }
@@ -378,7 +378,6 @@ textarea{
         width: 90%;height: 5vh;
     }
 }
-
 #commentsContainer{
     font-weight:bold;
 }
@@ -418,7 +417,7 @@ textarea{
 </form>
         </div>
         <div class="rt" style="color: white;">
-         <a href="video.code.web-dev.php" style="color: #de5b00;font-size: 1.5em;">
+         <a href="video.code.py.php" style="color: #de5b00;font-size: 1.5em;">
          <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path d="M5 9h11a4 4 0 1 1 0 8h-1"></path>
   <path d="M9 13 5 9l4-4"></path>
@@ -436,11 +435,11 @@ textarea{
      
         <?php
         // Check if the video ID is provided in the query parameter
-        if (isset($_GET['id'])) {
-            $videoId = $_GET['id'];
+        if (isset($_GET['watch'])) {
+            $videoId = $_GET['watch'];
             $videos = [
                 [
-                    'id' => 1,
+                    'watch' => 1,
                     'title' => '[Arabic] Learn HTML in 2022 In One Video',
                     'description' => '<i class="fas fa-newspaper"></i> Learn HTML in 2022 In One Video. The Course In 37 Separated Videos <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'qfPUMV9J5yw?si=wnprAt3rLHTdsvCE',
@@ -451,7 +450,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 2,
+                    'watch' => 2,
                     'title' => '[Arabic] Learn CSS in 2022 In One Video',
                     'description' => '<i class="fas fa-newspaper"></i> Learn CSS in 2022 In One Video. The Course In 88 Separated Videos <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'qyVkLebgfzY?si=bZpnaoGjOFjHqh6O',
@@ -462,7 +461,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 3,
+                    'watch' => 3,
                     'title' => '[Arabic] Learn JavaScript In One Video - Part One',
                     'description' => '<i class="fas fa-newspaper"></i> Learn JavaScript In One Video - Part One . Lessons From 001 To 101 The Course In 188 Separated Videos <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'gIGGhFlGgLI?si=WZ7v-57M9a3RKvtK',
@@ -473,7 +472,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 4,
+                    'watch' => 4,
                     'title' => '[Arabic] Learn JavaScript In One Video - Part Two',
                     'description' => '<i class="fas fa-newspaper"></i> Learn JavaScript In One Video - Part Two . Lessons From 102 To 188 The Course In 188 Separated Videos <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Front-end_web_development" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'FKrfis1W1tk?si=wffpm6lkKYF8LNKu',
@@ -484,7 +483,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 5,
+                    'watch' => 5,
                     'title' => '[Arabic] Learn Bootstrap In 12 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Bootstrap Course in 2022 . <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
                     'youtubeId' => 'videoseries?si=jr_L00-B67GNYRq-&amp;list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ',
@@ -495,7 +494,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 999,
+                    'watch' => 999,
                     'title' => '[Arabic] Learn React-JS In 30 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete React-JS Course in 2022 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Unique Coderz Academy</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Framework For Front-End</a>',
                     'youtubeId' => 'videoseries?si=uoLF7ZiC8TaV-5cx&amp;list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW',
@@ -506,7 +505,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCq_xgufsy1KrGsmJq7mFH-g',
                 ],
                 [
-                    'id' => 6,
+                    'watch' => 6,
                     'title' => '[Arabic] Learn PHP In 105 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete PHP Course in 2022 . <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2022</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
                     'youtubeId' => 'videoseries?si=PgA3KHaYp3EjTywe&amp;list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq',
@@ -517,7 +516,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 7,
+                    'watch' => 7,
                     'title' => '[Arabic] Learn MYSQL In 51 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete MYSQL Course in 2020 . <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2020</a><br><i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-end</a>',
                     'youtubeId' => 'videoseries?si=pTpW9ajAf691nCdo&amp;list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9',
@@ -528,7 +527,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 8,
+                    'watch' => 8,
                     'title' => '[Arabic] Learn Laravel In 21 Videos',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Laravel Course in 2021 . <br><br> <i class="fas fa-user"></i> Creator: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="https://www.youtube.com/@ElzeroWebSchool" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
                     'youtubeId' => 'videoseries?si=SmI4WPH26nADZhdS&amp;list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP',
@@ -539,7 +538,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
                 ],
                 [
-                    'id' => 9,
+                    'watch' => 9,
                     'title' => '[English] Learn HTML & CSS In One Video 2023',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete HTML & CSS Course in 2023 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'HGTJBPNC-Gw?si=i5gJ5fhCxskoxn0e',
@@ -550,7 +549,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
-                    'id' => 10,
+                    'watch' => 10,
                     'title' => '[English] Learn JAVASCRIPT In One Video 2024',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete JAVASCRIPT Course in 2024 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Front-End</a>',
                     'youtubeId' => 'lfmg-EJ8gm4?si=IIlZEQiXAHipOTx0',
@@ -561,7 +560,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
-                    'id' => 11,
+                    'watch' => 11,
                     'title' => '[English] Learn Bootstrap In 20 Videos 2021',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Bootstrap Course in 2021 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Net Ninja</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Front-End Framework</a>',
                     'youtubeId' => 'videoseries?si=jLu4BOAOlwlEqNfn&amp;list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR',
@@ -572,7 +571,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg',
                 ],
                 [
-                    'id' => 12,
+                    'watch' => 12,
                     'title' => '[English] Learn React-JS In One Video 2024',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete React-JS Course in 2024 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Front-End Framework</a>',
                     'youtubeId' => 'CgkZ7MvWUAA?si=4ku4iR4rtnuWrJxr',
@@ -583,7 +582,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
-                    'id' => 13,
+                    'watch' => 13,
                     'title' => '[English] Learn PHP In One Video 2024',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete PHP Course in 2024 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-End</a>',
                     'youtubeId' => 'zZ6vybT1HQs?si=OldtIeWGeqWIW5-H',
@@ -594,7 +593,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
-                    'id' => 14,
+                    'watch' => 14,
                     'title' => '[English] Learn MYSQL In One Video 2024',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete MYSQL Course in 2024 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Back-End</a>',
                     'youtubeId' => '5OdVJbNCSso?si=mzTzMhKgJdwgKBUd',
@@ -605,7 +604,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
                 ],
                 [
-                    'id' => 15,
+                    'watch' => 15,
                     'title' => '[English] Learn Laravel In 52 Videos 2024',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Laravel Course in 2024 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Yelo Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2024</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Framework For Back-End</a>',
                     'youtubeId' => 'videoseries?si=NfeU7r53FAb7yuh3&amp;list=PLqDySLfPKRn5d7WbN9R0yJA9IRgx-XBlU',
@@ -616,7 +615,7 @@ textarea{
                     'channel' => 'https://www.youtube.com/channel/UCGCq3TxiYbLbAfAvGFqZovg',
                 ],
                 [
-                    'id' => "Quan3doSe",
+                    'watch' => "Quan3doSe",
                     'title' => '[English] Learn Next.Js In 7 Hours And In One Video 2023',
                     'description' => '<i class="fas fa-newspaper"></i> A Complete Next.Js Course in 2023 . <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Dave Gray</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" style="color:blue;text-decoration:none;">Next.Js</a>',
                     'youtubeId' => '843nec-IvW0?si=MOoSKU2KUQMGB1nf',
@@ -626,11 +625,101 @@ textarea{
                     'subs' => '325k Followers',
                     'channel' => 'https://www.youtube.com/channel/UCY38RvRIxYODO4penyxUwTg',
                 ],
+                                [
+                    'watch' => "vandamGHv",
+                    'title' => '[Arabic] Learn Python in 2020 In 53 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020 <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Abdelrahman Gamal</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'youtubeId' => 'videoseries?si=SOHulmvIAScQQ9nl&amp;list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE',
+                    'likeNo' => '+ 460k',
+                    'dislikeNo' => '+ 2180',
+                    'saveNo' => '+ 3M',
+                    'subs' => '534k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCbQh1yxBPVhyjB-G_blFFEQ',
+                ],
+                [
+                    'watch' => "lkhvoejVt",
+                    'title' => '[Arabic] Learn Python in 2020 In 153 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Elzero Web School</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'youtubeId' => 'videoseries?si=WgF7EPmOZFmI3i3T&amp;list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs',
+                    'likeNo' => '+ 580k',
+                    'dislikeNo' => '+ 1270',
+                    'saveNo' => '+ 4.9M',
+                    'subs' => '1.5M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ',
+                ],
+                [
+                    'watch' => "klhvoVehav",
+                    'title' => '[Arabic] Learn Python in 2020 In 51 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2020. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Codezilla</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2020</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'youtubeId' => 'videoseries?si=5Io6MXF9FWIGfMlE&amp;list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ',
+                    'likeNo' => '+ 760k',
+                    'dislikeNo' => '+ 3374',
+                    'saveNo' => '+ 13M',
+                    'subs' => '897k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCveX_0uBOHVHbpV838OGXVA',
+                ],
+                [
+                    'watch' => "mbGvjedv",
+                    'title' => '[English] Learn Python in 2021 In One Video',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Python Course in 2021. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Bro Code</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Python</a>',
+                    'youtubeId' => 'XKHEtdqhLK8?si=LhVmWx3UEvy2d0Qf',
+                    'likeNo' => '+ 884k',
+                    'dislikeNo' => '+ 3930',
+                    'saveNo' => '+ 18M',
+                    'subs' => '2M Followers',
+                    'channel' => 'https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ',
+                ],
+                                [
+                    'watch' => "wtvVvhffv",
+                    'title' => '[Arabic] Learn Lua Script in 2023 In 37 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Lua Script Course in 2023. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Adres_Dev</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'youtubeId' => 'videoseries?si=Tv56LMMkjL9fJvSf&amp;list=PL1s2Olz3_bXG4GZ6EoEvWu1kVpZLbp6Le',
+                    'likeNo' => '+ 19k',
+                    'dislikeNo' => '+ 338',
+                    'saveNo' => '+ 175k',
+                    'subs' => '2,09k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCEMA3RbTCeE5GyArZVf2l5A',
+                ],
+                [
+                    'watch' => "nboFehfDjv",
+                    'title' => '[Arabic] Learn Lua Script in 2019 In 10 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Lua Script Course in 2019. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">JustCarry Explaining</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2019</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'youtubeId' => 'videoseries?si=QDW-8leUXGhIkSkM&amp;list=PL6yhZuIk6Ic4oiNcQuf7Cw77fwbqFVxpD',
+                    'likeNo' => '+ 1.4k',
+                    'dislikeNo' => '+ 122',
+                    'saveNo' => '+ 35k',
+                    'subs' => '958 Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCWQY0lm8YabS8omoXIC21sg',
+                ],
+                [
+                    'watch' => "bnEpdAce",
+                    'title' => '[Arabic] Learn Lua Script in 2023 In 7 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Lua Script Course in 2023. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">0xWaleed</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2023</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'youtubeId' => 'videoseries?si=vdVYzCAhZ54zX3Jt&amp;list=PL3KnC8_o_BSlPDf439a5ecZnflwqQ-r8W',
+                    'likeNo' => '+ 43k',
+                    'dislikeNo' => '+ 3372',
+                    'saveNo' => '+ 144k',
+                    'subs' => '8.61k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCwFmpPW6wKmp47KXSPTVjnA',
+                ],
+                [
+                    'watch' => "feyGjeav",
+                    'title' => '[English] Learn Lua Script in 2021 In 39 Videos',
+                    'description' => '<i class="fas fa-newspaper"></i> A Complete Lua Script Course in 2021. <br><br> <i class="fas fa-user"></i> Creator: <a href="#" style="color:blue;text-decoration:none;">Steve"s Teacher</a><br> <i class="fas fa-clock"></i> Time: <a href="#" style="color:blue;text-decoration:none;">2021</a><br> <i class="fas fa-question-circle"></i> About: <a href="#" style="color:blue;text-decoration:none;">Lua Script</a>',
+                    'youtubeId' => 'videoseries?si=dhh87ZfasYn2gLy3&amp;list=PLYBJzqz8zpWavt37pA6NANJTGStIHpybU',
+                    'likeNo' => '+ 71k',
+                    'dislikeNo' => '+ 248',
+                    'saveNo' => '+ 155k',
+                    'subs' => '13.6k Followers',
+                    'channel' => 'https://www.youtube.com/channel/UCrIsEy0a57Fz3MdEOvhWbkw',
+                ],
+                
             ];
+
 
             $selectedVideo = null;
             foreach ($videos as $video) {
-                if ($video['id'] == $videoId) {
+                if ($video['watch'] == $videoId) {
                     $selectedVideo = $video;
                     break;
                 }
@@ -652,10 +741,10 @@ textarea{
                     echo "<h2 class='formobilelabel'>$videoTitle</h2>";
                 
                     echo "<div class='buttons'>";
-                    echo "<button style='font-weight:bold;' id='lkb' class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
-                    echo "<button style='font-weight:bold;' class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
-                    echo "<button style='font-weight:bold;' class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
-                     echo "<br>";
+            echo "<button style='font-weight:bold;' id='lkb' class='like-button' type='button'><i class='fas fa-thumbs-up'></i>$likeNo</button>";
+            echo "<button style='font-weight:bold;' class='dislike-button' type='button'><i class='fas fa-thumbs-down'></i>$dislikeNo</button>";
+            echo "<button style='font-weight:bold;' class='save-button' type='button'><i class='fas fa-eye'></i>$saveNo</button>";
+            echo "<br>";
             echo "<br>";
             echo "</div>";
 
@@ -663,7 +752,7 @@ textarea{
             echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
-            echo "<a style='width:40%;' target='_blank' href='$channel' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
+            echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
 
             echo "</div>";
                     echo "<br>";
@@ -681,6 +770,7 @@ textarea{
                 echo '<center><svg class="no_ex" width="80" height="80" fill="none" stroke="#de5b00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M17.344 17.719c1.354 1.102 2.156 2.16 2.156 4.031"></path> <path d="M6.656 17.719C5.302 18.82 4.5 19.878 4.5 21.75"></path> <path d="M18 9.75c1.354-1.102 1.5-2.628 1.5-4.5"></path> <path d="M6 9.656C4.646 8.554 4.5 7.122 4.5 5.25"></path> <path d="M21.75 13.508H18"></path> <path d="M6 13.508H2.25"></path> <path d="M12 9v12"></path> <path d="M12 21.003c-3.3 0-6-2.7-6-6V10.5C6 7.45 8.7 6 12 6s6 1.2 6 4.5v4.503c0 3.3-2.7 6-6 6Z"></path> <path d="M8.41 6.728a2.3 2.3 0 0 1-.16-.738 3.75 3.75 0 0 1 3.74-3.74h.02a3.75 3.75 0 0 1 3.74 3.74c-.01.23-.059.457-.146.67"></path> </svg></center>';
                 echo "<br>";
                 echo "<h2 style='justify-content:center;text-align:center;color:white;'>Sorry! ... Nothing To Watch.</h2>";
+                
             }
         } else {
             echo '<center><svg class="no_ex" width="46" height="46" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M17.344 17.719c1.354 1.102 2.156 2.16 2.156 4.031"></path> <path d="M6.656 17.719C5.302 18.82 4.5 19.878 4.5 21.75"></path> <path d="M18 9.75c1.354-1.102 1.5-2.628 1.5-4.5"></path> <path d="M6 9.656C4.646 8.554 4.5 7.122 4.5 5.25"></path> <path d="M21.75 13.508H18"></path> <path d="M6 13.508H2.25"></path> <path d="M12 9v12"></path> <path d="M12 21.003c-3.3 0-6-2.7-6-6V10.5C6 7.45 8.7 6 12 6s6 1.2 6 4.5v4.503c0 3.3-2.7 6-6 6Z"></path> <path d="M8.41 6.728a2.3 2.3 0 0 1-.16-.738 3.75 3.75 0 0 1 3.74-3.74h.02a3.75 3.75 0 0 1 3.74 3.74c-.01.23-.059.457-.146.67"></path> </svg></center>';
@@ -689,9 +779,7 @@ textarea{
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
-
-<a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
-
+                <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
 
         <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
@@ -707,6 +795,7 @@ textarea{
 
 
     </div>
+
 
 
 
