@@ -7,7 +7,7 @@
       href="../imgs/logo.png"
       type="image/x-icon"
     />
-    <title>Python Video - Skilldr</title>
+    <title>Video - Skilldr</title>
 
 
     <link rel="stylesheet" type="text/css" href="../css/video.css">
@@ -967,6 +967,6 @@ displayComments();
         }
     });
 </script>
-
+<script src="../js/enjoywatching.js"></script>
 </body>
 </html>
