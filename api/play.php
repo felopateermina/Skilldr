@@ -417,7 +417,7 @@ textarea{
 </form>
         </div>
         <div class="rt" style="color: white;">
-         <a href="video.code.py.php" style="color: #de5b00;font-size: 1.5em;">
+         <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;">
          <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path d="M5 9h11a4 4 0 1 1 0 8h-1"></path>
   <path d="M9 13 5 9l4-4"></path>
@@ -758,7 +758,6 @@ textarea{
                     echo "<br>";
                 echo "<div class='desc'>";
                 echo "<p>$videoDescription</p>";
-                echo "<br>";
                 echo "</div>";
          
                 
