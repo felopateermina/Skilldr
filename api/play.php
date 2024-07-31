@@ -381,6 +381,36 @@ textarea{
 #commentsContainer{
     font-weight:bold;
 }
+.topCreators{
+    overflow-y:hidden;
+    overflow-x:auto;
+    display:flex;
+    width:100%;
+}
+.cardcrt{
+    box-shadow:5px 5px 5px rgba(255,255,255,0.1);
+    padding:20px;
+    margin:10px;
+    text-align:center;
+    border-radius:20px;
+    width: 30%;
+    background: #0f0f0f;
+}
+.cardcrt img{
+    border-radius:50px;
+}
+.cardcrt h4{
+    color:gray;
+}
+@media screen and (max-width: 1023px) {
+    .cardcrt{
+        width: 100%;
+        max-width:100%;
+    }
+    .cardcrt h3{
+        font-size:15px;
+    }
+}
 </style>
 
 </head>
@@ -779,7 +809,7 @@ textarea{
         }
         ?>
                 <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
-
+<br>
         <div id="commentSec" class="comment-section">
     <h3>Comments</h3>
     <form id="commentForm">
@@ -789,7 +819,47 @@ textarea{
         <button type="submit">Submit</button>
     </form>
     <div id="commentsContainer"></div>
-</div>
+</div>   
+<br>
+ <h2><i class="fas fa-star"></i> Top Creators:</h2>
+ <br>
+                <div class="topCreators">
+                
+                    <div class="cardcrt">
+                        <div class="cardcrtimg">
+                            <img src="https://yt3.googleusercontent.com/-qCvx3y42iXp9cMNe5Yx3aoR2lL8TFxsrLShyBLuXOE4tY56kt_bPceyvPw95rpUqgKqI8zDBe4=s160-c-k-c0x00ffffff-no-rj" alt="creator">
+                        </div>
+                        <br>
+                        <div class="cardcrtname">
+                            <h3><i class="fas fa-user"></i> <a href="https://www.youtube.com/@ElzeroWebSchool" style="text-decoration:none;color:white;">Elzero Web School</a></h3>
+                        </div>
+                        <div class="cardcrtsubs">
+                            <h4><i class="fab fa-youtube"></i> 1.5M Followers</h4>
+                        </div>
+                        <br>
+                        <div class="place">
+                            <h3 style="color:#FFD700;"><i class="fas fa-medal"></i> First Place</h3>
+                        </div>
+                    </div>
+
+                    <div class="cardcrt">
+                        <div class="cardcrtimg">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_mPFVsxROj1dOtTWc9iNBwDYV4z42Q8LPokBSewiW9pCSg=s160-c-k-c0x00ffffff-no-rj" alt="creator">
+                        </div>
+                        <br>
+                        <div class="cardcrtname">
+                            <h3><i class="fas fa-user"></i> <a href="https://www.youtube.com/@BroCodez" style="text-decoration:none;color:white;">Bro Code</a></h3>
+                        </div>
+                        <div class="cardcrtsubs">
+                            <h4><i class="fab fa-youtube"></i> 2M Followers</h4>
+                        </div>
+                        <br>
+                        <div class="place">
+                            <h3 style="color:#C0C0C0;"><i class="fas fa-medal"></i> Second Place</h3>
+                        </div>
+                    </div>
+
+                </div>
 </div>
 
 
@@ -967,6 +1037,6 @@ displayComments();
         }
     });
 </script>
-<script src="../js/enjoywatching.js"></script>
+<script src="../js/notify.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showNotification() {
     new Notification("Available Updates", {
-        body: "See The Updates In This Pages Now!",
+        body: "New Updates Are Available Now!",
         icon: "../imgs/logo.png" // Optional
     });
 }
