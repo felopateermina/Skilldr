@@ -3,12 +3,8 @@
 <head>
     <title>Register - Skilldr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link
-      rel="shortcut icon"
-      href="../imgs/logo.png"
-      type="image/x-icon"
-    />    <meta name="description" content="Sign In Now In Skilldr!">
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon"/>
+    <meta name="description" content="Sign In Now In Skilldr!">
     <style>
         body {
             background-color: #001220;
@@ -62,13 +58,12 @@
         }
         @media screen and (max-width:1023px) {
             #registerForm {
-            box-shadow: none;
-            width: 95%;
-        }
+                box-shadow: none;
+                width: 95%;
+            }
         }
     </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <br>
@@ -76,10 +71,10 @@
         <form id="registerForm">
             <h4>Skill<span style="color: #de5b00;">dr.</span></h4>
             <h3><i class="fas fa-user"></i> Register Now!</h3>
+            <span style="font-weight: bold;" id="usernameError" class="error-message"></span>
             <input maxlength="10" placeholder="Enter Your Username" type="text" id="registerUsername" required><br>
             <input maxlength="4" placeholder="Enter Your PIN (4 digits)" type="password" id="registerPIN" required><br>
             <span id="pinError" class="error-message"></span>
-
             <input maxlength="20" placeholder="Enter Your Password" type="password" id="registerPassword" required><br>
             <input maxlength="15" placeholder="Enter Your Name" type="text" id="registerName" required><br>
             <input maxlength="20" placeholder="Enter Your E-mail" type="email" id="registerEmail" required><br>
@@ -129,6 +124,18 @@
             const name = document.getElementById('registerName').value;
             const email = document.getElementById('registerEmail').value;
 
+            // Validate username
+            const usernameRegex = /^[a-zA-Z0-9_]+$/; // Allow only alphanumeric characters and underscores
+            const usernameError = document.getElementById('usernameError');
+            if (!usernameRegex.test(username)) {
+                document.getElementById('registerUsername').classList.add('invalid');
+                usernameError.textContent = 'Invalid Username Characters.';
+                return;
+            } else {
+                document.getElementById('registerUsername').classList.remove('invalid');
+                usernameError.textContent = '';
+            }
+
             // Validate PIN
             const pinRegex = /^\d{4}$/; // Assuming PIN is a 4-digit number
             const pinError = document.getElementById('pinError');
@@ -147,7 +154,7 @@
                     password: password,
                     name: name,
                     email: email,
-                    description: "This is your account description, Re-write It Now!"
+                    description: "This is your account description, Re-write It Now!",
                 };
 
                 localStorage.setItem(username, JSON.stringify(user));

@@ -134,7 +134,7 @@
                 <a href="../index.html">Back Home</a>
                 <br><br>
             </div>
-            <h3 style="color: #de5b00;padding: 3px;"><i class="fas fa-database"></i> Your Recent Activity:</h3>
+            <h3 style="color: #de5b00;padding: 3px;"><i class="fas fa-database"></i> Academy Activity:</h3>
 
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
@@ -194,12 +194,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const currentUser = sessionStorage.getItem('currentUser');
     const storedUser = currentUser ? JSON.parse(localStorage.getItem(currentUser)) : null;
     const userPin = sessionStorage.getItem('userPin');
-
     if (!currentUser || !storedUser || !userPin) {
         window.location.href = 'login.html';
         return;
     }
-
+console.log(currentUser);
     document.getElementById('pinPrompt').style.display = 'block';
 
     document.getElementById('submitPin').addEventListener('click', function () {
@@ -307,7 +306,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const comments = localStorage.getItem('comments');
         return comments ? JSON.parse(comments) : [];
     }
-
     function createCommentElement(comment) {
         const commentElement = document.createElement('div');
         commentElement.classList.add('comment');
