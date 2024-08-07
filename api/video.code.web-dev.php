@@ -170,7 +170,9 @@
         width: 90%;height: 5vh;
     }
 }
-        
+       p{
+            font-weight:bold;
+       } 
     </style>
 </head>
 <body style="background-color: #001220;">

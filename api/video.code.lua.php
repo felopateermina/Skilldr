@@ -93,7 +93,9 @@
         header {
             box-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
         }
-
+        p{
+            font-weight:bold;
+       } 
         .container {
             display: flex;
             flex-wrap: wrap;

@@ -781,6 +781,7 @@ textarea{
             echo "<div style='align-items:center;'>";
             echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
+            echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
 
             echo "</div>";
@@ -974,7 +975,7 @@ displayComments();
 
         if (!currentUser) {
 }else{
-        alert("Thanks For Your Like !");
+        alert("Successfully Liked The Video!");
              // Get existing comments from local storage
              const comments = getCommentsFromLocalStorage();
 
