@@ -12,21 +12,21 @@ $products = [
       'price' => "Learn Javascript with love in Arabic and English",
       'category' => 'Programming',
       'time' => "15/12/2023",
-      'id' => "play.code.web-dev.php?id=3",
+      'id' => "play.php?watch=3",
   ],
   [
       'name' => 'html html tutorials html examples html5 html tags html forms html tables html attributes html elements html semantics html templates html best practices html css html js html responsive design html accessibility html seo html canvas html audio html video html svg html boilerplate html forms validation html meta tags html semantic elements html layout html email templates semantic html html5 apis web components html performance',
       'price' => "Learn HTML with love in Arabic and English",
       'category' => 'Programming',
       'time' => "15/12/2023",
-      'id' => "play.code.web-dev.php?id=1",
+      'id' => "play.php?watch=1",
   ],
   [
       'name' => 'css css tutorials css examples css3 css selectors css properties css animations css transitions css flexbox css grid css layouts css frameworks css libraries css best practices css variables css typography css responsive design css media queries css preprocessors sass css bootstrap css materialize css tailwind css css hover effects css position css display css box model css z-index css pseudo-classes css pseudo-elements css performance optimization css variables css frameworks css animations css transitions css typography css layout techniques css flexbox css grid system css preprocessors',
       'price' => "Learn CSS with love in Arabic and English",
       'category' => 'Programming',
       'time' => "15/12/2023",
-      'id' => "play.code.web-dev.php?id=2",
+      'id' => "play.php?watch=2",
   ],
   [
       'name' => 'web development web development tutorials web development frameworks web development tools front-end development back-end development full-stack development responsive web design web development best practices web development projects web development languages html css javascript react.js angular.js vue.js node.js express.js web development libraries web development trends web development courses web development bootcamps web development certifications web development jobs web development salary web development career path web development portfolio web development for beginners web development roadmap web performance optimization devops continuous integration test-driven development agile methodologies software development life cycle',
@@ -40,14 +40,14 @@ $products = [
       'price' => "Learn MYSQL In 2024",
       'category' => 'Programming',
       'time' => "21/5/2024",
-      'id' => "play.code.web-dev.php?id=7",
+      'id' => "play.php?watch=7",
   ],
   [
       'name' => 'laravel laravel tutorials laravel examples laravel framework laravel installation laravel setup laravel controllers laravel models laravel views laravel routes laravel migrations laravel eloquent laravel blade templating laravel authentication laravel authorization laravel middleware laravel api development laravel rest api laravel crud laravel validation laravel form handling laravel sessions laravel caching laravel deployment laravel best practices laravel packages laravel artisan commands laravel queues laravel event handling laravel testing laravel performance optimization laravel security laravel projects laravel authentication and authorization laravel middleware and routing laravel eloquent orm laravel blade templating engine',
       'price' => "Learn Laravel In 2024",
       'category' => 'Programming',
       'time' => "21/5/2024",
-      'id' => "play.code.web-dev.php?id=8",
+      'id' => "play.php?watch=8",
   ],
   [
       'name' => 'python python tutorials python examples python programming python for beginners python projects python scripts python functions python libraries python frameworks python data science python machine learning python web development python django python flask python pandas python numpy python matplotlib python seaborn python scikit-learn python tensorflow python keras python data analysis python automation python scripting python file handling python exceptions python debugging python best practices python performance optimization python oop python threading python asyncio python regex python gui python tkinter python projects for beginners python data analysis python web development frameworks django flask machine learning libraries tensorflow keras data visualization matplotlib seaborn',
@@ -68,14 +68,14 @@ $products = [
       'price' => "Learn PHP In 2024 In Arabic.",
       'category' => 'Programming',
       'time' => "5/7/2024",
-      'id' => "play.code.web-dev.php?id=6",
+      'id' => "play.php?watch=6",
   ],
   [
       'name' => 'php php tutorials php examples php programming php for beginners php projects php scripts php functions php arrays php objects php classes php oops php form handling php file handling php sessions php cookies php mysql php pdo php mysqli php laravel php codeigniter php symfony php composer php artisan php api development php rest api php validation php authentication php authorization php security php debugging php performance optimization php best practices php error handling php mvc framework php cms development php wordpress development php projects for beginners php frameworks laravel codeigniter symfony php performance optimization techniques php security best practices php for beginners to advanced',
       'price' => "Learn PHP In 2024 In English.",
       'category' => 'Programming',
       'time' => "5/7/2024",
-      'id' => "play.code.web-dev.php?id=13",
+      'id' => "play.php?watch=13",
   ],
   [
       'name' => 'my account password my account password my account pin my account management email e-mail account settings of my account account management email settings password reset two-factor authentication security settings',
@@ -377,8 +377,10 @@ input{
                   placeholder="Search Skilldr..."
                   id="search"
                   required
+                  autofocus
                   value="<?php echo $searchQuery;?>"
                 />
+                <button style="background-color:#de5b00;color:white;outline:none;border:none;border-radius:10px;padding:5px;width:50px;margin-left:5px;"><i class="fas fa-search"></i></button>
 
 </form>
 <br><br>

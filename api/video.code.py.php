@@ -22,7 +22,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            padding: 10px 20px;
+            padding: 8px 20px;
             width: 100%;
             align-items: center;
         }
@@ -173,7 +173,20 @@
 p{
             font-weight:bold;
        } 
+       a{
+    text-decoration:none;
+}
+#search__form{
+    display:none;
+}
+@media screen and (max-width:1023px) {
+    #search__form{
+        display:block;
+    }
+}
     </style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body style="background-color: #001220;">
     <div id="mySidenav" class="sidenav">
@@ -186,32 +199,42 @@ p{
     </div>
 
     <header>
+        
        
     <a  href="../index.html">
 
 <img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
-</a>        <div class="chrme">
+</a>
+<div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input
                     title="Search Skilldr"
                     type="search"
                     name="query"
+                    required
                     style="border-radius: 10px; color: #de5b00; font-weight: 700; width: 700px;"
                     placeholder="Search Skilldr Academy ..."
                     id="search"
                 />
+                <button style="background-color:#de5b00;color:white;outline:none;border:none;border-radius:10px;padding:5px;width:40px;margin-left:5px;"><i class="fas fa-search"></i></button>
             </form>
         </div>
-        <div class="rt" style="color: white;">
-            <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 9h11a4 4 0 1 1 0 8h-1"></path>
-                    <path d="M9 13 5 9l4-4"></path>
-                </svg>
-            </a>
-        </div>
-    </header>
+        <div class="rt" style="color: white;display:flex;">
+            
+         <a id="search__form" href="result.php?query=python" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h2><i class="fas fa-search"></i></h2>
+         </a>
+         
+         <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h2><i class="fas fa-backward"></i></h2>
+         </a>
+         
+         <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h2><i class="fas fa-home"></i></h2>
+         </a>
 
+      </div>
+    </header>
     <div class="container">
     <div class="txt" style="width:100%; background-color: #c95400;padding: 5px;border-radius: 10px;">
             <h3 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Python Courses"</h3>
