@@ -4,9 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - Skilldr</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link
+    rel="shortcut icon"
+    href="../imgs/logo.png"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../WOW-master/css/libs/animate.css" />
+  <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    input{
+    border: none;
+  background-color: white;
+  color: #de5b00;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+
+}
+.search{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+}
+form{
+    width: 100%;
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 50%;
+}
+    body
+    {
+        background-color: #001220;  
+    }
+    .itslogo{
+    width: 90%;height: 7vh;
+}
+@media screen and (max-width:1023px) {
+    .itslogo{
+        width: 90%;height: 5vh;
+    }
+}
+.card-title{
+    color: #de5b00;
+    font-weight: bold;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #de5b00;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#searchtitle{
+    display: none;
+}
+.titlecats{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+  </style>
     <meta name="description" content="See More Courses In Skilldr Academy Now!">
 </head>
 <body>
-    (soon)
+  
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <div class="logoofweb">
+            
+            <a style="margin-right: 30px;text-decoration: none;" href="../index.html" >
+  
+              <img src="../imgs/log1 (5).png" class="itslogo">
+            </a>
+          </div>
+          
+          <a class="navbar-brand" id="openaccountinf">
+  
+         
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main"
+            aria-controls="main"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+  
+  
+  
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+  
+              <a href="../index.html" class="nav-link active">Home</a>
+              
+              <div class="dropdown-center">
+                <button class=" nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/whiteboard.html"><i class="fas fa-chalkboard-teacher"></i> Whiteboard</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../index.html#about"><i class="fas fa-question-circle"></i> About Us</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="#courses"><i class="fas fa-video"></i> Courses</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../api/share.php"><i class="fas fa-share"></i> Share</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/userdata.html"><i class="fas fa-user"></i> Account</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/community.html"><i class="fas fa-comments"></i> Community</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/studio.html"><i class="fa-brands fa-studiovinari"></i> Studio</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-center">
+                <button class=" nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/code/intro.html"><i class="fas fa-code"></i> Programming</a></li>
+                  <li><a style="font-weight: bold;" class="dropdown-item" href="../html/typefast/typefast.html"><i class="fas fa-keyboard"></i> Typing Fast</a></li>
+                </ul>
+              </div>      
+                 
+  
+  
+  
+  
+  
+  
+  
+             </div>
+  
+  
+  
+            <h1 class="h1al2" style="margin-right: 0px">|</h1>
+            <hr style="color: white" />
+            <br />
+  
+  
+  
+  
+        <div class="opt" id="opt">
+        </div>
+  
+  
+            
+          
+            
+          </div>
+        </div>
+      </nav>
+<div class="main">
+
+
+
+
+
+<br>
+
+
+    <h3 class="titlecats" id="tc"><i class="fas fa-medal"></i> Top Courses:</h3>
+    <h3 class="titlecats" id="searchtitle"><i class="fas fa-search"></i> Search:</h3>
+    
+    <div class="cards" id="topcourses">
+        <div class="card-group">
+            <div class="card">
+              <img src="https://img.freepik.com/free-vector/tiny-people-happy-kids-learning-programming-huge-laptop_335657-2500.jpg?ga=GA1.1.1904318355.1721759153&semt=ais_hybrid" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-code"></i> Programming Learning</h5>
+                <p class="card-text">Learn programming from the ground up with our all-inclusive course. Cover basics, object-oriented principles, data structures, web development, and databases. Ideal for all skill levels, this course offers practical projects and expert guidance to help you master programming and build real-world applications.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary"><button onclick="location.href='code/intro.html'">Get Started Now</button></small>
+              </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/speed-test-concept-illustration_114360-4223.jpg?t=st=1723287123~exp=1723290723~hmac=9b49b6c0ef4f66db41cfeeea4334ba153cc4d1ef92e574627569c88bb1654601&w=826" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-keyboard"></i> Fast Typing Learning</h5>
+                  <p class="card-text">Boost your typing speed and accuracy with our intensive course. Learn touch typing techniques, practice drills, and gain tips for improving efficiency. Perfect for all levels, this course provides targeted exercises and real-time feedback to enhance your typing skills quickly and effectively.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary"><button onclick="location.href='typefast/typefast.html'">Get Started Now</button></small>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+<br>
+    <h3 class="titlecats" id="tc"><i class="fas fa-code"></i> Programming Courses:</h3>
+    <div class="cards" id="programming">
+        <div class="card-group">
+            <div class="card">
+              <img src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg?t=st=1723289747~exp=1723293347~hmac=1efc81352574e80af2aa887513894721b0d6bdecea3cf79d869731b83a41e050&w=826" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-code"></i> Javascript Learning</h5>
+                <p class="card-text">Master JavaScript with our hands-on course. Learn core concepts, from basics to advanced techniques, including ES6 features and modern frameworks. Gain practical experience through projects and real-world applications, designed for all skill levels to boost your JavaScript proficiency and development skills.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary"><button onclick="location.href='../api/video.code.web-dev.php'">Get Started Now</button></small>
+              </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/website-setup-concept-landing-page_23-2148310295.jpg?ga=GA1.1.1904318355.1721759153&semt=ais_hybrid" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" title="Web Development Learning"><i class="fas fa-globe"></i> Web Development Le..</h5>
+                  <p class="card-text">Explore web development with our comprehensive course. Cover HTML, CSS, JavaScript, and modern frameworks to build responsive, interactive websites. Ideal for beginners and advanced learners, this course offers practical projects and expert guidance to enhance your web development skills and create dynamic web applications.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary"><button onclick="location.href='../api/video.code.web-dev.php'">Get Started Now</button></small>
+                </div>
+              </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149387396.jpg?t=st=1723290855~exp=1723294455~hmac=75ae26f0dfea84773da3272277611dc4049e69be787d6f51f695c4629cf248cb&w=826" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" title="Web Development Learning"><i class="fab fa-python"></i> Python Learning</h5>
+                  <p class="card-text">Learn Python with our detailed course. Start with basic syntax and progress to advanced topics like data analysis, web development, and automation. Perfect for all skill levels, this course provides hands-on projects and expert insights to boost your Python programming skills and tackle real-world problems.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary"><button onclick="location.href='../api/video.code.py.php'">Get Started Now</button></small>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+<br>
+<br>
+<footer style="background-color: #000c15; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+
+    <h6 style="font-weight: bold;">© Skill<span style="color: #de5b00;">dr.</span> Made By <span style="color: #de5b00;">Dark Alpha</span></h6>
+  
+    <div class="icons" style="display: flex;text-align: center;justify-content: center;margin-top: 20px;">
+    
+    <a href="../../api/result.php?query=python" style="color: white;">
+      <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="m21.407 19.753-4.41-4.41a8.148 8.148 0 0 0 1.633-4.903c0-4.516-3.674-8.19-8.19-8.19s-8.19 3.674-8.19 8.19 3.674 8.19 8.19 8.19a8.148 8.148 0 0 0 4.902-1.633l4.41 4.41a1.171 1.171 0 0 0 1.655-1.654ZM4.59 10.44a5.85 5.85 0 1 1 5.85 5.85 5.857 5.857 0 0 1-5.85-5.85Z"></path>
+      </svg>
+    </a>
+    
+    <a href="../userdata.html" style="color: white;">
+      <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm.094 4.5a3.375 3.375 0 1 1 0 6.75 3.375 3.375 0 0 1 0-6.75ZM12 20.25a8.23 8.23 0 0 1-6.055-2.653C6.359 15.45 10.08 15 12 15s5.64.45 6.055 2.596A8.228 8.228 0 0 1 12 20.25Z"></path>
+      </svg>
+    </a>
+    
+    <a href="../../api/share.php" style="color: white;">
+      <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.756 20.584a.75.75 0 0 1-.506-.71c0-3.426.688-6.166 2.046-8.144C5.936 9.338 8.525 8.052 12 7.891V4.125a.75.75 0 0 1 1.268-.542l8.25 7.875a.75.75 0 0 1 0 1.084l-8.25 7.875A.75.75 0 0 1 12 19.875v-3.74c-2.11.064-3.703.406-4.972 1.062-1.371.709-2.365 1.768-3.437 3.14a.75.75 0 0 1-.835.248Z"></path>
+      </svg>
+    </a>
+    </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+        
+        searchInput.addEventListener('input', function () {
+            const query = searchInput.value.toLowerCase();
+    
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const description = card.querySelector('.card-text').textContent.toLowerCase();
+    
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = 'flex';
+                    document.getElementById("tc").style.display = "none";
+                    document.getElementById("searchtitle").style.display = "block";
+                    if (searchInput.value == ""){
+                        window.location.reload();
+                    }
+                } else {
+                    card.style.display = 'none';
+                    if (searchInput.value == ""){
+                        window.location.reload();
+                    }
+                    document.getElementById("tc").style.display = "none";
+                    document.getElementById("searchtitle").style.display = "block";
+                }
+            });
+        });
+    });
+    </script>
+    
+      <script src="../bootstrap/js/all.min.js"></script>
+      <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>  
 </body>
 </html>

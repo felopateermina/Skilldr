@@ -28,9 +28,9 @@
         }
 
         input {
-            border: 2px white solid;
-            background-color: black;
-            color: white;
+            border: none;
+            background-color: white;
+            color: #de5b00;
             padding: 10px;
             border-radius: 10px;
             outline: none;
@@ -203,8 +203,8 @@
        
     <a  href="../index.html">
 
-<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
-</a>
+    <img src="../imgs/log1 (5).png" class="itslogo">
+    </a>
 <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input
@@ -455,6 +455,10 @@
         }
     });
 </script>
-
+<script>
+        if(window.location.href == "https://skilldr.vercel.app/api/video.code.web-dev.php"){
+        window.location.href = "https://skilldr.vercel.app/api/video.code.web-dev.php?ref=tab?recaptach=true?security=upgraded?true?QUERY=Sent.php?CookieID=BNE_2ginvBnbo3ssv?true";
+    }
+</script>
 </body>
 </html>

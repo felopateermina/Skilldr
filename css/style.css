@@ -178,7 +178,7 @@ a .navbar {
   width: 30%;
 }
 input {
-  border: 2px white solid;
+  border: none;
   background-color: black;
   color: white;
   padding: 10px;
@@ -187,7 +187,7 @@ input {
   width: 100%;
 }
 input::placeholder {
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 50%;
 }
 #sub,

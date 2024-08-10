@@ -126,8 +126,8 @@ header{
     align-items: center;
 }
 input{
-    border: 2px white solid;
-  background-color: black;
+  border: none;
+  background-color: white;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -443,7 +443,7 @@ a{
        
     <a  href="../index.html">
 
-<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
+<img src="../imgs/log1 (5).png" class="itslogo">
 </a>
 <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">

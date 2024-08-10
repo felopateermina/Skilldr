@@ -263,10 +263,10 @@ body{
   }
 input{
     outline: none;
-    border: white solid;
-    background-color: black;
+    border: none;
+    background-color: white;
     padding: 10px;
-    color: white;
+    color: #de5b00;
     border-radius: 0px;
     width: 80%;
     font-size: 1.1em;
@@ -286,7 +286,7 @@ input{
 
 
       input{
-        border: white solid;
+        border:  none;
         border-radius: 10px;
       }
       .buttonofsearch{
@@ -316,7 +316,7 @@ input{
        
       <a  href="../index.html">
 
-<img src="../imgs/skilldr-high-resolution-logo-white-transparent.png" class="itslogo">
+<img src="../imgs/log1 (5).png" class="itslogo">
 </a>
         <button
           class="navbar-toggler"
@@ -341,7 +341,7 @@ input{
 
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/whiteboard.html"><i class="fas fa-chalkboard-teacher"></i> Whiteboard</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../index.html#about"><i class="fas fa-question-circle"></i> About Us</a></li>
-                <li><a style="font-weight: bold;" class="dropdown-item" href="../index.html#courses"><i class="fas fa-video"></i> Courses</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/courses.html"><i class="fas fa-video"></i> Courses</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="share.php"><i class="fas fa-share"></i> Share</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/userdata.html"><i class="fas fa-user"></i> Account</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
@@ -358,6 +358,7 @@ input{
               <ul class="dropdown-menu">
               <li><a style="font-weight: bold;" class="dropdown-item" href="../html/code/intro.html"><i class="fas fa-code"></i> Programming</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/typefast/typefast.html"><i class="fas fa-keyboard"></i> Typing Fast</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="../html/courses.html"><i class="fas fa-search"></i> More...</a></li>
                 </ul>
             </div>
            
