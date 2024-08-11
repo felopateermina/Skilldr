@@ -222,17 +222,25 @@ p{
         <div class="rt" style="color: white;display:flex;">
             
          <a id="search__form" href="result.php?query=python" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-search"></i></h2>
+         <h3><i class="fas fa-search"></i></h3>
          </a>
          
          <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-backward"></i></h2>
+         <h3><i class="fas fa-backward"></i></h3>
+         </a>
+         
+         <a id="redirectButton"
+         style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fa fa-play-circle"></i></h3>
          </a>
          
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-home"></i></h2>
+         <h3><i class="fas fa-home"></i></h3>
          </a>
-
+         
+         <a href="../html/controls.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-cog"></i></h3>
+         </a>
       </div>
     </header>
     <div class="container">
@@ -363,6 +371,8 @@ p{
         }
     });
 </script>
+<script src="../js/lasturl.js"></script>
+
 <script>
         if(window.location.href == "https://skilldr.vercel.app/api/video.code.py.php"){
         window.location.href = "https://skilldr.vercel.app/api/video.code.py.php?ref=tab?recaptach=true?security=upgraded?true?QUERY=Sent.php?CookieID=BNE_2ginvBnbo3ssv?true";

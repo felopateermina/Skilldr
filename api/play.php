@@ -359,14 +359,15 @@ box-shadow:  5px 5px 10px #000000,
     }
 }
 
-#jj{
+#jj, #storeButton{
     width:15%;
 }
 @media screen and (max-width:1023px) {
-    #jj{
+    #jj, #storeButton{
         width:30%;
     }
 }
+
 textarea{
     resize:none;
 }
@@ -422,6 +423,13 @@ a{
         display:block;
     }
 }
+#savedVid{
+    color: #ffffff;
+    background-color: green;
+    border-color: #ffeeba;
+    padding:7px;
+    display: none;
+}
 </style>
 
 </head>
@@ -462,22 +470,29 @@ a{
         <div class="rt" style="color: white;display:flex;">
             
          <a id="search__form" href="result.php?query=python" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-search"></i></h2>
+         <h3><i class="fas fa-search"></i></h3>
          </a>
          
          <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-backward"></i></h2>
+         <h3><i class="fas fa-backward"></i></h3>
          </a>
          
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h2><i class="fas fa-home"></i></h2>
+         <h3><i class="fas fa-home"></i></h3>
          </a>
 
+         <a href="../html/controls.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-cog"></i></h3>
+         </a>
       </div>
     </header>
     <div id="warn" class="alert alert-warning">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Warning: You haven't signed in yet.
+           <strong>Warning:</strong> You haven't signed in yet.
+    </div>
+    <div id="savedVid" class="savedVid">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <strong>Notice:</strong> The Video Saved Successfully
     </div>
     <div class="container">
         <div class="mainvids">
@@ -799,7 +814,7 @@ a{
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' id='jj' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
+            echo "<a href='#' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
@@ -840,6 +855,9 @@ a{
     </form>
     <div id="commentsContainer"></div>
 </div>   
+
+<!-- id="redirectButton" -->
+
 <br>
  <h2><i class="fas fa-star"></i> Top Creators:</h2>
  <br>
@@ -885,6 +903,7 @@ a{
 
     </div>
 
+    <script src="../js/lasturl.js"></script>
 
 
 
@@ -1057,6 +1076,19 @@ displayComments();
         }
     });
 </script>
+<script>
+        function closeAlert() {
+            document.getElementById('savedVid').style.display = 'none';
+        }
+    </script>
+    <script>
+        let alert  = document.getElementById("savedVid");
+        let button = document.getElementById("storeButton");
+function tcco(){
+    savedVid.style.display = "block"
+}
+        button.addEventListener("click", tcco);
+    </script>
 <script src="../js/notify.js"></script>
 </body>
 </html>
