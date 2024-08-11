@@ -492,7 +492,7 @@ a{
     </div>
     <div id="savedVid" class="savedVid">
         <span class="closebtn" onclick="closeAlert()">&times;</span>
-        <strong>Notice:</strong> The Video Saved Successfully
+        <strong>Notice:</strong> The Shortcut Created Successfully For The Video
     </div>
     <div class="container">
         <div class="mainvids">
@@ -814,10 +814,11 @@ a{
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;'></i> Save</a>";
+            echo "<a href='#' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-save' style='color:white;'></i> Shortcut</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
+            // echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save Page</a>";
 
             echo "</div>";
                     echo "<br>";
