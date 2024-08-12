@@ -518,10 +518,10 @@ a{
     </div>
     <div id="savedVid" class="savedVid">
         <span class="closebtn" onclick="closeAlert()">&times;</span>
-     <strong>The Shortcut Created Successfully, You Can Click " <i class="fas fa-play-circle"></i> " Now Easily To Watch Again.</strong>
+     <strong>The Shortcut Created Successfully, You Can Click " <i class="fas fa-play-circle"></i> " Now Easily.</strong>
     </div>
     <div id="savedurl" class="savedurl">
-        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <span class="closebtn" onclick="closeAlertx()">&times;</span>
      <strong>The Video Saved Successfully, Click " <i class="fas fa-bookmark"></i> " To See All Saved Videos.</strong>
     </div>
     <div class="container">
@@ -1111,6 +1111,11 @@ displayComments();
 <script>
         function closeAlert() {
             document.getElementById('savedVid').style.display = 'none';
+        }
+    </script>
+    <script>
+        function closeAlertx() {
+            document.getElementById('savedurl').style.display = 'none';
         }
     </script>
     <script>
