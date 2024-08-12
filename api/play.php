@@ -878,14 +878,16 @@ a{
                 <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
 <br>
         <div id="commentSec" class="comment-section">
-    <h3>Comments</h3>
+    <!-- <h3>Comments</h3>
     <form id="commentForm">
     <h6><i>Nobody Can See Your Comments As It's A Data For You Only, Likes & Comments.</i></h6>
     <br>
         <textarea style="font-family:sans-serif;font-weight:bold;" id="commentText" placeholder="Your Comment" rows="4" required></textarea>
         <button type="submit">Submit</button>
     </form>
-    <div id="commentsContainer"></div>
+    <div id="commentsContainer"></div> -->
+    <div id="commentSec" class="comment-section">
+        <div class="powr-comments" id="31402cbe_1723472426"></div><script src="https://www.powr.io/powr.js?platform=html"></script></div> 
 </div>   
 
 <!-- id="redirectButton" -->
