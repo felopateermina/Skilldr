@@ -367,7 +367,14 @@ box-shadow:  5px 5px 10px #000000,
         width:30%;
     }
 }
-
+#downloadpage{
+    width: 20%;
+}
+@media screen and (max-width:1023px) {
+    #downloadpage{
+        width: 40%;
+    }
+}
 textarea{
     resize:none;
 }
@@ -430,6 +437,21 @@ a{
     padding:7px;
     display: none;
 }
+#savedurl{
+    color: #ffffff;
+    background-color: green;
+    border-color: #ffeeba;
+    padding:7px;
+    display: none;
+}
+#saveUrlButton{
+    width:20%;
+}
+@media screen and (max-width:1023px) {
+    #saveUrlButton{
+        width:40%;
+    }
+}
 </style>
 
 </head>
@@ -446,7 +468,7 @@ a{
         
 
 </div>
-    <header>
+    <header id="body">
         
        
     <a  href="../index.html">
@@ -477,6 +499,10 @@ a{
          <h3><i class="fas fa-backward"></i></h3>
          </a>
          
+         <a href="../html/savedVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-bookmark"></i></h3>
+         </a>
+         
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fas fa-home"></i></h3>
          </a>
@@ -492,7 +518,11 @@ a{
     </div>
     <div id="savedVid" class="savedVid">
         <span class="closebtn" onclick="closeAlert()">&times;</span>
-        <strong>Notice:</strong> The Shortcut Created Successfully For The Video
+     <strong>The Shortcut Created Successfully, You Can Click " <i class="fas fa-play-circle"></i> " Now Easily To Watch Again.</strong>
+    </div>
+    <div id="savedurl" class="savedurl">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+     <strong>The Video Saved Successfully, Click " <i class="fas fa-bookmark"></i> " To See All Saved Videos.</strong>
     </div>
     <div class="container">
         <div class="mainvids">
@@ -814,11 +844,12 @@ a{
             echo "</div>";
 
             echo "<div style='align-items:center;'>";
-            echo "<a href='#' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-save' style='color:white;'></i> Shortcut</a>";
+            echo "<a href='#body' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-save' style='color:white;'></i> Shortcut</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
-            // echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;' download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Save Page</a>";
+            echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Download Page</a>";
+            echo "<a id='saveUrlButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;' ></i> Save Video</a>";
 
             echo "</div>";
                     echo "<br>";
@@ -1089,6 +1120,24 @@ function tcco(){
     savedVid.style.display = "block"
 }
         button.addEventListener("click", tcco);
+    </script>
+    <script>
+        document.getElementById('saveUrlButton').addEventListener('click', function() {
+            // Get the current URL
+            const currentUrl = window.location.href;
+            
+            // Retrieve the existing URLs from localStorage
+            let urls = JSON.parse(localStorage.getItem('savedUrls')) || [];
+            document.getElementById('savedurl').style.display = "block";
+            // Add the current URL to the list if it's not already saved
+            if (!urls.includes(currentUrl)) {
+                urls.push(currentUrl);
+                localStorage.setItem('savedUrls', JSON.stringify(urls));
+                alert('URL saved!');
+            } else {
+                alert('This URL is already saved.');
+            }
+        });
     </script>
 <script src="../js/notify.js"></script>
 </body>

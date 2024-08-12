@@ -184,6 +184,9 @@
         display:block;
     }
 }
+#redirectButton{
+    cursor: pointer;
+}
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -233,6 +236,10 @@
          style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fa fa-play-circle"></i></h3>
          </a>
+                  
+         <a href="../html/savedVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-bookmark"></i></h3>
+         </a>
          
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fas fa-home"></i></h3>
@@ -246,9 +253,8 @@
 
     
     <div class="container">
-    <div class="txt" style="width:100%; background-color: #c95400;padding: 5px;border-radius: 10px;">
-            <h3 style="text-align: center;color: white;font-weight: 700;text-decoration: none;">"Web Development Courses"</h3>
-    </div>
+    <h2 style="text-align: center;color: white;font-weight: 700;text-decoration: none;"><i class="fas fa-globe"></i> Web Development Courses: </h2>
+
         <div class="video-container">
             <?php
             $videos = [
