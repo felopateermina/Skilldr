@@ -6,6 +6,9 @@
     <title>Saved Videos - Skilldr</title>
     <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -16,11 +19,17 @@
         }
         ul {
             list-style: decimal;
+            padding: 0;
         }
         li {
             margin-top: 20px;
             font-size: 20px;
             margin-right: 40px;
+            list-style: decimal;
+            display: flex;
+            flex-direction: row; /* Default to horizontal layout */
+            align-items: center;
+            justify-content: space-between; /* Space between link and other elements */
         }
         input {
             margin-left: 10px;
@@ -28,7 +37,33 @@
             padding: 10px;
             font-weight: bold;
             font-size: 20px;
-            width: 90%;
+             width: 60%;    
+             min-width: 60%;
+        }
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            li {
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start; /* Align items to the start */
+            }
+            input {
+                width: 100%; 
+                margin-left: 0;
+            }
+            button {
+                margin-left: 0; 
+                margin-top: 10px; 
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -48,29 +83,49 @@
             // Get the list element
             const urlList = document.getElementById('urlList');
             
-            // Display each URL as a list item
-            urls.forEach(function(url) {
-                const listItem = document.createElement('li');
-                const link = document.createElement('a');
-                const input = document.createElement('input');
-                
-                link.href = url;
-                link.textContent = url;
-                link.target = '_blank';
-                
-                // Set the input value to "Saved Video Note" initially
-                input.value = notes[url] || 'Video Note';
-                
-                // Add event listener to save note when input changes
-                input.addEventListener('input', function() {
-                    notes[url] = input.value;
-                    localStorage.setItem('savedNotes', JSON.stringify(notes));
+            // Function to update localStorage and the displayed list
+            function updateList() {
+                localStorage.setItem('savedUrls', JSON.stringify(urls));
+                localStorage.setItem('savedNotes', JSON.stringify(notes));
+                urlList.innerHTML = ''; // Clear the list
+                urls.forEach(function(url) {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    const input = document.createElement('input');
+                    const deleteButton = document.createElement('button');
+                    
+                    link.href = url;
+                    link.textContent = url;
+                    link.target = '_blank';
+                    
+                    // Set the input value to "Saved Video Note" initially
+                    input.value = notes[url] || 'Video Note';
+                    
+                    // Add event listener to save note when input changes
+                    input.addEventListener('input', function() {
+                        notes[url] = input.value;
+                        localStorage.setItem('savedNotes', JSON.stringify(notes));
+                    });
+                    
+                    // Configure the delete button
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.addEventListener('click', function() {
+                        const index = urls.indexOf(url);
+                        if (index > -1) {
+                            urls.splice(index, 1);
+                            delete notes[url];
+                            updateList(); // Update the list and localStorage
+                        }
+                    });
+                    
+                    listItem.appendChild(link);
+                    listItem.appendChild(input);
+                    listItem.appendChild(deleteButton);
+                    urlList.appendChild(listItem);
                 });
-                
-                listItem.appendChild(link);
-                listItem.appendChild(input);
-                urlList.appendChild(listItem);
-            });
+            }
+            
+            updateList(); // Initialize the list
         });
     </script>
 </body>
