@@ -886,8 +886,11 @@ a{
         <button type="submit">Submit</button>
     </form>
     <div id="commentsContainer"></div> -->
-    <div id="commentSec" class="comment-section">
+    <!-- <div id="commentSec" class="comment-section">
         <div class="powr-comments" id="31402cbe_1723472426"></div><script src="https://www.powr.io/powr.js?platform=html"></script></div> 
+         -->
+         <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+         <div class="commonninja_component pid-9b8eb4d7-497f-4d9c-8f03-c9bfcffcfa17"></div>
 </div>   
 
 <!-- id="redirectButton" -->
