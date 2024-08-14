@@ -452,6 +452,21 @@ a{
         width:40%;
     }
 }
+#favurl{
+    color: #ffffff;
+    background-color: green;
+    border-color: #ffeeba;
+    padding:7px;
+    display: none;
+}
+#favButton{
+    width:30%;
+}
+@media screen and (max-width:1023px) {
+    #favButton{
+        width:45%;
+    }
+}
 </style>
 
 </head>
@@ -523,6 +538,10 @@ a{
     <div id="savedurl" class="savedurl">
         <span class="closebtn" onclick="closeAlertx()">&times;</span>
      <strong>The Video Saved Successfully, Click " <i class="fas fa-bookmark"></i> " To See All Saved Videos.</strong>
+    </div>
+    <div id="favurl" class="favurl">
+        <span class="closebtn" onclick="closeAlertxx()">&times;</span>
+     <strong>The Video Added To Favorites Successfully, Click " <i class="fas fa-heart"></i> " To See All Your Favorites.</strong>
     </div>
     <div class="container">
         <div class="mainvids">
@@ -850,6 +869,7 @@ a{
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
             echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
             echo "<a id='saveUrlButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;' ></i> Save Video</a>";
+            echo "<a id='favButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-heart' style='color:white;' ></i> Add To Favorites</a>";
 
             echo "</div>";
                     echo "<br>";
@@ -1124,6 +1144,11 @@ displayComments();
         }
     </script>
     <script>
+        function closeAlertxx() {
+            document.getElementById('favurl').style.display = 'none';
+        }
+    </script>
+    <script>
         let alert  = document.getElementById("savedVid");
         let button = document.getElementById("storeButton");
 function tcco(){
@@ -1143,6 +1168,24 @@ function tcco(){
             if (!urls.includes(currentUrl)) {
                 urls.push(currentUrl);
                 localStorage.setItem('savedUrls', JSON.stringify(urls));
+                alert('URL saved!');
+            } else {
+                alert('This URL is already saved.');
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('favButton').addEventListener('click', function() {
+            // Get the current URL
+            const currentUrl = window.location.href;
+            
+            // Retrieve the existing URLs from localStorage
+            let urls = JSON.parse(localStorage.getItem('favUrls')) || [];
+            document.getElementById('favurl').style.display = "block";
+            // Add the current URL to the list if it's not already saved
+            if (!urls.includes(currentUrl)) {
+                urls.push(currentUrl);
+                localStorage.setItem('favUrls', JSON.stringify(urls));
                 alert('URL saved!');
             } else {
                 alert('This URL is already saved.');
