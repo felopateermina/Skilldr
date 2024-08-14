@@ -848,7 +848,7 @@ a{
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
-            echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-bookmark' style='color:white;'></i> Download Page</a>";
+            echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
             echo "<a id='saveUrlButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;' ></i> Save Video</a>";
 
             echo "</div>";
@@ -878,7 +878,7 @@ a{
                 <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
 <br>
         <div id="commentSec" class="comment-section">
-     <h3>Global Comments</h3>
+     <h3><i class="fas fa-comments"></i> Global Comments</h3>
     <!--<form id="commentForm">
     <h6><i>Nobody Can See Your Comments As It's A Data For You Only, Likes & Comments.</i></h6>
     <br>

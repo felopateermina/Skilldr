@@ -261,6 +261,7 @@ input{
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/redeemcode.html"><i class="fas fa-gift"></i> Redeem Code</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/community.html"><i class="fas fa-comments"></i> Community</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="../html/studio.html"><i class="fa-brands fa-studiovinari"></i> Studio</a></li>
+                <li><a style="font-weight: bold;" class="dropdown-item" href="https://skilldrblog.blogspot.com"><i class="fas fa-blog"></i> Blog</a></li>
 
               </ul>
             </div>

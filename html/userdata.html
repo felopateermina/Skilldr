@@ -135,7 +135,9 @@
                 <br><br>
             </div>
             <h3 style="color: #de5b00;padding: 3px;"><i class="fas fa-database"></i> Academy Activity:</h3>
-
+            <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+            <div class="commonninja_component pid-9b8eb4d7-497f-4d9c-8f03-c9bfcffcfa17"></div>
+    
             <div id="commentsContainer"></div>
             <!-- Button to delete comments -->
             <button style="font-weight: bold;" id="deleteCommentsButton"><i class="fas fa-trash"></i> DELETE YOUR ACTIVITY?</button>
@@ -292,7 +294,7 @@ console.log(currentUser);
         commentsContainer.innerHTML = ''; // Clear existing content
         const comments = getCommentsFromLocalStorage();
         if (comments.length === 0) {
-            commentsContainer.innerHTML = '<p>No Activity Yet!</p>';
+            commentsContainer.innerHTML = '<p></p>';
             document.getElementById("deleteCommentsButton").style.display = "none";
             return;
         }
