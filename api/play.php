@@ -518,6 +518,10 @@ a{
          <h3><i class="fas fa-bookmark"></i></h3>
          </a>
          
+         <a href="../html/favVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-heart"></i></h3>
+         </a>
+         
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fas fa-home"></i></h3>
          </a>
