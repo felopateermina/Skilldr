@@ -1,3 +1,13 @@
+<?php
+// Start session
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['username'])) {
+    header('Location: prem.log.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +15,7 @@
     <meta name="description" content="Watch Free Online Courses With Skilldr Academy!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skilldr | Free online courses </title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <meta name="keywords" content="courses , skilldr courses , courses skilldr">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://skilldr.vercel.app">
@@ -127,29 +137,29 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Skilldr Academy">
 <meta property="og:description" content="Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ">
-<meta property="og:image" content="imgs/log1 (1).png">
+<meta property="og:image" content="../imgs/log1 (1).png">
 <meta property="og:url" content="https://skilldr.vercel.app">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Skilldr Academy">
 <meta name="twitter:description" content="Studying & Online Courses With Skilldr Website . There are programming courses and graphic design courses and more! . Studying with the best teachers in all subjects ! ">
-<meta name="twitter:image" content="imgs/skilldr-high-resolution-logo-black-transparent.png">
+<meta name="twitter:image" content="../imgs/skilldr-high-resolution-logo-black-transparent.png">
 <!-- Others -->
 <meta name="author" content="Felopateer">
 
 
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="../manifest.json">
 
 
     <link
       rel="shortcut icon"
-      href="imgs/logo.png"
+      href="../imgs/skilldr-favicon-color.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="bootstrap/css/all.min.css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="WOW-master/css/libs/animate.css" />
+    <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../WOW-master/css/libs/animate.css" />
 
     <meta name="google-adsense-account" content="ca-pub-4585657499719833">
 
@@ -169,7 +179,7 @@
           
           <a style="margin-right: 30px;text-decoration: none;" href="index.html" >
 
-            <img src="imgs/log1 (5).png" class="itslogo">
+            <img src="../imgs/skilldr-high-resolution-logo-transparent.png" class="itslogo">
           </a>
         </div>
         
@@ -209,7 +219,6 @@
                 <li><a style="font-weight: bold;" class="dropdown-item" href="html/community.html"><i class="fas fa-comments"></i> Community</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="html/studio.html"><i class="fa-brands fa-studiovinari"></i> Studio</a></li>
                 <li><a style="font-weight: bold;" class="dropdown-item" href="https://skilldrblog.blogspot.com"><i class="fas fa-blog"></i> Blog</a></li>
-                <li><a style="font-weight: bold;" class="dropdown-item" href="other/@(CookieID=BHv_lnaopen34).GoTo.soon.htm"><i class="fas fa-star"></i> Premium</a></li>
               </ul>
             </div>
             <div class="dropdown-center">
@@ -528,16 +537,16 @@
 
 </div>
 
-    <script src="bootstrap/js/all.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="WOW-master/dist/wow.min.js"></script>
+    <script src="../bootstrap/js/all.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../WOW-master/dist/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
+        navigator.serviceWorker.register('../service-worker.js')
           .then(registration => {
             console.log('Service Worker registered with scope:', registration.scope);
           })
@@ -669,3 +678,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   </body>
 </html>
+
+<!-- <h1>Welcome, <?php echo $_SESSION['name']; ?>!</h1>
+    <p>Your username is: <?php echo $_SESSION['username']; ?></p>
+    <p>Your email is: <?php echo $_SESSION['email']; ?></p> -->
