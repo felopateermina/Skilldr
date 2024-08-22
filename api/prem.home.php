@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8" />
     <meta name="description" content="Watch Free Online Courses With Skilldr Academy!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skilldr | Free online courses </title>
+    <title>Skilldr | Premium Access </title>
     <link rel="stylesheet" href="../css/style.css" />
     <meta name="keywords" content="courses , skilldr courses , courses skilldr">
     <meta name="robots" content="index, follow">
