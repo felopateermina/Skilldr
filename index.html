@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .faq-container {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -46,6 +47,12 @@
    width: 90%;
 
 }
+.content {
+      max-width: 1200px; /* Max width for large screens */
+      width: 100%; /* Full width up to the max width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; 
+    }
 
 .question {
     cursor: pointer;
@@ -115,12 +122,8 @@
   }
 }
 .itslogo{
-    width: 90%;height: 7vh;
-}
-@media screen and (max-width:1023px) {
-    .itslogo{
-        width: 90%;height: 5vh;
-    }
+  width: 150px;  /* Fixed width */
+  height: 7vh;
 }
   </style>
 
@@ -168,7 +171,6 @@
         <div class="logoofweb">
           
           <a style="margin-right: 30px;text-decoration: none;" href="index.html" >
-
             <img src="imgs/log1 (5).png" class="itslogo">
           </a>
         </div>
