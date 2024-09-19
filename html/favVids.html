@@ -8,74 +8,156 @@
     <style>
         * {
             box-sizing: border-box;
-        }
-        body {
-            background-color: #001220;
-            color:white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            border: solid;
-            padding: 10px;
-            border-radius: 15px;
-            background-color: #001220;
-        }
-        ul {
-            list-style: decimal;
+            margin: 0;
             padding: 0;
         }
-        li {
-            margin-top: 20px;
-            font-size: 20px;
-            margin-right: 40px;
-            list-style: decimal;
+        body {
+            background: linear-gradient(135deg, #001220, #0a1c35);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
             display: flex;
-            flex-direction: row; /* Default to horizontal layout */
             align-items: center;
-            background-color: #de5b00;
-            padding: 10px;
-            border-radius: 10px;
-            justify-content: space-between; /* Space between link and other elements */
+            justify-content: center;
+        }
+        h1 i {
+            margin-right: 10px;
+        }
+        h5 {
+            text-align: center;
+            color: #de5b00;
+            margin-top: 30px;
+            font-size: 1.3rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        li {
+            background: #001220;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease-in-out;
+        }
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            color: #de5b00;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            word-break: break-word;
+            flex-grow: 1;
+        }
+        a:hover {
+            color: #8e3b00;
         }
         input {
-            margin-left: 10px;
-            margin-top: 4px;
             padding: 10px;
             font-weight: bold;
-            font-size: 20px;
-             width: 60%;    
-             min-width: 60%;
-             outline: none;
-             border: none;
-             border-radius: 15px;
-        }
-
-        button {
-            margin-left: 10px;
-            padding: 5px 10px;
             font-size: 16px;
+            width: 30%;    
+            outline: none;
+            transition: border-color 0.3s ease;
+            background-color: #0a1c35;
+            color: white;
             cursor: pointer;
-            background-color: red;
+        }
+        input:focus {
+            border-color: white;
+            color: #de5b00;
+        }
+        button, .star-btn {
+            padding: 8px 15px;
+            font-size: 1.5rem;            cursor: pointer;
+            background-color: #de5b00;
             color: white;
             border: none;
-            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        /* Media query for mobile devices */
+
+
+        .star-btn {
+            font-size: 1.5rem;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .starred {
+            color: #de5b00;
+            background-color: #0a1c35;
+        }
+        .not-starred {
+            color: white;
+            background-color: #0a1c35;
+
+        }
+
+        /* Mobile Styles */
         @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
             li {
-                flex-direction: column; /* Stack items vertically */
-                align-items: flex-start; /* Align items to the start */
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px;
             }
             input {
-                width: 100%; 
-                margin-left: 0;
+                width: 100%;
+                margin-top: 30px;
             }
-            button {
-                margin-left: 0; 
-                margin-top: 10px; 
+            button, .star-btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+            a {
+                font-size: 1rem;
+            }
+            h5 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Smaller screens (phones) */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            li {
+                padding: 10px;
+            }
+            input {
+                font-size: 14px;
+                padding: 8px;
+            }
+            button, .star-btn {
+                font-size: 13px;
+                padding: 8px 12px;
+            }
+            h5 {
+                font-size: 1rem;
             }
         }
     </style>
@@ -86,66 +168,66 @@
     <ul id="urlList"></ul>
     <h5>That's All For Now!</h5>
 
-    <div class="tips">
-        <div class="title">
-
-        </div>
-    </div>
-
     <script>
         window.addEventListener('load', function() {
-            // Retrieve the saved URLs from localStorage
             const urls = JSON.parse(localStorage.getItem('favUrls')) || [];
-            
-            // Retrieve the saved notes from localStorage
             const notes = JSON.parse(localStorage.getItem('favNotes')) || {};
-            
-            // Get the list element
+            const stars = JSON.parse(localStorage.getItem('favStars')) || {};
             const urlList = document.getElementById('urlList');
-            
-            // Function to update localStorage and the displayed list
+
             function updateList() {
                 localStorage.setItem('favUrls', JSON.stringify(urls));
                 localStorage.setItem('favNotes', JSON.stringify(notes));
-                urlList.innerHTML = ''; // Clear the list
+                localStorage.setItem('favStars', JSON.stringify(stars));
+                urlList.innerHTML = '';
+
                 urls.forEach(function(url) {
                     const listItem = document.createElement('li');
                     const link = document.createElement('a');
                     const input = document.createElement('input');
                     const deleteButton = document.createElement('button');
+                    const starButton = document.createElement('button');
                     
                     link.href = url;
                     link.textContent = url;
                     link.target = '_blank';
-                    
-                    // Set the input value to "Saved Video Note" initially
+
+                    // Set the input value to a note or default to "Video Note"
                     input.value = notes[url] || 'Video Note';
-                    
-                    // Add event listener to save note when input changes
                     input.addEventListener('input', function() {
                         notes[url] = input.value;
                         localStorage.setItem('favNotes', JSON.stringify(notes));
                     });
-                    
+
                     // Configure the delete button
-                    deleteButton.textContent = `Delete`;
+                    deleteButton.innerHTML = `<i class="fas fa-trash"></i>`;
                     deleteButton.addEventListener('click', function() {
                         const index = urls.indexOf(url);
                         if (index > -1) {
                             urls.splice(index, 1);
                             delete notes[url];
-                            updateList(); // Update the list and localStorage
+                            delete stars[url];
+                            updateList();
                         }
                     });
-                    
+
+                    // Star button to toggle favorite
+                    starButton.innerHTML = `<i class="fas fa-star"></i>`;
+                    starButton.classList.add('star-btn', stars[url] ? 'starred' : 'not-starred');
+                    starButton.addEventListener('click', function() {
+                        stars[url] = !stars[url];
+                        updateList();
+                    });
+
                     listItem.appendChild(link);
                     listItem.appendChild(input);
+                    listItem.appendChild(starButton);
                     listItem.appendChild(deleteButton);
                     urlList.appendChild(listItem);
                 });
             }
-            
-            updateList(); // Initialize the list
+
+            updateList();
         });
     </script>
 </body>

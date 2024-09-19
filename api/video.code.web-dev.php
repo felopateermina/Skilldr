@@ -13,6 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+              
+  @font-face {
+    font-family: 'Font';
+    src: url('fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+      .content {
+      max-width: 1400px; /* Max width for large screens */
+      width: 100%; /* Full width up to the max width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px;
+      background-color: #000c15; 
+      border-radius: 10px;
+
+    }
+    .logo{
+      font-family: 'Font';
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
         body {
             color: white;
             font-family: system-ui;
@@ -187,11 +210,35 @@
 #redirectButton{
     cursor: pointer;
 }
+            
+@font-face {
+    font-family: 'Font';
+    src: url('../fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+      .content {
+      max-width: 1400px; /* Max width for large screens */
+      width: 100%; /* Full width up to the max width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px;
+      background-color: #000c15; 
+    }
+    .logo{
+      font-family: 'Font';
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body style="background-color: #001220;">
+    <div class="content">
+
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br><br><br>
@@ -204,10 +251,9 @@
     <header>
         
        
-    <a  href="../index.html">
+    <a class='logo' href="../index.html">
 
-    <img src="../imgs/log1 (5).png" class="itslogo">
-    </a>
+SKILLDR    </a>
 <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input
@@ -235,10 +281,6 @@
          <a id="redirectButton"
          style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fa fa-play-circle"></i></h3>
-         </a>
-                  
-         <a href="../html/savedVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h3><i class="fas fa-bookmark"></i></h3>
          </a>
          
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
@@ -442,7 +484,7 @@
 </a>
 </div>
 </footer>
-
+</div>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";

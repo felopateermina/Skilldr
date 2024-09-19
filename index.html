@@ -11,6 +11,13 @@
     <link rel="canonical" href="https://skilldr.vercel.app">
 
 <style>
+  
+  @font-face {
+    font-family: 'Font';
+    src: url('fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
   .loader-wrapper { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #001220; display: flex; justify-content: center; align-items: center; z-index: 9999; }
         .loader { border: 8px solid #de5b00; border-radius: 50%; border-top: 8px solid #001220; width: 50px; height: 50px; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -20,6 +27,8 @@
         .navbar{
           box-shadow:  5px 5px 10px #000000,
              -5px -5px 10px #000000;
+             background-color: #000c15; 
+
         }
 #ioc{
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -48,10 +57,19 @@
 
 }
 .content {
-      max-width: 1200px; /* Max width for large screens */
+      max-width: 1400px; /* Max width for large screens */
       width: 100%; /* Full width up to the max width */
       margin: 0 auto; /* Center the container horizontally */
-      padding: 20px; 
+      padding: 20px;
+      background-color: #000c15; 
+      border-radius: 10px;
+    }
+    .logo{
+      font-family: 'Font';
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
 
 .question {
@@ -121,10 +139,7 @@
     display: none;
   }
 }
-.itslogo{
-  width: 150px;  /* Fixed width */
-  height: 7vh;
-}
+
   </style>
 
 <!-- Open Graph Meta Tags -->
@@ -160,7 +175,7 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>
+  <body style="background-color: #001220;">
     
     <div class="loader-wrapper"><div class="loader"></div><div class="txt" style="margin-left: 10px;font-size: 1.9em;font-weight: bold;color:white;">Please Wait...</div></div>
     <div class="content">
@@ -170,8 +185,8 @@
       <div class="container">
         <div class="logoofweb">
           
-          <a style="margin-right: 30px;text-decoration: none;" href="index.html" >
-            <img src="imgs/log1 (5).png" class="itslogo">
+          <a class="logo" style="margin-right: 30px;text-decoration: none;" href="index.html" >
+                   SKILLDR
           </a>
         </div>
         
@@ -263,7 +278,8 @@
     
 
     <div class="tutu" id="tutu">
-      <section id="home">
+      <section id="home" style="      background-color: #000c15; 
+">
         <br><br>
         <div class="homee">
           <br /><br />
@@ -301,7 +317,7 @@
       </section>
 
 
-<section id="courses">
+<section id="courses" style="background-color: white;">
 
   <center>
     <h1 style="color: #de5b00; text-decoration: none;"><svg style="margin-right: 10px;" width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +390,8 @@
 </section>
 
 
-<section id="about">
+<section id="about" style="      background-color: #000c15; 
+">
   <br>
   <center>
     <h1 style="color: #de5b00; text-decoration: none;"><svg width="46" height="46" fill="none" stroke="#de5b00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -427,7 +444,7 @@
   <br><br><br>
 </section>
 
- <section id="faQs">
+ <section id="faQs" style="background-color: white;">
   <br>
   <center>
     <h1 style="color: #de5b00; text-decoration: none;"><svg width="46" height="46" fill="#de5b00" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

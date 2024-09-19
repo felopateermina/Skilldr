@@ -29,6 +29,32 @@ $results = array_filter($products, function ($product) use ($searchQuery) {
     <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <style>
+            
+
+        
+            @font-face {
+    font-family: 'Font';
+    src: url('../fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+      .content {
+      max-width: 1400px; /* Max width for large screens */
+      width: 100%; /* Full width up to the max width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px;
+      background-color: #000c15; 
+      border-radius: 10px;
+
+    }
+    .logo{
+      font-family: 'Font';
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-decoration:none;
+    }
       *{
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -213,7 +239,12 @@ input{
         width: 90%;height: 5vh;
     }
 }
-      
+.navbar{
+          box-shadow:  5px 5px 10px #000000,
+             -5px -5px 10px #000000;
+             background-color: #000c15; 
+
+        } 
     </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
 
@@ -224,14 +255,14 @@ input{
     />
   </head>
 <body style="background-color: #001220;">
- 
+ <div class="content" style="height:100vh;">
 <nav class="navbar navbar-expand-lg">
       <div class="container">
          
-      <a  href="../index.html">
+      
+      <a class="logo"  href="../index.html">
 
-      <img src="../imgs/log1 (5).png" class="itslogo">
-      </a>
+SKILLDR</a>
         <button
           class="navbar-toggler"
           type="button"

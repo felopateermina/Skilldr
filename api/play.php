@@ -15,7 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
-    
+      @font-face {
+    font-family: 'Font';
+    src: url('../fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body {
     margin: 0;
     padding: 0;
@@ -33,6 +38,21 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+.content {
+      max-width: 1400px; /* Max width for large screens */
+      width: 100%; /* Full width up to the max width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px;
+      background-color: #000c15; 
+      border-radius: 10px;
+
+    }
+    .logo{
+      font-family: 'Font';
+      font-size: 30px;
+      color: white;
+      letter-spacing: 2px
+    }
 
 .video-container {
     display: flex;
@@ -233,9 +253,7 @@ nav a{
             color: red;
         }
 
-        .save-button i.fa-eye {
-            color: green;
-        }
+
         .no_ex{
             justify-content: center;
             text-align: center;
@@ -471,6 +489,8 @@ a{
 
 </head>
 <body>
+    <div class="content">
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <br><br><br>
@@ -486,10 +506,10 @@ a{
     <header id="body">
         
        
-    <a  href="../index.html">
+    <a class="logo"  href="../index.html">
 
-<img src="../imgs/log1 (5).png" class="itslogo">
-</a>
+    SKILLDR
+    </a>
 <div class="chrme">
             <form method="get" action="result.php" style="display: flex; justify-content: center;" class="search_form">
                 <input
@@ -514,9 +534,6 @@ a{
          <h3><i class="fas fa-backward"></i></h3>
          </a>
          
-         <a href="../html/savedVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
-         <h3><i class="fas fa-bookmark"></i></h3>
-         </a>
          
          <a href="../html/favVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fas fa-heart"></i></h3>
@@ -539,10 +556,7 @@ a{
         <span class="closebtn" onclick="closeAlert()">&times;</span>
      <strong>The Shortcut Created Successfully, You Can Click " <i class="fas fa-play-circle"></i> " Now Easily.</strong>
     </div>
-    <div id="savedurl" class="savedurl">
-        <span class="closebtn" onclick="closeAlertx()">&times;</span>
-     <strong>The Video Saved Successfully, Click " <i class="fas fa-bookmark"></i> " To See All Saved Videos.</strong>
-    </div>
+
     <div id="favurl" class="favurl">
         <span class="closebtn" onclick="closeAlertxx()">&times;</span>
      <strong>The Video Added To Favorites Successfully, Click " <i class="fas fa-heart"></i> " To See All Your Favorites.</strong>
@@ -872,7 +886,6 @@ a{
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
             echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
             echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
-            echo "<a id='saveUrlButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-bookmark' style='color:white;' ></i> Save Video</a>";
             echo "<a id='favButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-heart' style='color:white;' ></i> Add To Favorites</a>";
 
             echo "</div>";
@@ -1124,6 +1137,8 @@ displayComments();
 </a>
 </div>
 </footer>
+</div>
+
 <script>
     // Disable right-click context menu
     document.addEventListener('contextmenu', event => event.preventDefault());
