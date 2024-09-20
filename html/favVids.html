@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorites - Skilldr</title>
+    <title>Your Favorites - Skilldr</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/7219/7219095.png?semt=ais_hybrid" type="image/x-icon">
     <style>
         * {
@@ -61,7 +61,7 @@
         a {
             color: #de5b00;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: color 0.3s;
             word-break: break-word;
             flex-grow: 1;
@@ -81,7 +81,6 @@
             cursor: pointer;
         }
         input:focus {
-            border-color: white;
             color: #de5b00;
         }
         button, .star-btn {
@@ -160,13 +159,47 @@
                 font-size: 1rem;
             }
         }
+        footer{
+            margin: 0 auto;
+            margin-top: 40px;
+            text-align: center;
+            width: 20%;
+            display: none;
+        }
+        @media screen and (max-width:1023px) {
+            footer{
+                width: 100%;
+                display: block;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <h1><i class="fas fa-heart"></i> Favourite Videos:</h1>
+    <h1><i class="fas fa-heart"></i> Your Favorites:</h1>
     <ul id="urlList"></ul>
     <h5>That's All For Now!</h5>
+    <footer>
+        <div class="rt" style="color: white;display:flex;">
+            
+            <a id="search__form" href="../api/result.php?query=python" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+            <h3><i class="fas fa-search"></i></h3>
+            </a>
+            
+            <a href="../html/code/intro.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+            <h3><i class="fas fa-backward"></i></h3>
+            </a>
+            
+
+            <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+            <h3><i class="fas fa-home"></i></h3>
+            </a>
+   
+            <a href="../html/controls.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+            <h3><i class="fas fa-cog"></i></h3>
+            </a>
+         </div>
+    </footer>
 
     <script>
         window.addEventListener('load', function() {

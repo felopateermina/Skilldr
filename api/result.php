@@ -331,6 +331,11 @@ input{
              background-color: #000c15; 
 
         }
+        @media screen and (max-width:1023px){
+.content{
+  padding: 0px;
+}
+}
     </style>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
 
@@ -340,7 +345,7 @@ input{
       type="image/x-icon"
     />
   </head>
-<body style="background-color: #001220;">
+<body style="background-color: #000c15;">
 <div class="content"  style="height:100vh;">
 
 <nav class="navbar navbar-expand-lg">

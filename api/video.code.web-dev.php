@@ -231,11 +231,16 @@
       font-weight: bold;
       letter-spacing: 2px;
     }
+    @media screen and (max-width:1023px){
+.content{
+  padding: 0px;
+}
+}
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
-<body style="background-color: #001220;">
+<body style="background-color: #000c15;">
     <div class="content">
 
 
@@ -281,6 +286,10 @@ SKILLDR    </a>
          <a id="redirectButton"
          style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
          <h3><i class="fa fa-play-circle"></i></h3>
+         </a>
+                  
+         <a href="../html/favVids.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">
+         <h3><i class="fas fa-heart"></i></h3>
          </a>
          
          <a href="../index.html" style="color: #de5b00;font-size: 1.5em;margin-right:10px;">

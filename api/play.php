@@ -7,7 +7,7 @@
       href="../imgs/logo.png"
       type="image/x-icon"
     />
-    <title>Video - Skilldr</title>
+    <title>Video Playing - Skilldr</title>
 
 
     <link rel="stylesheet" type="text/css" href="../css/video.css">
@@ -125,16 +125,15 @@ h1 {
         
     }
     .desc{
-        background-color: 
-        black;
+        background-color: #000c15;
+    box-shadow:  5px 5px 10px #000000,
+    -5px -5px 10px #000000;
         width: 100%;
         border-radius: 10px;
-        padding: 8px;
+        padding: 18px;
              font-weight: 700;
              font-size:18px;
 
-background: #0f0f0f;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     }
     
@@ -367,6 +366,9 @@ box-shadow:  5px 5px 10px #000000,
 }
 #commentSec{
     display: block;
+    background-color: #000c15;
+    box-shadow:  5px 5px 10px #000000,
+    -5px -5px 10px #000000;
 }
 #showComments{
     width:100%;
@@ -414,14 +416,14 @@ textarea{
     width:100%;
 }
 .cardcrt{
-    box-shadow:5px 5px 5px rgba(255,255,255,0.1);
     padding:20px;
     margin:10px;
     text-align:center;
     border-radius:20px;
     width: 30%;
-    background: #0f0f0f;
-}
+    background-color: #000c15;
+    box-shadow:  5px 5px 10px #000000,
+    -5px -5px 10px #000000;}
 .cardcrt img{
     border-radius:50px;
 }
@@ -485,10 +487,15 @@ a{
         width:45%;
     }
 }
+@media screen and (max-width:1023px){
+.content{
+  padding: 0px;
+}
+}
 </style>
 
 </head>
-<body>
+<body style="background-color: #000c15;">
     <div class="content">
 
 <div id="mySidenav" class="sidenav">
@@ -912,10 +919,11 @@ a{
             echo "<h3 style='justify-content:center;text-align:center;'>Invalid video ID.</h3>";
         }
         ?>
+        <br>
                 <a id="showComments" class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-eye' style='color:white;'></i> Show / Hide Comments</a>
 <br>
         <div id="commentSec" class="comment-section">
-     <h3><i class="fas fa-comments"></i> Global Comments</h3>
+     <h3><i class="fas fa-comments"></i> Global Chat</h3>
     <!--<form id="commentForm">
     <h6><i>Nobody Can See Your Comments As It's A Data For You Only, Likes & Comments.</i></h6>
     <br>
@@ -926,9 +934,11 @@ a{
     <!-- <div id="commentSec" class="comment-section">
         <div class="powr-comments" id="31402cbe_1723472426"></div><script src="https://www.powr.io/powr.js?platform=html"></script></div> 
          -->
-         <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+         <!-- <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
          <div class="commonninja_component pid-9b8eb4d7-497f-4d9c-8f03-c9bfcffcfa17"></div>
-</div>   
+         -->
+         <script src="https://minnit.chat/js/embed.js" defer></script><minnit-chat data-chatname="https://organizations.minnit.chat/793477230788067/Main?embed&nickname=" data-style="width:100%;height:500px;max-height:90vh;"></minnit-chat><p class="powered-by-minnit"><a href="https://minnit.chat" target=_blank></a></p>
+        </div>   
 
 <!-- id="redirectButton" -->
 
