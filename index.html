@@ -401,7 +401,7 @@
         <path fill="currentColor" stroke="none" d="M16.219 13.219a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z"></path>
         <path fill="currentColor" stroke="none" d="M7.781 13.219a1.219 1.219 0 1 0 0-2.438 1.219 1.219 0 0 0 0 2.438Z"></path>
         <path d="M21 12c0-4.969-4.031-9-9-9s-9 4.031-9 9 4.031 9 9 9 9-4.031 9-9Z"></path>
-      </svg><br><span class="iotext">More AND MORE</span></h1>
+      </svg><br><span class="iotext">More</span></h1>
     </div>
   </div>
 
@@ -730,7 +730,39 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 </script> -->
 
-<script src="js/lasturl.js"></script>
+<script>
+  // storeAndRedirect.js
+
+// Function to store the current URL in localStorage
+function storeCurrentUrl() {
+    const currentUrl = window.location.href;
+    localStorage.setItem('lastVisitedUrl', currentUrl);
+}
+
+// Function to redirect to the last visited URL
+function redirectToLastVisitedUrl() {
+    const lastVisitedUrl = localStorage.getItem('lastVisitedUrl');
+    if (lastVisitedUrl) {
+        window.location.href = lastVisitedUrl;
+    }
+}
+
+// Set up event listeners for the buttons
+document.addEventListener('DOMContentLoaded', () => {
+    // Assuming you have a button with id 'storeButton'
+    const storeButton = document.getElementById('storeButton');
+    if (storeButton) {
+        storeButton.addEventListener('click', storeCurrentUrl);
+    }
+
+    // Assuming you have a button with id 'redirectButton'
+    const redirectButton = document.getElementById('redirectButton');
+    if (redirectButton) {
+        redirectButton.addEventListener('click', redirectToLastVisitedUrl);
+    }
+});
+
+</script>
 
   </body>
 </html>
