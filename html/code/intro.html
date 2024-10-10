@@ -410,33 +410,66 @@ SKILLDR        </a>
             <div class="control-container">
 
                 <div class="rectangle-control" >
-                    <a id="redirectButton"
-                    style="color: #de5b00;">
-                    <h1><i class="fa fa-play-circle"></i></h1>
+                    <a id="redirectButton2"
+                    style="color: #ffffff;">
+                    <h4><i class="fa fa-play-circle"></i> <br> Watch</h4>
                     </a>
                 </div>
 
                 <div class="rectangle-control" >
-                    <a href="../../index.html" style="color: #de5b00;">
-                        <h1><i class="fas fa-home"></i></h1>
+                    <a href="../../index.html" style="color: #ffffff;">
+                        <h4><i class="fas fa-home"></i> <br> Home</h4>
                     </a>
                 </div>
 
                 <div class="rectangle-control" >
-                    <a href="../favVids.html" style="color: #de5b00;">
-                        <h1><i class="fas fa-heart"></i></h1>
+                    <a href="../favVids.html" style="color: #ffffff;">
+                        <h4><i class="fas fa-heart"></i> <br> Favorites</h4>
                     </a>            
                 </div>
 
                 <div class="rectangle-control" >
-                    <a href="../../html/controls.html" style="color: #de5b00;">
-                        <h1><i class="fas fa-cog"></i></h1>
+                    <a href="../../html/controls.html" style="color: #ffffff;">
+                        <h4><i class="fas fa-cog"></i> <br> Controls</h4>
                     </a>
                 </div>
 
             </div>
 
 
+<script>
+    // storeAndRedirect.js
+
+// Function to store the current URL in localStorage
+function storeCurrentUrl() {
+    const currentUrl = window.location.href;
+    localStorage.setItem('lastVisitedUrl', currentUrl);
+}
+
+// Function to redirect to the last visited URL
+function redirectToLastVisitedUrl() {
+    const lastVisitedUrl = localStorage.getItem('lastVisitedUrl');
+    if (lastVisitedUrl) {
+        window.location.href = lastVisitedUrl;
+    }
+}
+
+// Set up event listeners for the buttons
+document.addEventListener('DOMContentLoaded', () => {
+    // Assuming you have a button with id 'storeButton'
+    const storeButton = document.getElementById('storeButton');
+    if (storeButton) {
+        storeButton.addEventListener('click', storeCurrentUrl);
+    }
+
+    // Assuming you have a button with id 'redirectButton'
+    const redirectButton2 = document.getElementById('redirectButton2');
+    if (redirectButton2) {
+        redirectButton2.addEventListener('click', redirectToLastVisitedUrl);
+    }
+});
+
+</script>
 
           <script src="../../js/lasturl.js"></script>
           
