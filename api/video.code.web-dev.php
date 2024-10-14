@@ -4,7 +4,7 @@
 
 <link
       rel="shortcut icon"
-      href="../imgs/favicon.png"
+      href="../imgs/favicon (3).png"
       type="image/x-icon"
     />
         <title>Web Development Courses - Skilldr</title>
@@ -236,6 +236,56 @@
   padding: 0px;
 }
 }
+   
+.control-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #000c15; /* Optional background */
+  width: 100%;
+  justify-content: center;
+  box-shadow: 15px 0px 3px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.rectangle-control {
+  background-color: #000c15; /* Your preferred color */
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rectangle-control:hover {
+  background-color: #001728; /* Slightly darker color on hover */
+  color: #de5b00;
+}
+.header_mobile{
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width:1023px) {
+    .control-container{
+        display: flex;
+    }
+    .header_computer{
+        display: none;
+    }
+    .header_mobile{
+        display: flex;
+    }
+    footer{
+        display: none;
+    }
+}
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -244,16 +294,18 @@
     <div class="content">
 
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <br><br><br>
-        <a href="../html/code/intro.html">Return</a>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#about">About Us</a>
-        <a href="../index.html#courses">Courses</a>
-    </div>
+    <header class="header_mobile">
+        
+       
+        <a class="logo" href="../index.html">
+    
+SKILLDR        
 
-    <header>
+</a>
+             
+        </header>
+
+    <header class="header_computer">
         
        
     <a class='logo' href="../index.html">
@@ -493,7 +545,38 @@ SKILLDR    </a>
 </a>
 </div>
 </footer>
+
+
+<div class="control-container">
+
+<div class="rectangle-control" >
+    <a id="redirectButton2"
+    style="color: #ffffff;">
+    <h4><i class="fa fa-play-circle"></i> <br> Watch</h4>
+    </a>
 </div>
+
+<div class="rectangle-control" >
+    <a href="../index.html" style="color: #ffffff;">
+        <h4><i class="fas fa-home"></i> <br> Home</h4>
+    </a>
+</div>
+
+<div class="rectangle-control" >
+    <a href="../html/favVids.html" style="color: #ffffff;">
+        <h4><i class="fas fa-heart"></i> <br> Favorites</h4>
+    </a>            
+</div>
+
+<div class="rectangle-control" >
+    <a href="../html/controls.html" style="color: #ffffff;">
+        <h4><i class="fas fa-cog"></i> <br> Controls</h4>
+    </a>
+</div>
+
+</div>
+</div>
+<script src="../js/lasturl2.js"></script>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";

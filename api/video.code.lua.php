@@ -4,7 +4,7 @@
 
 <link
       rel="shortcut icon"
-      href="../imgs/favicon.png"
+      href="../imgs/favicon (3).png"
       type="image/x-icon"
     />
         <title>Lua Script Courses - Skilldr</title>

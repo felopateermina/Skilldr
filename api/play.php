@@ -4,7 +4,7 @@
 
 <link
       rel="shortcut icon"
-      href="../imgs/favicon.png"
+      href="../imgs/favicon (3).png"
       type="image/x-icon"
     />
     <title>Video Playing - Skilldr</title>
@@ -379,13 +379,7 @@ box-shadow:  5px 5px 10px #000000,
     }
 }
 
-#jj, #storeButton{
-    width:15%;
-}
-@media screen and (max-width:1023px) {
-    #jj, #storeButton{
-        width:30%;
-    }
+#jj{
 }
 #downloadpage{
     width: 20%;
@@ -457,21 +451,8 @@ a{
     padding:7px;
     display: none;
 }
-#savedurl{
-    color: #ffffff;
-    background-color: green;
-    border-color: #ffeeba;
-    padding:7px;
-    display: none;
-}
-#saveUrlButton{
-    width:20%;
-}
-@media screen and (max-width:1023px) {
-    #saveUrlButton{
-        width:40%;
-    }
-}
+
+
 #favurl{
     color: #ffffff;
     background-color: green;
@@ -479,14 +460,8 @@ a{
     padding:7px;
     display: none;
 }
-#favButton{
-    width:30%;
-}
-@media screen and (max-width:1023px) {
-    #favButton{
-        width:45%;
-    }
-}
+
+
 @media screen and (max-width:1023px){
 .content{
   padding: 0px;
@@ -891,7 +866,7 @@ a{
             echo "<a href='#body' class='buttondown' id='storeButton' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-save' style='color:white;'></i> Shortcut</a>";
             echo "<a href='../html/donate.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-donate' style='color:white;'></i> Donate</a>";
             echo "<a href='../html/report.html' id='jj' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-flag' style='color:white;'></i> Report</a>";
-            echo "<a style='width:40%;' href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
+            echo "<a href='$channel' target='_blank' id='jj' title='$subs' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fab fa-youtube' style='color:white;'></i> $subs</a>";
             echo "<a href='#' id='downloadpage' class='buttondown' style='color:white;text-decoration:none;text-align:center;'  download='$videoTitle'><i class='fas fa-download' style='color:white;'></i> Download Page</a>";
             echo "<a id='favButton' class='buttondown' style='color:white;text-decoration:none;text-align:center;'><i class='fas fa-heart' style='color:white;' ></i> Add To Favorites</a>";
 
